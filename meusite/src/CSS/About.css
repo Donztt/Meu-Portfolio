@@ -1,0 +1,35 @@
+#About-Content{
+    padding-top: 40px;
+    background-color: #348AA7;
+    border-bottom: 20px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    padding-bottom: 50px;
+}
+
+#About-Content p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #D2D0BA;
+    padding: 20px;
+}
+
+#About-Content h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #D2D0BA;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 2px solid;
+}
+#Data{
+    border-top: 20px solid;
+    background-color: #01101d;
+    
+}
+
+#Experiences{
+    background-color: #01101d;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
