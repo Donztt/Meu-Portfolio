@@ -4,6 +4,7 @@ import About from './PAGES/About';
 import PersonalProjects from './PAGES/PersonalProjects';
 import './Components/default.css';
 
+
 function App() {
   return (
       <div className="App">
@@ -15,4 +16,6 @@ function App() {
       </div>
   );
 }
+
+
 export default App;

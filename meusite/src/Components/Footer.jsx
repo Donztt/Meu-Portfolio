@@ -9,6 +9,8 @@ function Footer() {
                     <div className="social">
                         <a href="https://www.linkedin.com/in/donizetti-oliveira-589a15178/"><i className="fa fa-linkedin"></i></a>
                         <a href="https://github.com/Donztt"><i className="fa fa-github"></i></a>
+                        <a href="https://www.instagram.com/donztt_olv"><i className="fa fa-instagram"></i></a>
+                        <a href="https://open.spotify.com/playlist/4iv3ATi1fpQQmZxYpYNlpj"><i className="fa fa-spotify"></i></a>
                     </div>
                     <ul className="list-inline">
                         <div class="container">

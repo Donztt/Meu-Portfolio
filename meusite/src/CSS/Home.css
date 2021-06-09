@@ -1,3 +1,6 @@
+#Home-Content{
+    margin-top: 50px;
+}
 #Welcome{
     margin-bottom: 30px;
 }
@@ -9,30 +12,47 @@
     color: #1363be;
     background: none;
 }
-#Apresentacao{
+#introduction{
     border-top: 20px solid;
     background-color: #01101d;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    margin-bottom: 20px;
 }
-#Apresentacao p{
+#introduction p{
     font-style: oblique;
     font-weight: bold;
-    padding: 30px;
+    padding: 15px;
     font-size: 1.2rem;
     color: #D2D0BA;
+    z-index: 1;
+}
+#introduction button{
+
+    background-color: #021c33;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 #Home-Content{
     padding-top: 40px;
     background-color: #348AA7;
-    border-bottom: 20px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
 }
-
 #Perfil-Photo img{
     min-width: 150px;
     min-height: 150px;
     height: 90%;
     width:  90%;
+}
+#Skills li{
+    text-align: center;
+}
+#Skills{
+    z-index: 900;
+    box-shadow: inset 0 10px 15px rgb(43, 44, 43);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 20px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-color: #D2D0BA;
 }

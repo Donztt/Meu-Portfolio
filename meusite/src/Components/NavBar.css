@@ -1,3 +1,37 @@
-li{
+.navbar-brand{
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 5px solid;
+    border-left: 5px solid;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: #D2D0BA;
+    color: #D2D0BA;
+}
+.navbar li{
     padding-left: 50px;
+}
+.navbar a {
+    color: #D2D0BA;
+}
+.navbar {
+    background-color: #01101d;
+    filter: drop-shadow(0 6px 6px #011531);
+}
+.dropdown-menu{
+    background-color: #01101d;
+}
+
+.dropdown-menu a{
+    color: #D2D0BA;
+}
+
+.dropdown-menu li{
+    padding: 0px;
+}
+
+.btn-group button{
+    color: #D2D0BA;
 }
