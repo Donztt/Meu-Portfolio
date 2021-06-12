@@ -12,9 +12,13 @@
 }
 .navbar li{
     padding-left: 50px;
+    padding-right: 50px;
 }
 .navbar a {
     color: #D2D0BA;
+}
+.navbar ul{
+    font-weight: bold;
 }
 .navbar {
     background-color: #01101d;

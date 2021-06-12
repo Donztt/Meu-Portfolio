@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
 import '../CSS/Home.css';
 import Image from '../Photos/MyImages/eu.png';
 import Fade from 'react-reveal/Fade';
-import { Link } from 'react-router-dom'
 
 import { FaJava } from 'react-icons/fa';
 import { FaUnity } from 'react-icons/fa';

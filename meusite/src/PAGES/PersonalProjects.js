@@ -6,9 +6,33 @@ import PersonagemPhoto from '../Photos/GameImages/Rpg Game Photo.png';
 import MonsterPhoto from '../Photos/GameImages/Rpg Game Monster.png';
 import MonsterPhoto2 from '../Photos/GameImages/Rpg Game Monster2.png';
 import Zoom from 'react-reveal/Zoom';
-import {Gallery} from '../Components/Gallery';
+import ImageGallery from 'react-image-gallery';
 import ModelViewer from 'react-model-viewer';
 import modelPath from '../Models3D/Rato2.obj';
+import Image1 from '../Photos/GameImages/Image1.PNG';
+import Image2 from '../Photos/GameImages/Image2.PNG';
+import Image3 from '../Photos/GameImages/Image3.PNG';
+import Image4 from '../Photos/GameImages/Image4.PNG';
+import Image5 from '../Photos/GameImages/Image5.PNG';
+
+const imagesGallery = [
+    {
+        original:  Image1,
+    },
+    {
+        original:  Image2,
+    },
+    {
+        original:  Image3,
+    },
+    {
+        original:  Image4,
+    },
+    {
+        original:  Image5,
+    },
+      
+  ];
 
 
 function PersonalProjects() {
@@ -48,7 +72,7 @@ function PersonalProjects() {
                                 </div>
                             </div>
                             <div id = "Gallery">
-                                <Gallery/>
+                                <ImageGallery items={imagesGallery} showThumbnails = {false} showBullets = {true} />;
                             </div>
                             <div id = "Videos">
                                 <div id = "Video1">

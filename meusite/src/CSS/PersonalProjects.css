@@ -8,6 +8,7 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     padding-bottom: 50px;
+    box-shadow: inset 0 0px 50px rgb(43, 44, 43);
 }
 #Project{
     background-color: #01101d;

@@ -1,5 +1,7 @@
 import React from 'react';
 import './Footer.css';
+import EnCurriculo from '../Curriculos/Donizetti Oliveira En Curriculo.pdf';
+import PtCurriculo from '../Curriculos/Donizetti Oliveira PTBR Curriculo.pdf';
 
 function Footer() {
     return (
@@ -22,8 +24,8 @@ function Footer() {
                                 </div>
                                 <div class="col">
                                     <li className="list-inline-item">Downloads</li>
-                                    <p><a href="../Curriculos/(PT-BR) Curriculo Donizetti" download>Currículo - (PT-BR)</a></p>
-                                    <p><a href="../Curriculos/(EN) Curriculo Donizetti" download>Currículo - (EN)</a></p>
+                                    <p><a href={PtCurriculo} download>Currículo - (PT-BR)</a></p>
+                                    <p><a href={EnCurriculo} download>Currículo - (EN)</a></p>
                                 </div>
                                 <div class="col">
                                     <li className="list-inline-item">Endereço</li>
