@@ -8,7 +8,7 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     padding-bottom: 50px;
-    box-shadow: inset 0 0px 50px rgb(43, 44, 43);
+    box-shadow: inset 0 0px 50px #021c33;
 }
 #Project{
     background-color: #01101d;
@@ -48,4 +48,10 @@
 }
 #Videos{
     padding: 60px;
+}
+
+#Models3D{
+    height: 700px;
+    width: 100%;
+    padding-bottom: 60px;
 }

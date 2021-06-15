@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
 import '../CSS/PersonalProjects.css';
@@ -7,33 +7,53 @@ import MonsterPhoto from '../Photos/GameImages/Rpg Game Monster.png';
 import MonsterPhoto2 from '../Photos/GameImages/Rpg Game Monster2.png';
 import Zoom from 'react-reveal/Zoom';
 import ImageGallery from 'react-image-gallery';
-import ModelViewer from 'react-model-viewer';
-import modelPath from '../Models3D/Rato2.obj';
 import Image1 from '../Photos/GameImages/Image1.PNG';
 import Image2 from '../Photos/GameImages/Image2.PNG';
 import Image3 from '../Photos/GameImages/Image3.PNG';
 import Image4 from '../Photos/GameImages/Image4.PNG';
 import Image5 from '../Photos/GameImages/Image5.PNG';
+import { Canvas } from '@react-three/fiber'
+import {  OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei'
+import {BeholderModel,MouseModel,LobModel,PilarModel,GreatSwordModel} from '../Models3D/ModelsGame';
 
 const imagesGallery = [
     {
-        original:  Image1,
+        original: Image1,
     },
     {
-        original:  Image2,
+        original: Image2,
     },
     {
-        original:  Image3,
+        original: Image3,
     },
     {
-        original:  Image4,
+        original: Image4,
     },
     {
-        original:  Image5,
+        original: Image5,
     },
-      
-  ];
+];
 
+function ConfigModels(props) {
+
+    return (
+        <group>
+            <ambientLight intensity={0.7} />
+            <spotLight intensity={3} angle={10} penumbra={1} position={[-15, 80, 0]} receiveShadow castShadow/>
+            <PerspectiveCamera {...props} />
+            <OrbitControls />
+        </group>
+    )
+}
+
+function Plane() {
+    return (
+        <mesh rotation={[-1.5, 0, 0]} position={[0, -12, 0]} receiveShadow>
+            <planeBufferGeometry attach="geometry" args={[1000, 1000]} />
+            <meshLambertMaterial attach="material" color="#02213b" />
+        </mesh>
+    )
+}
 
 function PersonalProjects() {
     return (
@@ -60,38 +80,50 @@ function PersonalProjects() {
                                 <div class="container">
                                     <div class="row">
                                         <div class="col align-self-start">
-                                            <img src={MonsterPhoto} class="rounded mx-auto d-block"></img>
+                                            <img src={MonsterPhoto} class="rounded mx-auto d-block" alt=""></img>
                                         </div>
                                         <div class="col align-self-center">
-                                            <img src={PersonagemPhoto} class="rounded mx-auto d-block"></img>
+                                            <img src={PersonagemPhoto} class="rounded mx-auto d-block" alt=""></img>
                                         </div>
                                         <div class="col align-self-end">
-                                            <img src={MonsterPhoto2} class="rounded mx-auto d-block"></img>
+                                            <img src={MonsterPhoto2} class="rounded mx-auto d-block" alt=""></img>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id = "Gallery">
-                                <ImageGallery items={imagesGallery} showThumbnails = {false} showBullets = {true} />;
+                            <div id="Gallery">
+                                <ImageGallery items={imagesGallery} showThumbnails={false} showBullets={true} />;
                             </div>
-                            <div id = "Videos">
-                                <div id = "Video1">
+                            <div id="Videos">
+                                <div id="Video1">
                                     <h3>Visão Geral do jogo</h3>
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6800416080004190208?compact=1" height="284" width="504"  allowfullscreen = ""></iframe>
+                                        <iframe class="embed-responsive-item" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6800416080004190208?compact=1" title="Demo Jogo" height="284" width="504" allowfullscreen=""></iframe>
                                     </div>
                                 </div>
-                                <div id = "Video2">
+                                <div id="Video2">
                                     <h3>Update: Sistema de Crafting</h3>
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6801603672020160512?compact=1" height="284" width="504" allowfullscreen=""></iframe>           
-                                    </div> 
-                                </div> 
+                                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6801603672020160512?compact=1" title="Sistema Crafting" height="284" width="504" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="Models3D">
-                                
-                            </div>          
                         </Zoom>
+                        <div id="Models3D">
+                            <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 35, 70], fov: 50 }} shadowMap>
+                                <ConfigModels />
+                                <Stars radius={500} depth={150} count={5000} factor={20} saturation={0} fade />
+                                <Suspense fallback={null}>
+                                    <MouseModel position={[0, 11, 0]} />
+                                    <BeholderModel position={[-28, 25, 0]} />
+                                    <LobModel position={[28, 11, -2]}/>
+                                    <GreatSwordModel position={[0, 0, 8]}/>
+                                    <PilarModel position={[0, 0, 0]}/>
+                                    <PilarModel position={[-28, 0, 0]}/>
+                                    <PilarModel position={[28, 0, 0]}/> 
+                                </Suspense>
+                            </Canvas>
+                        </div>
                     </div>
                 </div>
             </div>

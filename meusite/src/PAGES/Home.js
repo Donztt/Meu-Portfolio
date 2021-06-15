@@ -50,7 +50,7 @@ function Home() {
                             <div class="col align-self-end">
                                 <Fade right>
                                     <div id="Perfil-Photo">
-                                        <img src={Image} class="rounded mx-auto d-block"></img>
+                                        <img src={Image} class="rounded mx-auto d-block" alt = ""></img>
                                     </div>
                                 </Fade>
                             </div>
