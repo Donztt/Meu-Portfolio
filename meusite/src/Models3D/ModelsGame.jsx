@@ -14,7 +14,7 @@ import greatSword from './EspadaGrande.glb';
 export function BeholderModel(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF(beholder)
-  const [active, setActive] = useState(false)
+  const [active] = useState(false)
   const { actions } = useAnimations(animations, group)
 
   useFrame((state) => {
@@ -22,7 +22,7 @@ export function BeholderModel(props) {
       group.current.rotation.z = -  (1 + Math.sin(t / 1.5)) / 20
       group.current.rotation.x = Math.cos(t / 4) / 8
       group.current.rotation.y = Math.sin(t / 4) / 8
-      group.current.position.y = (180 + Math.sin(t / 1.5)) / 10
+      group.current.position.y = (140 + Math.sin(t / 1.5)) / 10
   })
 
   useEffect(() => {
@@ -134,4 +134,13 @@ export function GreatSwordModel(props) {
 }
 
 useGLTF.preload(greatSword)
+
+function Plane(props) {
+  return (
+      <mesh rotation={[-1.5, 0, 0]} {...props} receiveShadow>
+          <planeBufferGeometry attach="geometry" args={[1000, 1000]} />
+          <meshLambertMaterial attach="material" color="#02213b" />
+      </mesh>
+  )
+}
 

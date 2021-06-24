@@ -46,15 +46,6 @@ function ConfigModels(props) {
     )
 }
 
-function Plane() {
-    return (
-        <mesh rotation={[-1.5, 0, 0]} position={[0, -12, 0]} receiveShadow>
-            <planeBufferGeometry attach="geometry" args={[1000, 1000]} />
-            <meshLambertMaterial attach="material" color="#02213b" />
-        </mesh>
-    )
-}
-
 function PersonalProjects() {
     return (
         <div>
@@ -114,13 +105,13 @@ function PersonalProjects() {
                                 <ConfigModels />
                                 <Stars radius={500} depth={150} count={5000} factor={20} saturation={0} fade />
                                 <Suspense fallback={null}>
-                                    <MouseModel position={[0, 11, 0]} />
-                                    <BeholderModel position={[-28, 25, 0]} />
-                                    <LobModel position={[28, 11, -2]}/>
-                                    <GreatSwordModel position={[0, 0, 8]}/>
-                                    <PilarModel position={[0, 0, 0]}/>
-                                    <PilarModel position={[-28, 0, 0]}/>
-                                    <PilarModel position={[28, 0, 0]}/> 
+                                    <MouseModel position={[0, 6, 0]} />
+                                    <BeholderModel position={[-28, 20, 0]} />
+                                    <LobModel position={[28, 6, -2]}/>
+                                    <GreatSwordModel position={[0, -5, 8]}/>
+                                    <PilarModel position={[0, -5, 0]}/>
+                                    <PilarModel position={[-28, -5, 0]}/>
+                                    <PilarModel position={[28, -5, 0]}/> 
                                 </Suspense>
                             </Canvas>
                         </div>
