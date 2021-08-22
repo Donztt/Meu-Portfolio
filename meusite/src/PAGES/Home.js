@@ -33,7 +33,7 @@ function Home() {
                                     <Fade left cascade>
                                         <div id="Welcome">
                                             <h2><b>Bem vindo!</b></h2>
-                                            <h3><strong>Meu nome é <mark id="Donizetti">Donizetti</mark>.</strong></h3>
+                                            <h3><strong>Me chamo <mark id="Donizetti">Donizetti</mark>.</strong></h3>
                                         </div>
                                     </Fade>
                                     <Fade left>
@@ -49,8 +49,10 @@ function Home() {
                             </div>
                             <div class="col align-self-end">
                                 <Fade right>
-                                    <div id="Perfil-Photo">
-                                        <img src={Image} class="rounded mx-auto d-block" alt = ""></img>
+                                    <div id="Photo-Canvas">
+                                        <div id="Perfil-Photo">
+                                            <img src={Image} class="rounded mx-auto d-block" alt = ""></img>
+                                        </div>
                                     </div>
                                 </Fade>
                             </div>

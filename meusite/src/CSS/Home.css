@@ -9,7 +9,7 @@
 }
 #Donizetti{
     font-size: 1.8em;
-    color: #1363be;
+    color: #012247;
     background: none;
 }
 #introduction{
@@ -38,10 +38,15 @@
     background-color: #348AA7;
 }
 #Perfil-Photo img{
-    min-width: 150px;
-    min-height: 150px;
-    height: 90%;
-    width:  90%;
+    min-width: 250px;
+    min-height: 250px;
+    height: 70%;
+    width:  70%;
+    background-color: #d2e1ed;
+    margin-bottom: 90px;
+    border:10px solid;
+    border-radius: 20% !important;
+    filter: drop-shadow(0 6px 15px #011531);
 }
 #Skills li{
     text-align: center;
