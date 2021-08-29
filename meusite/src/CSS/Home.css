@@ -1,63 +1,97 @@
-#Home-Content{
-    margin-top: 50px;
+#Home-Content {
+  margin-top: 50px;
 }
-#Welcome{
-    margin-bottom: 30px;
+#Home-Content {
+  position: relative;
+  z-index: 500;
+  padding-top: 40px;
+  background-color: #348aa7;
+  padding-bottom: 50px;
+  filter: drop-shadow(0 7px 6px #011531);
 }
-#Welcome h2{
-    font-size: 4rem;
+#Welcome {
+  margin-bottom: 30px;
 }
-#Donizetti{
-    font-size: 1.8em;
-    color: #012247;
-    background: none;
+#Welcome h2 {
+  font-size: 4rem;
 }
-#introduction{
-    border-top: 20px solid;
-    background-color: #01101d;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    margin-bottom: 20px;
+#Donizetti {
+  font-size: 1.8em;
+  color: #012247;
+  background: none;
 }
-#introduction p{
-    font-style: oblique;
-    font-weight: bold;
-    padding: 15px;
-    font-size: 1.2rem;
-    color: #D2D0BA;
-    z-index: 1;
+#introduction {
+  background-color: #01101d;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 6px 12px #011531);
 }
-#introduction button{
+#introduction p {
+  font-style: oblique;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #d2d0ba;
+  z-index: 1;
+}
+#introduction button {
+  background-color: #021c33;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+#Perfil-Photo img {
+  min-width: 250px;
+  min-height: 250px;
+  height: 70%;
+  width: 70%;
+  background-color: #d2e1ed;
+  margin-bottom: 90px;
+  border: 10px solid;
+  border-radius: 20% !important;
+  filter: drop-shadow(0 6px 15px #011531);
+}
 
-    background-color: #021c33;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+#Skills {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 20px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  background-color: #d2d0ba;
 }
-#Home-Content{
-    padding-top: 40px;
-    background-color: #348AA7;
+
+#tooltip {
+  text-align: center;
+  position: relative;
+  display: inline-block;
 }
-#Perfil-Photo img{
-    min-width: 250px;
-    min-height: 250px;
-    height: 70%;
-    width:  70%;
-    background-color: #d2e1ed;
-    margin-bottom: 90px;
-    border:10px solid;
-    border-radius: 20% !important;
-    filter: drop-shadow(0 6px 15px #011531);
+#tooltip #tooltiptext {
+  position: absolute;
+  z-index: 9999;
+  visibility: hidden;
+  width: 100px;
+  height: 50px;
+  left: 50%;
+
+  margin-left: -50px;
+  filter: drop-shadow(0 6px 15px #011531);
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  opacity: 0.6;
+  font-size: 0.8rem;
+  word-wrap: break-word;
+
+  padding: 10px;
+  top: 5%;
+  z-index: 1;
 }
-#Skills li{
-    text-align: center;
+#tooltip:hover #tooltiptext {
+  visibility: visible;
 }
-#Skills{
-    z-index: 900;
-    box-shadow: inset 0 10px 15px #2b2c2b;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 20px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    background-color: #D2D0BA;
+#tooltip:hover {
+  filter: drop-shadow(0 6px 15px #011531);
 }

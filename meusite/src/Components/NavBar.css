@@ -22,7 +22,10 @@
 }
 .navbar {
     background-color: #01101d;
+    border-bottom: 5px solid;
+    border-color: #000000;
     filter: drop-shadow(0 6px 6px #011531);
+    padding: 10px;
 }
 .dropdown-menu{
     background-color: #01101d;
@@ -39,3 +42,13 @@
 .btn-group button{
     color: #D2D0BA;
 }
+#navbarNav li:hover{
+    box-shadow: inset 0 6px 15px #2b2c2b;
+    background-color: #348AA7;
+    border-radius: 10px;
+}
+
+#navbarNav a:hover{
+    color: #01101d;
+}
+
