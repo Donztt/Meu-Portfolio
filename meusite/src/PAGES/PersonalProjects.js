@@ -189,24 +189,32 @@ class PersonalProjects extends React.Component {
               <h3>RPG Survival Game</h3>
               <p>Projeto feito na engine Unity 3D na linguagem C#.</p>
               <p>
-                Jogo com a temática medieval de fantasia sendo baseado em formas
-                Cartoon, e Inspirado em Terraria e Dark Souls.
+                Este jogo tem uma temática medieval de fantasia,
+                 com um estilo visual baseado em formas cartoon.
+                  Inspirado em sucessos como Terraria e Dark Souls,
+                  o jogo apresentará uma rica história com elementos de fantasia e aventura,
+                   que irão prender o jogador do começo ao fim. Com uma atmosfera envolvente e visualmente cativante,
+                    o jogo oferecerá uma experiência única e imersiva para os fãs de RPGs de ação.
               </p>
               <p>
-                Possuindo o sistema de inventário, montagem de itens (Crafting)
-                e sistema de equipamentos
+                O jogo apresenta um sistema completo de gerenciamento de inventário,
+                 com uma mecânica de montagem de itens (Crafting) que permite ao jogador criar novos equipamentos e ferramentas a partir de recursos coletados durante a exploração.
+                  Além disso, o jogo conta com um sistema de equipamentos que permite ao jogador personalizar o personagem com armaduras e armas poderosas,
+                   e ainda permite a construção de estruturas e fortificações para proteger o personagem e criar um ambiente mais seguro para a exploração.
+                    Com esses recursos, o jogador terá total controle sobre seu personagem e poderá experimentar diferentes estratégias para enfrentar os desafios do jogo.
               </p>
               <p>
-                O jogo será altamente focado na exploração de mapas e saque de
-                monstros, onde terá uma vasta quantidade de recursos espalhadas
-                para que sejam usadas para a criação de novos equipamentos que
-                auxiliam na sobrevivência e exploração do personagem.
+                Este jogo terá uma jogabilidade altamente focada na exploração de mapas e saque de monstros,
+                 onde o jogador encontrará uma vasta quantidade de recursos espalhados pelo cenário.
+                  Esses recursos poderão ser coletados e usados para criar novos equipamentos e ferramentas que auxiliam na sobrevivência
+                   e exploração do personagem. Com essa dinâmica de jogo, o jogador será constantemente desafiado a explorar cada canto do mapa
+                    em busca de novos recursos e enfrentar monstros poderosos para obter itens valiosos, proporcionando uma experiência emocionante e envolvente.
               </p>
               <p>
-                Também irá contar com uma quantidade grande de equipamentos que
-                o personagem irá conseguir utilizar para se proteger de ataque
-                de monstros espalhados pelo mapa, entre elas armas normais e
-                armas mágicas que possuem ataque especiais.
+                Além disso, o jogo contará com uma grande variedade de equipamentos que o jogador poderá utilizar para se proteger dos ataques dos monstros que habitam o mapa,
+                 incluindo armas convencionais e armas mágicas com ataques especiais. Com essa ampla gama de equipamentos disponíveis,
+                  o jogador terá muitas opções para personalizar o personagem e enfrentar diferentes desafios com estratégias únicas,
+                   tornando a jogabilidade ainda mais empolgante e diversificada.
               </p>
               <Zoom top>
                 <div id="Project-Photo">
@@ -284,15 +292,13 @@ class PersonalProjects extends React.Component {
                 da faculdade (4° semestre)
               </p>
               <p>
-                O jogo é uma junção do jogo Bomberman com um sistema de puzzle
-                que baseia-se em coletar todos os objetos da cena para concluir
-                a fase, porém dentro de cada fase existem obstáculos que só
-                podem ser ultrapassado ao estourar as bombas que o personagem
-                carrega. A sacada para se tornar um jogo considerado puzzle
-                (quebra-cabeças) é que as bombas são limitadas e o jogador terá
-                que usa-las em posições estratégicas para que possa ser efetivo
-                em destruir os obstáculos certos e coletar todos os itens
-                (lixos) que estão espalhados na fase afim de completa-la.
+                Este jogo é uma mistura emocionante do clássico Bomberman com um sistema de puzzle,
+                 onde o jogador deve coletar todos os objetos da cena para concluir a fase. No entanto,
+                  a jogabilidade é mais desafiadora do que parece,
+                   pois existem obstáculos que só podem ser ultrapassados ao estourar as bombas que o personagem carrega.
+                   Para tornar o jogo ainda mais estratégico, as bombas são limitadas,
+                    e o jogador deve usá-las de forma inteligente para destruir os obstáculos certos e coletar todos os itens espalhados pela fase.
+                     Com essa dinâmica, este jogo se torna um verdadeiro quebra-cabeças, exigindo do jogador estratégia e pensamento crítico para vencer cada desafio.
               </p>
               <Zoom top>
                 <div id="Gallery">

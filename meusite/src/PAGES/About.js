@@ -18,11 +18,11 @@ class About extends React.Component {
             <Fade top>
               <div id="Data">
                 <h3>Donizetti José Fernando de Oliveira Junior</h3>
-                <p>
-                  Curso: Ciência da Computação (previsão de termino -
-                  Dezembro/2021)
+                <p className="text-center">
+                  Curso: Ciência da Computação (termino -
+                  Janeiro/2022)
                 </p>
-                <p> Idade: 25 Anos</p>
+                <p className="text-center"> Idade: 25 Anos</p>
               </div>
               <div id="Experiences">
                 <h3>Ideia Sistemas</h3>

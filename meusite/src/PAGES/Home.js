@@ -62,13 +62,15 @@ class Home extends React.Component {
                   <Fade left>
                     <div id="introduction">
                       <p>
-                        Desenvolvedor Full-Stack, interessado igualmente pelo
-                        Back-end e Front-end.
+                        Desenvolvedor Full-Stack
                       </p>
                       <p>
-                        Tenho interesse em conhecer novas tecnologias, para ter
-                        uma base de conhecimento mais ampla e aprimorar minhas
-                        habilidades como programador
+                      Como programador, tenho um grande interesse em expandir minha base
+                       de conhecimento e habilidades. Estou sempre buscando aprender novas
+                        tecnologias e tendências emergentes em minha área, a fim de aprimorar
+                         ainda mais minha capacidade de desenvolver soluções inovadoras e eficazes.
+                          Estou sempre animado para explorar e experimentar novas ferramentas e tecnologias
+                           que possam agregar valor aos projetos em que estou envolvido.
                       </p>
                       <p>
                         Este Portfólio possui projetos pessoais que gostaria de
