@@ -19,6 +19,8 @@
     border-left: 5px solid;
     border-color: #D2D0BA;
     filter: drop-shadow(0 6px 12px #011531);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 #Project p{
     font-style: oblique;
@@ -36,13 +38,28 @@
     padding-bottom: 20px;
     border-bottom: 2px solid;
 }
-
+#Project h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #D2D0BA;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+    width: 50%;
+    margin: 0 auto;
+}
 #Project img{
     min-width: 150px;
     min-height: 150px;
     height: 80%;
     width: 80%;
     filter: drop-shadow(0 6px 12px #000000);
+}
+#botao {
+    background-color: #021c33;
+    margin-bottom: 7px;
+    width: 50%;
 }
 #Gallery{
     background-size: cover;
