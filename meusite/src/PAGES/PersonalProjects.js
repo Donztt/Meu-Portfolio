@@ -31,6 +31,7 @@ import Image20224 from "../Photos/Drawnins/drunken sailor remake.png";
 import Image20225 from "../Photos/Drawnins/2d.png";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera, Stars } from "@react-three/drei";
+import ErrorBoundary from "../Util/ErrorBoundary"
 import {
   BeholderModel,
   MouseModel,
@@ -137,6 +138,41 @@ function ConfigModels(props) {
     </group>
   );
 }
+function Canvas3dModels() {
+    return (
+      <ErrorBoundary
+      message = "Não foi possível carregar a apresentação 3D, Verifique se o acelerador de GPU está ativo em seu navegador"
+      >
+      <div id="Models3D">
+        <Canvas
+          shadows
+          dpr={[1, 2]}
+          camera={{ position: [0, 35, 70], fov: 50 }}
+          shadowMap
+        >
+          <ConfigModels />
+          <Stars
+            radius={500}
+            depth={150}
+            count={5000}
+            factor={20}
+            saturation={0}
+            fade
+          />
+          <Suspense fallback={null}>
+            <MouseModel position={[0, 6, 0]} />
+            <BeholderModel position={[-28, 20, 0]} />
+            <LobModel position={[28, 6, -2]} />
+            <GreatSwordModel position={[0, -5, 8]} />
+            <PilarModel position={[0, -5, 0]} />
+            <PilarModel position={[-28, -5, 0]} />
+            <PilarModel position={[28, -5, 0]} />
+          </Suspense>
+        </Canvas>
+      </div>
+      </ErrorBoundary>
+    );
+}
 
 class PersonalProjects extends React.Component {
   componentDidMount() {
@@ -174,32 +210,33 @@ class PersonalProjects extends React.Component {
               </p>
               <Zoom top>
                 <div id="Project-Photo">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col align-self-start">
+                  <div className="container">
+                    <div className="row">
+                      <div className="col align-self-start">
                         <img
                           src={MonsterPhoto}
-                          class="rounded mx-auto d-block"
+                          className="rounded mx-auto d-block"
                           alt=""
                         ></img>
                       </div>
-                      <div class="col align-self-center">
+                      <div className="col align-self-center">
                         <img
                           src={PersonagemPhoto}
-                          class="rounded mx-auto d-block"
+                          className="rounded mx-auto d-block"
                           alt=""
                         ></img>
                       </div>
-                      <div class="col align-self-end">
+                      <div className="col align-self-end">
                         <img
                           src={MonsterPhoto2}
-                          class="rounded mx-auto d-block"
+                          className="rounded mx-auto d-block"
                           alt=""
                         ></img>
                       </div>
                     </div>
                   </div>
                 </div>
+                </Zoom>
                 <div id="Gallery">
                   <ImageGallery
                     items={imagesGallery}
@@ -211,58 +248,30 @@ class PersonalProjects extends React.Component {
                 <div id="Videos">
                   <div id="Video1">
                     <h3>Visão Geral do jogo</h3>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div className="embed-responsive embed-responsive-16by9">
                       <iframe
-                        class="embed-responsive-item"
+                        className="embed-responsive-item"
                         src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6800416080004190208?compact=1"
                         title="Demo Jogo"
                         height="284"
                         width="504"
-                        allowfullscreen=""
                       ></iframe>
                     </div>
                   </div>
                   <div id="Video2">
                     <h3>Update: Sistema de Crafting</h3>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div className="embed-responsive embed-responsive-16by9">
                       <iframe
                         src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6801603672020160512?compact=1"
                         title="Sistema Crafting"
                         height="284"
                         width="504"
-                        allowfullscreen=""
                       ></iframe>
                     </div>
                   </div>
                 </div>
-              </Zoom>
-              <div id="Models3D">
-                <Canvas
-                  shadows
-                  dpr={[1, 2]}
-                  camera={{ position: [0, 35, 70], fov: 50 }}
-                  shadowMap
-                >
-                  <ConfigModels />
-                  <Stars
-                    radius={500}
-                    depth={150}
-                    count={5000}
-                    factor={20}
-                    saturation={0}
-                    fade
-                  />
-                  <Suspense fallback={null}>
-                    <MouseModel position={[0, 6, 0]} />
-                    <BeholderModel position={[-28, 20, 0]} />
-                    <LobModel position={[28, 6, -2]} />
-                    <GreatSwordModel position={[0, -5, 8]} />
-                    <PilarModel position={[0, -5, 0]} />
-                    <PilarModel position={[-28, -5, 0]} />
-                    <PilarModel position={[28, -5, 0]} />
-                  </Suspense>
-                </Canvas>
-              </div>
+    
+              <Canvas3dModels />
             </div>
             <div id="Project">
               <h3>Bomberman Ecológico</h3>
@@ -295,7 +304,7 @@ class PersonalProjects extends React.Component {
                   ;
                 </div>
               </Zoom>
-              <div class="text-center">
+              <div className="text-center">
                 <a
                   href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico"
                   target="_blank"
@@ -303,18 +312,18 @@ class PersonalProjects extends React.Component {
                 >
                   <button
                     type="button"
-                    class="btn btn-primary btn-lg btn-block"
+                    className="btn btn-primary btn-lg btn-block"
                     id="botao"
                   >
                     Código-Fonte
                   </button>
                 </a>
               </div>
-              <div class="text-center">
+              <div className="text-center">
                 <a href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico/releases/download/1.0/Bomberman.jar">
                   <button
                     type="button"
-                    class="btn btn-primary btn-lg btn-block"
+                    className="btn btn-primary btn-lg btn-block"
                     id="botao"
                   >
                     Baixar Jogo

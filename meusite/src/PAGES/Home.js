@@ -43,9 +43,9 @@ class Home extends React.Component {
       <div id="general-content">
         <NavBar />
         <div id="Home-Content">
-          <div class="container">
-            <div class="row">
-              <div class="col align-self-start">
+          <div className="container">
+            <div className="row">
+              <div className="col align-self-start">
                 <div className="container-md">
                   <Fade left cascade>
                     <div id="Welcome">
@@ -77,7 +77,7 @@ class Home extends React.Component {
                       <Link to="/projetospessoais">
                         <button
                           type="button"
-                          class="btn btn-primary btn-lg btn-block"
+                          className="btn btn-primary btn-lg btn-block"
                         >
                           Conhecer Projetos
                         </button>
@@ -86,13 +86,13 @@ class Home extends React.Component {
                   </Fade>
                 </div>
               </div>
-              <div class="col align-self-end">
+              <div className="col align-self-end">
                 <Fade right>
                   <div id="Photo-Canvas">
                     <div id="Perfil-Photo">
                       <img
                         src={Image}
-                        class="rounded mx-auto d-block"
+                        className="rounded mx-auto d-block"
                         alt=""
                       ></img>
                     </div>
@@ -104,146 +104,146 @@ class Home extends React.Component {
         </div>
         <Slide top>
           <div id="Skills">
-            <div class="container">
-              <div class="col-2" id="tooltip">
+            <div className="container">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Java</p>
                   <FaJava id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Spring Boot</p>
                   <SiSpring id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">React</p>
                   <FaReact id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Angular</p>
                   <SiAngular id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">CSharp</p>
                   <SiCsharp id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">.NET</p>
                   <SiDotNet id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">MySQL</p>
                   <DiMysql id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">SQL Server</p>
                   <SiMicrosoftsqlserver id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">PostgresSQL</p>
                   <SiPostgresql id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Oracle SQL</p>
                   <SiOracle id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">VS Code</p>
                   <SiVisualstudiocode id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">IntelliJ</p>
                   <SiIntellijidea id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Eclipse</p>
                   <SiEclipseide id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Github</p>
                   <ImGithub id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Bitbucket</p>
                   <SiBitbucket id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">HTML 5</p>
                   <SiHtml5 id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">CSS 3</p>
                   <SiCss3 id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Javascript</p>
                   <SiJavascript id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Typescript</p>
                   <SiTypescript id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Bootstrap</p>
                   <SiBootstrap id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Unity</p>
                   <FaUnity id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Blender</p>
                   <SiBlender id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Photoshop</p>
                   <SiAdobephotoshop id="SkillIcon" />
                 </h2>
               </div>
-              <div class="col-2" id="tooltip">
+              <div className="col-2" id="tooltip">
                 <h2>
                   <p id="tooltiptext">Infraestrutura</p>
                   <GiAutoRepair id="SkillIcon" />
