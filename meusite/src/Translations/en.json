@@ -1,0 +1,61 @@
+{
+    "NAV": {
+        "HOME": "Home",
+        "ABOUT_ME": "About Me",
+        "PERSONAL_PROJECTS": "Personal Projects"
+    },
+    "FOOTER": {
+        "CONTACTS": "Contacts",
+        "ADRESS": "Address"
+    },
+    "HOME": {
+        "WELCOME": "Welcome!",
+        "INTRODDUCTION": "My name is",
+        "OFFICE": "Full-Stack Developer",
+        "TEXT": "As a programmer, I have a great interest in expanding my knowledge base and skills. I am always seeking to learn new technologies and emerging trends in my field to further enhance my ability to develop innovative and effective solutions. I am always excited to explore and experiment with new tools and technologies that can add value to the projects I'm involved in.",
+        "TEXT2": "This Portfolio showcases personal projects that I would like to present to you!",
+        "DISCOVERY_PROJECTS": "Discover Projects"
+    },
+    "ABOUT_ME": {
+        "COLLEGE": "Degree: Computer Science (Expected completion - January 2022)",
+        "YO": "Age: 25 years",
+        "IDEIA_SISTEMAS": {
+            "STACKS": "Programming Languages: Visual Basic 6 / C#",
+            "DATABASES": "Used Databases: SQL Server and MySQL",
+            "FRAMEWORKS": "Frameworks: Rest API",
+            "ABOUT": "At the company specialized in developing enterprise management systems (ERP), I had the opportunity to learn Visual Basic 6 and use that skill to start my professional journey. It was there that I gained valuable programming experience and worked alongside a highly qualified team of professionals in the field."
+        },
+        "TRULOGIC": {
+            "STACKS": "Programming Languages: C# / Java / Javascript / HTML / CSS",
+            "DATABASES": "Used Databases: SQL Server and Postgres",
+            "FRAMEWORKS": "Frameworks: ASP.NET / React-Native / Angular 12 / Vue.Js / Spring Boot / Hibernate / Rest API / Entity Framework",
+            "WORK_METODOLOGY": "Work Methodology: SCRUM",
+            "ABOUT": "Trulogic was a true knowledge and camaraderie oasis for me. Focused on listening to the needs and ideas of its clients and turning them into reality, Trulogic provided me with a wide variety of projects and, as a result, a wealth of knowledge and acquired skills. I had the opportunity to work with several highly utilized tools in the industry, which significantly boosted my journey as a developer."
+        },
+        "AMLABS": {
+            "STACKS": "Programming Languages: C# / Javascript / HTML / CSS",
+            "DATABASES": "Used Databases: SQL Server",
+            "FRAMEWORKS": "Frameworks: ASP.NET / AngularJs / Git Flow / Entity Framework",
+            "WORK_METODOLOGY": "Work Methodology: SCRUM",
+            "ABOUT": "Working in a company focused on the foreign market, I had the opportunity to challenge myself and learn new tools like AngularJS and GitFlow. Additionally, I participated in daily meetings in English, which allowed me to improve my language skills while collaborating on exciting and challenging projects."
+        }
+    },
+    "PERSONAL_PROJECTS": {
+        "RPG_SURVIVAL_GAME": {
+            "TEXT1": "Project made in Unity 3D engine using C# language.",
+            "TEXT2": "This game has a medieval fantasy theme with a cartoon-based visual style. Inspired by successes like Terraria and Dark Souls, the game will feature a rich story with elements of fantasy and adventure that will captivate the player from beginning to end. With an immersive and visually captivating atmosphere, the game will offer a unique and engaging experience for action RPG fans.",
+            "TEXT3": "The game features a complete inventory management system with a crafting mechanic that allows the player to create new equipment and tools from resources collected during exploration. Additionally, the game includes an equipment system that allows the player to customize the character with powerful armor and weapons, as well as the ability to build structures and fortifications to protect the character and create a safer environment for exploration. With these features, the player will have full control over their character and can experiment with different strategies to face the challenges of the game.",
+            "TEXT4": "This game will have gameplay highly focused on map exploration and monster looting, where the player will encounter a wide variety of resources scattered throughout the environment. These resources can be collected and used to create new equipment and tools that aid in character survival and exploration. With this gameplay dynamic, the player will be constantly challenged to explore every corner of the map in search of new resources and face powerful monsters to obtain valuable items, providing an exciting and immersive experience.",
+            "TEXT5": "Additionally, the game will feature a wide variety of equipment that the player can use to defend against the attacks of the monsters inhabiting the map, including conventional weapons and magical weapons with special abilities. With this extensive range of available equipment, the player will have many options to personalize their character and face different challenges with unique strategies, making the gameplay even more exciting and diverse.",
+            "VIDEO_TITLE1": "Game Overview",
+            "VIDEO_TITLE2": "Update: Crafting System"
+        },
+        "BOMBERMAN_ECOLOGICO": {
+            "TEXT1": "Project made in Java using the Swing library predominantly.",
+            "TEXT2": "It was created to be presented as one of the semester projects at college (4th semester).",
+            "TEXT3": "This game is an exciting mix of the classic Bomberman and a puzzle system, where the player must collect all objects in the scene to complete each level. However, the gameplay is more challenging than it seems, as there are obstacles that can only be overcome by detonating the bombs carried by the character. To make the game even more strategic, bombs are limited, and the player must use them intelligently to destroy the right obstacles and collect all the items scattered throughout the level. With this dynamic, the game becomes a true puzzle, requiring strategy and critical thinking from the player to overcome each challenge.",
+            "FONT_CODE": "Source Code",
+            "DOWNLOAD_GAME": "Download Game"
+        }
+    }
+}
