@@ -6,6 +6,7 @@ import "../CSS/Home.css";
 import Image from "../Photos/MyImages/eu.png";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
+import { Translations } from "../Components/Translations.js";
 
 import { FaJava, FaReact, FaUnity } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
@@ -34,6 +35,17 @@ import {
 } from "react-icons/si";
 
 class Home extends React.Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      language: localStorage.getItem("language") || "en",
+    };
+
+    this.TRANSLATION = Translations(this.state.language);
+  }
+
   componentDidMount() {
     document.title = "Portfólio Donizetti - Home";
   }
@@ -50,11 +62,11 @@ class Home extends React.Component {
                   <Fade left cascade>
                     <div id="Welcome">
                       <h2>
-                        <b>Bem vindo!</b>
+                        <b>{this.TRANSLATION.HOME.WELCOME}</b>
                       </h2>
                       <h3>
                         <strong>
-                          Me chamo <mark id="Donizetti">Donizetti</mark>.
+                          {this.TRANSLATION.HOME.INTRODUCTION} <mark id="Donizetti">Donizetti</mark>.
                         </strong>
                       </h3>
                     </div>
@@ -62,26 +74,20 @@ class Home extends React.Component {
                   <Fade left>
                     <div id="introduction">
                       <p>
-                        Desenvolvedor Full-Stack
+                        {this.TRANSLATION.HOME.OFFICE}
                       </p>
                       <p>
-                      Como programador, tenho um grande interesse em expandir minha base
-                       de conhecimento e habilidades. Estou sempre buscando aprender novas
-                        tecnologias e tendências emergentes em minha área, a fim de aprimorar
-                         ainda mais minha capacidade de desenvolver soluções inovadoras e eficazes.
-                          Estou sempre animado para explorar e experimentar novas ferramentas e tecnologias
-                           que possam agregar valor aos projetos em que estou envolvido.
+                      {this.TRANSLATION.HOME.TEXT}
                       </p>
                       <p>
-                        Este Portfólio possui projetos pessoais que gostaria de
-                        apresentar a você!
+                      {this.TRANSLATION.HOME.TEXT2}
                       </p>
                       <Link to="/projetospessoais">
                         <button
                           type="button"
                           className="btn btn-primary btn-lg btn-block"
                         >
-                          Conhecer Projetos
+                          {this.TRANSLATION.HOME.DISCOVERY_PROJECTS}
                         </button>
                       </Link>
                     </div>

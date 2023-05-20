@@ -39,6 +39,7 @@ import {
   PilarModel,
   GreatSwordModel,
 } from "../Models3D/ModelsGame";
+import { Translations } from "../Components/Translations.js";
 
 const imagesGallery = [
   {
@@ -175,6 +176,16 @@ function Canvas3dModels() {
 }
 
 class PersonalProjects extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      language: localStorage.getItem("language") || "en",
+    };
+
+    this.TRANSLATION = Translations(this.state.language);
+  }
+
   componentDidMount() {
     document.title = "Portfólio Donizetti - Projetos Pessoais";
   }
@@ -187,34 +198,20 @@ class PersonalProjects extends React.Component {
           <div className="container-md">
             <div id="Project">
               <h3>RPG Survival Game</h3>
-              <p>Projeto feito na engine Unity 3D na linguagem C#.</p>
               <p>
-                Este jogo tem uma temática medieval de fantasia,
-                 com um estilo visual baseado em formas cartoon.
-                  Inspirado em sucessos como Terraria e Dark Souls,
-                  o jogo apresentará uma rica história com elementos de fantasia e aventura,
-                   que irão prender o jogador do começo ao fim. Com uma atmosfera envolvente e visualmente cativante,
-                    o jogo oferecerá uma experiência única e imersiva para os fãs de RPGs de ação.
+                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT1}
               </p>
               <p>
-                O jogo apresenta um sistema completo de gerenciamento de inventário,
-                 com uma mecânica de montagem de itens (Crafting) que permite ao jogador criar novos equipamentos e ferramentas a partir de recursos coletados durante a exploração.
-                  Além disso, o jogo conta com um sistema de equipamentos que permite ao jogador personalizar o personagem com armaduras e armas poderosas,
-                   e ainda permite a construção de estruturas e fortificações para proteger o personagem e criar um ambiente mais seguro para a exploração.
-                    Com esses recursos, o jogador terá total controle sobre seu personagem e poderá experimentar diferentes estratégias para enfrentar os desafios do jogo.
+                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT2}
               </p>
               <p>
-                Este jogo terá uma jogabilidade altamente focada na exploração de mapas e saque de monstros,
-                 onde o jogador encontrará uma vasta quantidade de recursos espalhados pelo cenário.
-                  Esses recursos poderão ser coletados e usados para criar novos equipamentos e ferramentas que auxiliam na sobrevivência
-                   e exploração do personagem. Com essa dinâmica de jogo, o jogador será constantemente desafiado a explorar cada canto do mapa
-                    em busca de novos recursos e enfrentar monstros poderosos para obter itens valiosos, proporcionando uma experiência emocionante e envolvente.
+                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT3}
               </p>
               <p>
-                Além disso, o jogo contará com uma grande variedade de equipamentos que o jogador poderá utilizar para se proteger dos ataques dos monstros que habitam o mapa,
-                 incluindo armas convencionais e armas mágicas com ataques especiais. Com essa ampla gama de equipamentos disponíveis,
-                  o jogador terá muitas opções para personalizar o personagem e enfrentar diferentes desafios com estratégias únicas,
-                   tornando a jogabilidade ainda mais empolgante e diversificada.
+                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT4}
+              </p>
+              <p>
+                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT5}
               </p>
               <Zoom top>
                 <div id="Project-Photo">
@@ -255,7 +252,7 @@ class PersonalProjects extends React.Component {
                 </div>
                 <div id="Videos">
                   <div id="Video1">
-                    <h3>Visão Geral do jogo</h3>
+                    <h3>{this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE1}</h3>
                     <div className="embed-responsive embed-responsive-16by9">
                       <iframe
                         className="embed-responsive-item"
@@ -267,7 +264,7 @@ class PersonalProjects extends React.Component {
                     </div>
                   </div>
                   <div id="Video2">
-                    <h3>Update: Sistema de Crafting</h3>
+                    <h3>{this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE2}</h3>
                     <div className="embed-responsive embed-responsive-16by9">
                       <iframe
                         src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6801603672020160512?compact=1"
@@ -284,21 +281,13 @@ class PersonalProjects extends React.Component {
             <div id="Project">
               <h3>Bomberman Ecológico</h3>
               <p>
-                Projeto feito em Java, usando a biblioteca Swing
-                predominantemente.
+                {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT1}
               </p>
               <p>
-                Foi criado para ser apresentado em um dos trabalhos semestrais
-                da faculdade (4° semestre)
+                {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT2}
               </p>
               <p>
-                Este jogo é uma mistura emocionante do clássico Bomberman com um sistema de puzzle,
-                 onde o jogador deve coletar todos os objetos da cena para concluir a fase. No entanto,
-                  a jogabilidade é mais desafiadora do que parece,
-                   pois existem obstáculos que só podem ser ultrapassados ao estourar as bombas que o personagem carrega.
-                   Para tornar o jogo ainda mais estratégico, as bombas são limitadas,
-                    e o jogador deve usá-las de forma inteligente para destruir os obstáculos certos e coletar todos os itens espalhados pela fase.
-                     Com essa dinâmica, este jogo se torna um verdadeiro quebra-cabeças, exigindo do jogador estratégia e pensamento crítico para vencer cada desafio.
+                {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT3}
               </p>
               <Zoom top>
                 <div id="Gallery">
@@ -321,7 +310,7 @@ class PersonalProjects extends React.Component {
                     className="btn btn-primary btn-lg btn-block"
                     id="botao"
                   >
-                    Código-Fonte
+                    {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.FONT_CODE}
                   </button>
                 </a>
               </div>
@@ -332,7 +321,7 @@ class PersonalProjects extends React.Component {
                     className="btn btn-primary btn-lg btn-block"
                     id="botao"
                   >
-                    Baixar Jogo
+                    {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.DOWNLOAD_GAME}
                   </button>
                 </a>
               </div>

@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import "../CSS/About.css";
 import Fade from "react-reveal/Fade";
+import { Translations } from "../Components/Translations.js";
 
 class About extends React.Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      language: localStorage.getItem("language") || "en",
+    };
+
+    this.TRANSLATION = Translations(this.state.language);
+  }
+
   componentDidMount() {
     document.title = "Portfólio Donizetti - Projetos Pessoais";
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.language !== this.state.language) {
+      this.state.language.setState(Translations(this.state.language));
+    }
   }
 
   render() {
@@ -19,26 +37,22 @@ class About extends React.Component {
               <div id="Data">
                 <h3>Donizetti José Fernando de Oliveira Junior</h3>
                 <p className="text-center">
-                  Curso: Ciência da Computação (termino -
-                  Janeiro/2022)
+                  {this.TRANSLATION.ABOUT_ME.COLLEGE}
                 </p>
-                <p className="text-center"> Idade: 25 Anos</p>
+                <p className="text-center"> {this.TRANSLATION.ABOUT_ME.YO}</p>
               </div>
               <div id="Experiences">
                 <h3>Ideia Sistemas</h3>
                 <div className="container">
                   <div className="row">
                     <div className="col align-self-start">
-                      <p>Linguagens de programação: VisualBasic 6 / C#</p>
-                      <p>Banco de dados utilizados: SQL Server e MySQL</p>
-                      <p>Frameworks: Rest API</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACKS}</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.DATABASES}</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.FRAMEWORKS}</p>
                     </div>
                     <div className="col align-self-end">
                       <p>
-                      Na empresa especializada em desenvolvimento de sistemas para gestão empresarial (ERP),
-                       tive a oportunidade de aprender a linguagem Visual Basic 6 e utilizar essa habilidade
-                        para iniciar minha jornada de trabalho. Foi lá que adquiri uma valiosa experiência
-                         profissional em programação e trabalhei em conjunto com uma equipe altamente qualificada de profissionais da área.
+                      {this.TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.ABOUT}
                       </p>
                     </div>
                   </div>
@@ -49,19 +63,14 @@ class About extends React.Component {
                 <div className="container">
                   <div className="row">
                     <div className="col align-self-start">
-                      <p>Linguagens de programação: C# / Java / Javascript / HTML / CSS</p>
-                      <p>Banco de dados utilizados: SQL Server e Postgres</p>
-                      <p>Frameworks: ASP.NET / React-Native / Angular 12 / Vue.Js / Spring Boot / Hibernate / Rest API / Entity Framework </p>
-                      <p>Tipo de Metodologia de trabalho: SCRUM</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.STACKS}</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.DATABASES}</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.FRAMEWORKS}</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.WORK_METODOLOGY}</p>
                     </div>
                     <div className="col align-self-end">
                       <p>
-                      A empresa Trulogic foi, para mim, um verdadeiro oásis de conhecimento
-                       e companheirismo. Focada em ouvir as necessidades e ideias de seus clientes
-                        e transformá-las em realidade, Trulogic me proporcionou uma grande diversidade
-                         de projetos e, como resultado, uma riqueza de conhecimentos e habilidades
-                          adquiridas. Tive a oportunidade de trabalhar com várias ferramentas altamente
-                           utilizadas atualmente, o que impulsionou significativamente a minha jornada como desenvolvedor.
+                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.ABOUT}</p>
                       </p>
                     </div>
                   </div>
@@ -72,18 +81,14 @@ class About extends React.Component {
                 <div className="container">
                   <div className="row">
                     <div className="col align-self-start">
-                      <p>Linguagens de programação: C# / Javascript / HTML / CSS</p>
-                      <p>Banco de dados utilizados: SQL Server</p>
-                      <p>Frameworks: ASP.NET / AngularJs / Git Flow / Entity Framework </p>
-                      <p>Tipo de Metodologia de trabalho: SCRUM</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.AMLABS.STACKS}</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.AMLABS.DATABASES}</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.AMLABS.FRAMEWORKS}</p>
+                      <p>{this.TRANSLATION.ABOUT_ME.AMLABS.WORK_METODOLOGY}</p>
                     </div>
                     <div className="col align-self-end">
                       <p>
-                      Trabalhando em uma empresa com foco no mercado estrangeiro,
-                       eu tive a oportunidade de me desafiar e aprender novas ferramentas
-                        como AngularJS e GitFlow. Além disso, participei de reuniões diárias em inglês,
-                         o que me permitiu aprimorar minhas habilidades linguísticas enquanto colaborava em projetos
-                          emocionantes e desafiadores.
+                        {this.TRANSLATION.ABOUT_ME.AMLABS.ABOUT}
                       </p>
                     </div>
                   </div>
