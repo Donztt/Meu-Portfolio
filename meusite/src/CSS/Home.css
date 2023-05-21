@@ -5,9 +5,9 @@
   position: relative;
   z-index: 500;
   padding-top: 40px;
-  background-color: #348aa7;
+  background-color: #ffc895;
   padding-bottom: 50px;
-  filter: drop-shadow(0 7px 6px #011531);
+  filter: drop-shadow(0 7px 6px #220404);
 }
 #Welcome {
   margin-bottom: 30px;
@@ -17,15 +17,17 @@
 }
 #Donizetti {
   font-size: 1.8em;
-  color: #012247;
+  color: #3a0707;
   background: none;
 }
 #introduction {
-  background-color: #01101d;
+  background-color: #3a0707;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   margin-bottom: 20px;
-  filter: drop-shadow(0 6px 12px #011531);
+  filter: drop-shadow(0 6px 12px #220404);
+  border: 5px solid;
+  border-color: #d2d0ba;
 }
 #introduction p {
   font-style: oblique;
@@ -36,9 +38,17 @@
   z-index: 1;
 }
 #introduction button {
-  background-color: #021c33;
+  background-color: #200404;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  color: #d2d0ba;
+  border-top: 5px solid;
+  border-right: 0px solid;
+  border-left: 0px solid;
+  border-bottom: 0px solid;
+  border-color: #d2d0ba;
 }
 #Perfil-Photo img {
   min-width: 250px;
@@ -47,9 +57,10 @@
   width: 70%;
   background-color: #d2e1ed;
   margin-bottom: 90px;
-  border: 10px solid;
-  border-radius: 20% !important;
-  filter: drop-shadow(0 6px 15px #011531);
+  border: 5px solid;
+  border-color: #d2d0ba;
+  border-radius: 100% !important;
+  filter: drop-shadow(0 6px 15px #220404);
 }
 
 #Skills {
@@ -78,7 +89,7 @@
   left: 50%;
 
   margin-left: -50px;
-  filter: drop-shadow(0 6px 15px #011531);
+  filter: drop-shadow(0 6px 15px #220404);
   background-color: black;
   color: #fff;
   text-align: center;
@@ -96,5 +107,5 @@
   padding-top: 18px;
 }
 #tooltip:hover {
-  filter: drop-shadow(0 6px 15px #011531);
+  filter: drop-shadow(0 6px 15px #220404);
 }

@@ -91,7 +91,7 @@ class Home extends React.Component {
                       <Link to="/projetospessoais">
                         <button
                           type="button"
-                          className="btn btn-primary btn-lg btn-block"
+                          className="btn btn-lg btn-block"
                         >
                           {TRANSLATION.HOME.DISCOVERY_PROJECTS}
                         </button>
