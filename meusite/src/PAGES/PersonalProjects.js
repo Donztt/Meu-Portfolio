@@ -180,17 +180,23 @@ class PersonalProjects extends React.Component {
     super(props)
 
     this.state = {
-      language: localStorage.getItem("language") || "en",
+      language: localStorage.getItem("language"),
     };
-
-    this.TRANSLATION = Translations(this.state.language);
   }
 
   componentDidMount() {
     document.title = "Portfólio Donizetti - Projetos Pessoais";
+
+    window.addEventListener("storageLanguage", () => {
+      this.setState({
+        language: localStorage.getItem("language")
+      });
+    });
   }
 
   render() {
+    const TRANSLATION = Translations(this.state.language);
+
     return (
       <div>
         <NavBar />
@@ -199,19 +205,19 @@ class PersonalProjects extends React.Component {
             <div id="Project">
               <h3>RPG Survival Game</h3>
               <p>
-                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT1}
+                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT1}
               </p>
               <p>
-                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT2}
+                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT2}
               </p>
               <p>
-                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT3}
+                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT3}
               </p>
               <p>
-                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT4}
+                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT4}
               </p>
               <p>
-                {this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT5}
+                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT5}
               </p>
               <Zoom top>
                 <div id="Project-Photo">
@@ -252,7 +258,7 @@ class PersonalProjects extends React.Component {
                 </div>
                 <div id="Videos">
                   <div id="Video1">
-                    <h3>{this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE1}</h3>
+                    <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE1}</h3>
                     <div className="embed-responsive embed-responsive-16by9">
                       <iframe
                         className="embed-responsive-item"
@@ -264,7 +270,7 @@ class PersonalProjects extends React.Component {
                     </div>
                   </div>
                   <div id="Video2">
-                    <h3>{this.TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE2}</h3>
+                    <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE2}</h3>
                     <div className="embed-responsive embed-responsive-16by9">
                       <iframe
                         src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6801603672020160512?compact=1"
@@ -281,13 +287,13 @@ class PersonalProjects extends React.Component {
             <div id="Project">
               <h3>Bomberman Ecológico</h3>
               <p>
-                {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT1}
+                {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT1}
               </p>
               <p>
-                {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT2}
+                {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT2}
               </p>
               <p>
-                {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT3}
+                {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT3}
               </p>
               <Zoom top>
                 <div id="Gallery">
@@ -310,7 +316,7 @@ class PersonalProjects extends React.Component {
                     className="btn btn-primary btn-lg btn-block"
                     id="botao"
                   >
-                    {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.FONT_CODE}
+                    {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.FONT_CODE}
                   </button>
                 </a>
               </div>
@@ -321,7 +327,7 @@ class PersonalProjects extends React.Component {
                     className="btn btn-primary btn-lg btn-block"
                     id="botao"
                   >
-                    {this.TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.DOWNLOAD_GAME}
+                    {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.DOWNLOAD_GAME}
                   </button>
                 </a>
               </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import "../CSS/About.css";
@@ -11,23 +11,29 @@ class About extends React.Component {
     super(props)
 
     this.state = {
-      language: localStorage.getItem("language") || "en",
+      language: localStorage.getItem("language"),
     };
-
-    this.TRANSLATION = Translations(this.state.language);
   }
 
   componentDidMount() {
     document.title = "Portfólio Donizetti - Projetos Pessoais";
+
+    window.addEventListener("storageLanguage", () => {
+      this.setState({
+        language: localStorage.getItem("language")
+      });
+    });
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.language !== this.state.language) {
-      this.state.language.setState(Translations(this.state.language));
+      this.TRANSLATION = Translations(this.state.language);
     }
   }
 
   render() {
+    const TRANSLATION = Translations(this.state.language); 
+
     return (
       <div>
         <NavBar />
@@ -37,22 +43,22 @@ class About extends React.Component {
               <div id="Data">
                 <h3>Donizetti José Fernando de Oliveira Junior</h3>
                 <p className="text-center">
-                  {this.TRANSLATION.ABOUT_ME.COLLEGE}
+                  {TRANSLATION.ABOUT_ME.COLLEGE}
                 </p>
-                <p className="text-center"> {this.TRANSLATION.ABOUT_ME.YO}</p>
+                <p className="text-center"> {TRANSLATION.ABOUT_ME.YO}</p>
               </div>
               <div id="Experiences">
                 <h3>Ideia Sistemas</h3>
                 <div className="container">
                   <div className="row">
                     <div className="col align-self-start">
-                      <p>{this.TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACKS}</p>
-                      <p>{this.TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.DATABASES}</p>
-                      <p>{this.TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.FRAMEWORKS}</p>
+                      <p>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACKS}</p>
+                      <p>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.DATABASES}</p>
+                      <p>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.FRAMEWORKS}</p>
                     </div>
                     <div className="col align-self-end">
                       <p>
-                      {this.TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.ABOUT}
+                      {TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.ABOUT}
                       </p>
                     </div>
                   </div>
@@ -63,15 +69,13 @@ class About extends React.Component {
                 <div className="container">
                   <div className="row">
                     <div className="col align-self-start">
-                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.STACKS}</p>
-                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.DATABASES}</p>
-                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.FRAMEWORKS}</p>
-                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.WORK_METODOLOGY}</p>
+                      <p>{TRANSLATION.ABOUT_ME.TRULOGIC.STACKS}</p>
+                      <p>{TRANSLATION.ABOUT_ME.TRULOGIC.DATABASES}</p>
+                      <p>{TRANSLATION.ABOUT_ME.TRULOGIC.FRAMEWORKS}</p>
+                      <p>{TRANSLATION.ABOUT_ME.TRULOGIC.WORK_METODOLOGY}</p>
                     </div>
                     <div className="col align-self-end">
-                      <p>
-                      <p>{this.TRANSLATION.ABOUT_ME.TRULOGIC.ABOUT}</p>
-                      </p>
+                      <p>{TRANSLATION.ABOUT_ME.TRULOGIC.ABOUT}</p>
                     </div>
                   </div>
                 </div>
@@ -81,14 +85,14 @@ class About extends React.Component {
                 <div className="container">
                   <div className="row">
                     <div className="col align-self-start">
-                      <p>{this.TRANSLATION.ABOUT_ME.AMLABS.STACKS}</p>
-                      <p>{this.TRANSLATION.ABOUT_ME.AMLABS.DATABASES}</p>
-                      <p>{this.TRANSLATION.ABOUT_ME.AMLABS.FRAMEWORKS}</p>
-                      <p>{this.TRANSLATION.ABOUT_ME.AMLABS.WORK_METODOLOGY}</p>
+                      <p>{TRANSLATION.ABOUT_ME.AMLABS.STACKS}</p>
+                      <p>{TRANSLATION.ABOUT_ME.AMLABS.DATABASES}</p>
+                      <p>{TRANSLATION.ABOUT_ME.AMLABS.FRAMEWORKS}</p>
+                      <p>{TRANSLATION.ABOUT_ME.AMLABS.WORK_METODOLOGY}</p>
                     </div>
                     <div className="col align-self-end">
                       <p>
-                        {this.TRANSLATION.ABOUT_ME.AMLABS.ABOUT}
+                        {TRANSLATION.ABOUT_ME.AMLABS.ABOUT}
                       </p>
                     </div>
                   </div>

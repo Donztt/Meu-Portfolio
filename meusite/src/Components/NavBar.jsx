@@ -1,7 +1,9 @@
-import "./NavBar.css";
+import "../CSS/NavBar.css";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Translations } from "./Translations.js";
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 function NavBar() {
   const storage = localStorage.getItem("language");
@@ -10,23 +12,25 @@ function NavBar() {
 
   useEffect(() => {
     localStorage.setItem("language", language);
+    window.dispatchEvent(new Event("storageLanguage"));
   }, [language]);
 
   const TRANSLATION = Translations(language);
 
   const handleLanguageChange = (e) => {
-    setLanguage(e.target.value);
+    console.log(e);
+    setLanguage(e.value);
   };
+
+  const options = [
+    { value: 'en', label: 'English' },
+    { value: 'pt', label: 'Português' },
+    { value: 'es', label: 'Español' },
+  ];
 
   return (
     <div className="NavBar-Content">
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
-        <header>
-          <select value={language} onChange={handleLanguageChange}>
-            <option value="en">English</option>
-            <option value="pt">Português</option>
-          </select>
-        </header>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             Donztt Olv
@@ -61,6 +65,7 @@ function NavBar() {
               </li>
             </ul>
           </div>
+          <Dropdown options={options} onChange={handleLanguageChange} value={language} className="languageChangeSelect" />
         </div>
       </nav>
     </div>

@@ -2,7 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './PAGES/Home';
 import About from './PAGES/About';
 import PersonalProjects from './PAGES/PersonalProjects';
-import './Components/default.css';
+import './CSS/default.css';
 
 
 function App() {

@@ -1,9 +1,19 @@
-import React from 'react';
-import './Footer.css';
+import React, { useState, useEffect } from "react";
+import '../CSS/Footer.css';
 import EnCurriculo from '../Curriculos/Donizetti Oliveira En Curriculo.pdf';
 import PtCurriculo from '../Curriculos/Donizetti Oliveira PTBR Curriculo.pdf';
+import { Translations } from "./Translations.js";
 
 function Footer() {
+    const storage = localStorage.getItem("language");
+    const [language, setLanguage] = useState(storage);
+
+    window.addEventListener("storageLanguage", () => {
+        setLanguage(localStorage.getItem("language"));
+    });
+
+    const TRANSLATION = Translations(language);
+
     return (
         <div>
             <div className="footer-basic">
@@ -18,8 +28,8 @@ function Footer() {
                         <div className="container">
                             <div className="row align-items-start">
                                 <div className="col">
-                                    <li className="list-inline-item">Contatos</li>
-                                    <p>(16)99645-5191</p>
+                                    <li className="list-inline-item">{TRANSLATION.FOOTER.CONTACTS}</li>
+                                    <p>(16) 99645-5191</p>
                                     <p>donizettioliveirajr@gmail.com</p>
                                 </div>
                                 <div className="col">
@@ -28,7 +38,7 @@ function Footer() {
                                     <p><a href={EnCurriculo} download>Currículo - (EN)</a></p>
                                 </div>
                                 <div className="col">
-                                    <li className="list-inline-item">Endereço</li>
+                                    <li className="list-inline-item">{TRANSLATION.FOOTER.ADRESS}</li>
                                     <p>Araraquara - SP</p>
                                     <p>Parque Alvorada</p>
                                 </div>

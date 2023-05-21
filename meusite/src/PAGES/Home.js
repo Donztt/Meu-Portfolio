@@ -40,17 +40,23 @@ class Home extends React.Component {
     super(props)
 
     this.state = {
-      language: localStorage.getItem("language") || "en",
+      language: localStorage.getItem("language"),
     };
-
-    this.TRANSLATION = Translations(this.state.language);
   }
-
+  
   componentDidMount() {
     document.title = "Portfólio Donizetti - Home";
-  }
 
+    window.addEventListener("storageLanguage", () => {
+      this.setState({
+        language: localStorage.getItem("language")
+      });
+    });
+  }
+  
   render() {
+    const TRANSLATION = Translations(this.state.language); 
+
     return (
       <div id="general-content">
         <NavBar />
@@ -62,11 +68,11 @@ class Home extends React.Component {
                   <Fade left cascade>
                     <div id="Welcome">
                       <h2>
-                        <b>{this.TRANSLATION.HOME.WELCOME}</b>
+                        <b>{TRANSLATION.HOME.WELCOME}</b>
                       </h2>
                       <h3>
                         <strong>
-                          {this.TRANSLATION.HOME.INTRODUCTION} <mark id="Donizetti">Donizetti</mark>.
+                          {TRANSLATION.HOME.INTRODUCTION} <mark id="Donizetti">Donizetti</mark>.
                         </strong>
                       </h3>
                     </div>
@@ -74,20 +80,20 @@ class Home extends React.Component {
                   <Fade left>
                     <div id="introduction">
                       <p>
-                        {this.TRANSLATION.HOME.OFFICE}
+                        {TRANSLATION.HOME.OFFICE}
                       </p>
                       <p>
-                      {this.TRANSLATION.HOME.TEXT}
+                      {TRANSLATION.HOME.TEXT}
                       </p>
                       <p>
-                      {this.TRANSLATION.HOME.TEXT2}
+                      {TRANSLATION.HOME.TEXT2}
                       </p>
                       <Link to="/projetospessoais">
                         <button
                           type="button"
                           className="btn btn-primary btn-lg btn-block"
                         >
-                          {this.TRANSLATION.HOME.DISCOVERY_PROJECTS}
+                          {TRANSLATION.HOME.DISCOVERY_PROJECTS}
                         </button>
                       </Link>
                     </div>

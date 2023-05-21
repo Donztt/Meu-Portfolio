@@ -1,0 +1,61 @@
+{
+    "NAV": {
+        "HOME": "Inicio",
+        "ABOUT_ME": "Sobre mí",
+        "PERSONAL_PROJECTS": "Proyectos personales"
+    },
+    "FOOTER": {
+        "CONTACTS": "Contactos",
+        "ADRESS": "Dirección"
+    },
+    "HOME": {
+        "WELCOME": "¡Bienvenido!",
+        "INTRODUCTION": "Mi nombre es",
+        "OFFICE": "Desarrollador Full-Stack",
+        "TEXT": "Como programador, tengo un gran interés en ampliar mi base de conocimientos y habilidades. Siempre busco aprender nuevas tecnologías y tendencias emergentes en mi campo para mejorar aún más mi capacidad de desarrollar soluciones innovadoras y efectivas. Siempre estoy emocionado de explorar y experimentar con nuevas herramientas y tecnologías que puedan agregar valor a los proyectos en los que estoy involucrado.",
+        "TEXT2": "¡Este portafolio muestra proyectos personales que me gustaría presentarte!",
+        "DISCOVERY_PROJECTS": "Descubrir proyectos"
+    },
+    "ABOUT_ME": {
+        "COLLEGE": "Grado: Ciencias de la Computación (completado - enero de 2022)",
+        "YO": "Edad: 25 años",
+        "IDEIA_SISTEMAS": {
+            "STACKS": "Lenguajes de programación: Visual Basic 6 / C#",
+            "DATABASES": "Bases de datos utilizadas: SQL Server y MySQL",
+            "FRAMEWORKS": "Frameworks: Rest API",
+            "ABOUT": "En la empresa especializada en el desarrollo de sistemas de gestión empresarial (ERP), tuve la oportunidad de aprender Visual Basic 6 y utilizar esa habilidad para comenzar mi trayectoria profesional. Fue allí donde adquirí valiosa experiencia en programación y trabajé junto a un equipo altamente calificado de profesionales en el campo."
+        },
+        "TRULOGIC": {
+            "STACKS": "Lenguajes de programación: C# / Java / Javascript / HTML / CSS",
+            "DATABASES": "Bases de datos utilizadas: SQL Server y Postgres",
+            "FRAMEWORKS": "Frameworks: ASP.NET / React-Native / Angular 12 / Vue.Js / Spring Boot / Hibernate / Rest API / Entity Framework",
+            "WORK_METODOLOGY": "Metodología de trabajo: SCRUM",
+            "ABOUT": "Trulogic fue un verdadero oasis de conocimiento y camaradería para mí. Enfocado en escuchar las necesidades e ideas de sus clientes y convertirlas en realidad, Trulogic me brindó una amplia variedad de proyectos y, como resultado, una gran cantidad de conocimientos y habilidades adquiridas. Tuve la oportunidad de trabajar con varias herramientas altamente utilizadas en la industria, lo que impulsó significativamente mi trayectoria como desarrollador."
+        },
+        "AMLABS": {
+            "STACKS": "Lenguajes de programación: C# / Javascript / HTML / CSS",
+            "DATABASES": "Bases de datos utilizadas: SQL Server",
+            "FRAMEWORKS": "Frameworks: ASP.NET / AngularJs / Git Flow / Entity Framework",
+            "WORK_METODOLOGY": "Metodología de trabajo: SCRUM",
+            "ABOUT": "Trabajando en una empresa enfocada en el mercado extranjero, tuve la oportunidad de desafiarme a mí mismo y aprender nuevas herramientas como AngularJS y GitFlow. Además, participé en reuniones diarias en inglés, lo que me permitió mejorar mis habilidades lingüísticas mientras colaboraba en proyectos emocionantes y desafiantes."
+        }
+    },
+    "PERSONAL_PROJECTS": {
+        "RPG_SURVIVAL_GAME": {
+            "TEXT1": "Proyecto realizado en el motor Unity 3D utilizando el lenguaje C#.",
+            "TEXT2": "Este juego tiene un tema de fantasía medieval con un estilo visual basado en caricaturas. Inspirado en éxitos como Terraria y Dark Souls, el juego contará con una historia rica con elementos de fantasía y aventura que cautivarán al jugador de principio a fin. Con una atmósfera envolvente y visualmente cautivadora, el juego ofrecerá una experiencia única y atractiva para los fanáticos de los RPG de acción.",
+            "TEXT3": "El juego cuenta con un completo sistema de gestión de inventario con una mecánica de elaboración que permite al jugador crear nuevo equipamiento y herramientas a partir de los recursos recolectados durante la exploración. Además, el juego incluye un sistema de equipamiento que permite al jugador personalizar el personaje con armaduras y armas poderosas, así como la capacidad de construir estructuras y fortificaciones para proteger al personaje y crear un entorno más seguro para la exploración. Con estas características, el jugador tendrá un control total sobre su personaje y podrá experimentar con diferentes estrategias para enfrentar los desafíos del juego.",
+            "TEXT4": "Este juego tendrá una jugabilidad altamente centrada en la exploración del mapa y en la obtención de botín de monstruos, donde el jugador encontrará una amplia variedad de recursos dispersos por el entorno. Estos recursos se pueden recolectar y utilizar para crear nuevo equipamiento y herramientas que ayuden en la supervivencia y exploración del personaje. Con esta dinámica de juego, el jugador estará constantemente desafiado a explorar cada rincón del mapa en busca de nuevos recursos y enfrentar a poderosos monstruos para obtener objetos valiosos, lo que proporcionará una experiencia emocionante e inmersiva.",
+            "TEXT5": "Además, el juego contará con una amplia variedad de equipamiento que el jugador podrá utilizar para defenderse de los ataques de los monstruos que habitan en el mapa, incluyendo armas convencionales y armas mágicas con habilidades especiales. Con esta extensa gama de equipamiento disponible, el jugador tendrá muchas opciones para personalizar su personaje y enfrentar diferentes desafíos con estrategias únicas, lo que hará que la jugabilidad sea aún más emocionante y diversa.",
+            "VIDEO_TITLE1": "Descripción general del juego",
+            "VIDEO_TITLE2": "Actualización: Sistema de elaboración"
+        },
+        "BOMBERMAN_ECOLOGICO": {
+            "TEXT1": "Proyecto realizado en Java utilizando predominantemente la biblioteca Swing.",
+            "TEXT2": "Fue creado para ser presentado como uno de los proyectos del semestre en la universidad (4º semestre).",
+            "TEXT3": "Este juego es una emocionante mezcla del clásico Bomberman y un sistema de puzzles, donde el jugador debe recolectar todos los objetos de la escena para completar cada nivel. Sin embargo, la jugabilidad es más desafiante de lo que parece, ya que hay obstáculos que solo se pueden superar detonando las bombas que lleva el personaje. Para hacer el juego aún más estratégico, las bombas son limitadas y el jugador debe usarlas inteligentemente para destruir los obstáculos correctos y recolectar todos los objetos dispersos por el nivel. Con esta dinámica, el juego se convierte en un verdadero puzzle, que requiere estrategia y pensamiento crítico del jugador para superar cada desafío.",
+            "FONT_CODE": "Código fuente",
+            "DOWNLOAD_GAME": "Descargar juego"
+        }
+    }
+}

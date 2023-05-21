@@ -52,3 +52,12 @@
     color: #01101d;
 }
 
+.languageChangeSelect {
+    background-color: #01101d;
+    color: #D2D0BA;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+
