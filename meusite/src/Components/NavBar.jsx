@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Translations } from "./Translations.js";
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
+import DefaultButton from "./ButtonDefault"
 
 function NavBar() {
   const storage = localStorage.getItem("language");
@@ -18,7 +19,6 @@ function NavBar() {
   const TRANSLATION = Translations(language);
 
   const handleLanguageChange = (e) => {
-    console.log(e);
     setLanguage(e.value);
   };
 
@@ -49,23 +49,21 @@ function NavBar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="nav mx-auto">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
-                  {TRANSLATION.NAV.HOME}
-                </Link>
+                <DefaultButton href="/" text={TRANSLATION.NAV.HOME}/>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/sobremim/">
-                  {TRANSLATION.NAV.ABOUT_ME}
-                </Link>
+                <DefaultButton href="/sobremim" text={TRANSLATION.NAV.ABOUT_ME}/>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/projetospessoais/">
-                  {TRANSLATION.NAV.PERSONAL_PROJECTS}
-                </Link>
+                <DefaultButton href="/projetospessoais" text={TRANSLATION.NAV.PERSONAL_PROJECTS}/>
+              </li>
+              <li className="nav-item">
+                <div style={{marginTop: 15}}>
+                  <Dropdown options={options} onChange={handleLanguageChange} value={language} className="languageChangeSelect" />
+                </div>
               </li>
             </ul>
           </div>
-          <Dropdown options={options} onChange={handleLanguageChange} value={language} className="languageChangeSelect" />
         </div>
       </nav>
     </div>

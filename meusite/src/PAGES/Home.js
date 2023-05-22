@@ -7,6 +7,8 @@ import Image from "../Photos/MyImages/eu.png";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import { Translations } from "../Components/Translations.js";
+import DefaultButton from "../Components/ButtonDefault.jsx"
+import ToolTipDefault from "../Components/ToolTipDefault.jsx"
 
 import { FaJava, FaReact, FaUnity } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
@@ -88,14 +90,7 @@ class Home extends React.Component {
                       <p>
                       {TRANSLATION.HOME.TEXT2}
                       </p>
-                      <Link to="/projetospessoais">
-                        <button
-                          type="button"
-                          className="btn btn-lg btn-block"
-                        >
-                          {TRANSLATION.HOME.DISCOVERY_PROJECTS}
-                        </button>
-                      </Link>
+                      <DefaultButton href="/projetospessoais" text={TRANSLATION.HOME.DISCOVERY_PROJECTS}/>
                     </div>
                   </Fade>
                 </div>
@@ -104,11 +99,13 @@ class Home extends React.Component {
                 <Fade right>
                   <div id="Photo-Canvas">
                     <div id="Perfil-Photo">
+                      <Link to="/sobremim">
                       <img
                         src={Image}
                         className="rounded mx-auto d-block"
                         alt=""
                       ></img>
+                      </Link>
                     </div>
                   </div>
                 </Fade>
@@ -116,156 +113,88 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-        <Slide top>
-          <div id="Skills">
-            <div className="container">
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Java</p>
-                  <FaJava id="SkillIcon" />
-                </h2>
+        <div id="SkillsBackground">
+          <Slide top>
+            <div id="Skills">
+              <div className="container">
+              <div className="row">
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "90" text = "Java" icon= { <FaJava id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "60" text = "Spring Boot" icon= { <SiSpring id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "80" text = "React" icon= { <FaReact id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "60" text = "AngularJs" icon= { <SiAngular id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "90" text = "CSharp" icon= { <SiCsharp id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "80" text = ".NET" icon= { <SiDotNet id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "50" text = "MySQL" icon= { <DiMysql id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "80" text = "SQL Server" icon= { <SiMicrosoftsqlserver id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "60" text = "PostgresSQL" icon= { <SiPostgresql id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "40" text = "Oracle SQL" icon= { <SiOracle id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "90" text = "VS Code" icon= { <SiVisualstudiocode id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "80" text = "IntelliJ" icon= { <SiIntellijidea id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "70" text = "Eclipse" icon= { <SiEclipseide id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "90" text = "Github" icon= { <ImGithub id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "60" text = "Bitbucket" icon= { <SiBitbucket id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "80" text = "HTML 5" icon= { <SiHtml5 id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "80" text = "CSS 3" icon= { <SiCss3 id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "80" text = "Javascript" icon= { <SiJavascript id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "50" text = "Typescript" icon= { <SiTypescript id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "66" text = "Bootstrap" icon= { <SiBootstrap id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "90" text = "Unity" icon= { <FaUnity id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "60" text = "Blender" icon= { <SiBlender id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "50" text = "Photoshop" icon= { <SiAdobephotoshop id="SkillIcon" /> }/>
+                </div>
+                <div className="col-md-2 col-sm-4">
+                  <ToolTipDefault percentage= "80" text = "Infraestrutura" icon= { <GiAutoRepair id="SkillIcon" /> }/>
+                </div>
               </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Spring Boot</p>
-                  <SiSpring id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">React</p>
-                  <FaReact id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Angular</p>
-                  <SiAngular id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">CSharp</p>
-                  <SiCsharp id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">.NET</p>
-                  <SiDotNet id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">MySQL</p>
-                  <DiMysql id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">SQL Server</p>
-                  <SiMicrosoftsqlserver id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">PostgresSQL</p>
-                  <SiPostgresql id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Oracle SQL</p>
-                  <SiOracle id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">VS Code</p>
-                  <SiVisualstudiocode id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">IntelliJ</p>
-                  <SiIntellijidea id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Eclipse</p>
-                  <SiEclipseide id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Github</p>
-                  <ImGithub id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Bitbucket</p>
-                  <SiBitbucket id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">HTML 5</p>
-                  <SiHtml5 id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">CSS 3</p>
-                  <SiCss3 id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Javascript</p>
-                  <SiJavascript id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Typescript</p>
-                  <SiTypescript id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Bootstrap</p>
-                  <SiBootstrap id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Unity</p>
-                  <FaUnity id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Blender</p>
-                  <SiBlender id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Photoshop</p>
-                  <SiAdobephotoshop id="SkillIcon" />
-                </h2>
-              </div>
-              <div className="col-2" id="tooltip">
-                <h2>
-                  <p id="tooltiptext">Infraestrutura</p>
-                  <GiAutoRepair id="SkillIcon" />
-                </h2>
               </div>
             </div>
-          </div>
-        </Slide>
+          </Slide>
+        </div>
         <Footer />
       </div>
     );

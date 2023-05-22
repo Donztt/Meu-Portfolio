@@ -7,15 +7,15 @@
     font-size: 25px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-color: #d2d0ba;
-    color: #d2d0ba;
+    border-color: #e7e7e7;
+    color: #e7e7e7;
 }
 .navbar li{
     padding-left: 50px;
     padding-right: 50px;
 }
 .navbar a {
-    color: #d2d0ba;
+    color: #e7e7e7;
 }
 .navbar ul{
     font-weight: bold;
@@ -23,7 +23,7 @@
 .navbar {
     background-color: #3a0707;
     border-bottom: 5px solid;
-    border-color: #000000;
+    border-color: #e7e7e7;
     filter: drop-shadow(0 6px 6px #220404);
     padding: 10px;
 }
@@ -32,7 +32,7 @@
 }
 
 .dropdown-menu a{
-    color: #d2d0ba;
+    color: #e7e7e7;
 }
 
 .dropdown-menu li{
@@ -40,21 +40,12 @@
 }
 
 .btn-group button{
-    color: #d2d0ba;
-}
-#navbarNav li:hover{
-    box-shadow: inset 0 0px 5px #220404;
-    background-color: #ffc895;
-    border-radius: 10px;
-}
-
-#navbarNav a:hover{
-    color: #3a0707;
+    color: #e7e7e7;
 }
 
 .languageChangeSelect {
     background-color: #3a0707;
-    color: #d2d0ba;
+    color: #e7e7e7;
     border-radius: 10px;
     width: 120px;
     height: 40px;

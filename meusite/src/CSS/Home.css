@@ -1,7 +1,5 @@
 #Home-Content {
-  margin-top: 50px;
-}
-#Home-Content {
+  margin-top: 80px;
   position: relative;
   z-index: 500;
   padding-top: 40px;
@@ -27,29 +25,17 @@
   margin-bottom: 20px;
   filter: drop-shadow(0 6px 12px #220404);
   border: 5px solid;
-  border-color: #d2d0ba;
+  border-color: #e7e7e7;
 }
 #introduction p {
   font-style: oblique;
   font-weight: bold;
   padding: 15px;
   font-size: 1.2rem;
-  color: #d2d0ba;
+  color: #e7e7e7;
   z-index: 1;
 }
-#introduction button {
-  background-color: #200404;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: #d2d0ba;
-  border-top: 5px solid;
-  border-right: 0px solid;
-  border-left: 0px solid;
-  border-bottom: 0px solid;
-  border-color: #d2d0ba;
-}
+
 #Perfil-Photo img {
   min-width: 250px;
   min-height: 250px;
@@ -58,9 +44,14 @@
   background-color: #d2e1ed;
   margin-bottom: 90px;
   border: 5px solid;
-  border-color: #d2d0ba;
+  border-color: #e7e7e7;
   border-radius: 100% !important;
   filter: drop-shadow(0 6px 15px #220404);
+  transition: transform 0.3s ease;
+}
+
+#Perfil-Photo img:hover {
+  transform: translateY(-10px);
 }
 
 #Skills {
@@ -72,40 +63,15 @@
   border-bottom: 20px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
-  background-color: #d2d0ba;
+  background-color: #e7e7e7;
 }
 
-#tooltip {
+#SkillsBackground{
+  background-color: #3a0707;
+}
+
+#SkillItem{
   text-align: center;
   position: relative;
   display: inline-block;
-}
-#tooltip #tooltiptext {
-  position: absolute;
-  z-index: 9999;
-  visibility: hidden;
-  width: 90px;
-  height: 50px;
-  left: 50%;
-
-  margin-left: -50px;
-  filter: drop-shadow(0 6px 15px #220404);
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  opacity: 0.6;
-  font-size: 0.7rem;
-  word-wrap: break-word;
-
-  padding: 10px;
-  top: 5%;
-  z-index: 1;
-}
-#tooltip:hover #tooltiptext {
-  visibility: visible;
-  padding-top: 18px;
-}
-#tooltip:hover {
-  filter: drop-shadow(0 6px 15px #220404);
 }

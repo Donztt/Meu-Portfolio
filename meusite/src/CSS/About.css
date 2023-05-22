@@ -12,14 +12,14 @@
 #About-Content p{
     font-size: 1.2em;
     font-weight: bold;
-    color: #D2D0BA;
+    color: #e7e7e7;
     padding: 20px;
 }
 
 #About-Content h3 {
     font-size: 1.8em;
     font-weight: bold;
-    color: #D2D0BA;
+    color: #e7e7e7;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -30,7 +30,7 @@
     border-top: 10px solid;
     border-right:5px solid;
     border-left:5px solid;
-    border-color: #D2D0BA;
+    border-color: #e7e7e7;
     filter: drop-shadow(0 6px 8px #220404);
 }
 
@@ -39,7 +39,7 @@
     background-color: #3a0707;
     border-right:5px solid;
     border-left:5px solid;
-    border-color: #D2D0BA;
+    border-color: #e7e7e7;
     filter: drop-shadow(0 6px 8px #220404);
 }
 
@@ -49,7 +49,7 @@
     border-right:5px solid;
     border-left:5px solid;
     border-bottom:10px solid;
-    border-color: #D2D0BA;
+    border-color: #e7e7e7;
     height: 100px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;

@@ -40,6 +40,7 @@ import {
   GreatSwordModel,
 } from "../Models3D/ModelsGame";
 import { Translations } from "../Components/Translations.js";
+import DefaultButton from "../Components/ButtonDefault.jsx"
 
 const imagesGallery = [
   {
@@ -305,31 +306,15 @@ class PersonalProjects extends React.Component {
                   ;
                 </div>
               </Zoom>
-              <div className="text-center">
-                <a
-                  href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button
-                    type="button"
-                    className="btn btn-primary btn-lg btn-block"
-                    id="botao"
-                  >
-                    {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.FONT_CODE}
-                  </button>
-                </a>
-              </div>
-              <div className="text-center">
-                <a href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico/releases/download/1.0/Bomberman.jar">
-                  <button
-                    type="button"
-                    className="btn btn-primary btn-lg btn-block"
-                    id="botao"
-                  >
-                    {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.DOWNLOAD_GAME}
-                  </button>
-                </a>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <DefaultButton href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico" text={TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.FONT_CODE}/>
+                  </div>
+                  <div class="col-md-6">
+                    <DefaultButton href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico/releases/download/1.0/Bomberman.jar" text={TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.DOWNLOAD_GAME}/>
+                  </div>
+                </div>
               </div>
             </div>
             <div id="Project">
