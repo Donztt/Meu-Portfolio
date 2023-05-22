@@ -201,157 +201,159 @@ class PersonalProjects extends React.Component {
     return (
       <div>
         <NavBar />
-        <div id="Personal-Content">
-          <div className="container-md">
-            <div id="Project">
-              <h3>RPG Survival Game</h3>
-              <p>
-                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT1}
-              </p>
-              <p>
-                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT2}
-              </p>
-              <p>
-                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT3}
-              </p>
-              <p>
-                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT4}
-              </p>
-              <p>
-                {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT5}
-              </p>
-              <Zoom top>
-                <div id="Project-Photo">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col align-self-start">
-                        <img
-                          src={MonsterPhoto}
-                          className="rounded mx-auto d-block"
-                          alt=""
-                        ></img>
-                      </div>
-                      <div className="col align-self-center">
-                        <img
-                          src={PersonagemPhoto}
-                          className="rounded mx-auto d-block"
-                          alt=""
-                        ></img>
-                      </div>
-                      <div className="col align-self-end">
-                        <img
-                          src={MonsterPhoto2}
-                          className="rounded mx-auto d-block"
-                          alt=""
-                        ></img>
+        <div id="PersonalContentBackground">
+          <div id="Personal-Content">
+            <div className="container-md">
+              <div id="Project">
+                <h3>RPG Survival Game</h3>
+                <p>
+                  {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT1}
+                </p>
+                <p>
+                  {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT2}
+                </p>
+                <p>
+                  {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT3}
+                </p>
+                <p>
+                  {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT4}
+                </p>
+                <p>
+                  {TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT5}
+                </p>
+                <Zoom top>
+                  <div id="Project-Photo">
+                    <div className="container">
+                      <div className="row">
+                        <div className="col align-self-start">
+                          <img
+                            src={MonsterPhoto}
+                            className="rounded mx-auto d-block"
+                            alt=""
+                          ></img>
+                        </div>
+                        <div className="col align-self-center">
+                          <img
+                            src={PersonagemPhoto}
+                            className="rounded mx-auto d-block"
+                            alt=""
+                          ></img>
+                        </div>
+                        <div className="col align-self-end">
+                          <img
+                            src={MonsterPhoto2}
+                            className="rounded mx-auto d-block"
+                            alt=""
+                          ></img>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                  </Zoom>
+                  <div id="Gallery">
+                    <ImageGallery
+                      items={imagesGallery}
+                      showThumbnails={false}
+                      showBullets={true}
+                    />
+                    ;
+                  </div>
+                  <div id="Videos">
+                    <div id="Video1">
+                      <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE1}</h3>
+                      <div className="embed-responsive embed-responsive-16by9">
+                        <iframe
+                          className="embed-responsive-item"
+                          src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6800416080004190208?compact=1"
+                          title="Demo Jogo"
+                          height="284"
+                          width="504"
+                        ></iframe>
+                      </div>
+                    </div>
+                    <div id="Video2">
+                      <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE2}</h3>
+                      <div className="embed-responsive embed-responsive-16by9">
+                        <iframe
+                          src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6801603672020160512?compact=1"
+                          title="Sistema Crafting"
+                          height="284"
+                          width="504"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+      
+                <Canvas3dModels />
+              </div>
+              <div id="Project">
+                <h3>Bomberman Ecológico</h3>
+                <p>
+                  {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT1}
+                </p>
+                <p>
+                  {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT2}
+                </p>
+                <p>
+                  {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT3}
+                </p>
+                <Zoom top>
+                  <div id="Gallery">
+                    <ImageGallery
+                      items={imageGalleryBomberman}
+                      showThumbnails={false}
+                      showBullets={true}
+                    />
+                    ;
+                  </div>
                 </Zoom>
-                <div id="Gallery">
-                  <ImageGallery
-                    items={imagesGallery}
-                    showThumbnails={false}
-                    showBullets={true}
-                  />
-                  ;
-                </div>
-                <div id="Videos">
-                  <div id="Video1">
-                    <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE1}</h3>
-                    <div className="embed-responsive embed-responsive-16by9">
-                      <iframe
-                        className="embed-responsive-item"
-                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6800416080004190208?compact=1"
-                        title="Demo Jogo"
-                        height="284"
-                        width="504"
-                      ></iframe>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <DefaultButton href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico" text={TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.FONT_CODE}/>
                     </div>
-                  </div>
-                  <div id="Video2">
-                    <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.VIDEO_TITLE2}</h3>
-                    <div className="embed-responsive embed-responsive-16by9">
-                      <iframe
-                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6801603672020160512?compact=1"
-                        title="Sistema Crafting"
-                        height="284"
-                        width="504"
-                      ></iframe>
+                    <div class="col-md-6">
+                      <DefaultButton href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico/releases/download/1.0/Bomberman.jar" text={TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.DOWNLOAD_GAME}/>
                     </div>
-                  </div>
-                </div>
-    
-              <Canvas3dModels />
-            </div>
-            <div id="Project">
-              <h3>Bomberman Ecológico</h3>
-              <p>
-                {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT1}
-              </p>
-              <p>
-                {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT2}
-              </p>
-              <p>
-                {TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT3}
-              </p>
-              <Zoom top>
-                <div id="Gallery">
-                  <ImageGallery
-                    items={imageGalleryBomberman}
-                    showThumbnails={false}
-                    showBullets={true}
-                  />
-                  ;
-                </div>
-              </Zoom>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <DefaultButton href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico" text={TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.FONT_CODE}/>
-                  </div>
-                  <div class="col-md-6">
-                    <DefaultButton href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico/releases/download/1.0/Bomberman.jar" text={TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.DOWNLOAD_GAME}/>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="Project">
-              <h3>Artes Digitais</h3>
-              <h4>2019</h4>
-              <Zoom top>
-                <div id="Gallery">
-                  <ImageGallery
-                    items={drawnings2019}
-                    showThumbnails={false}
-                    showBullets={true}
-                  />
-                  ;
-                </div>
-              </Zoom>
-              <h4>2020</h4>
-              <Zoom top>
-                <div id="Gallery">
-                  <ImageGallery
-                    items={drawnings2020}
-                    showThumbnails={false}
-                    showBullets={true}
-                  />
-                  ;
-                </div>
-              </Zoom>
-              <h4>2022</h4>
-              <Zoom top>
-                <div id="Gallery">
-                  <ImageGallery
-                    items={drawnings2022}
-                    showThumbnails={false}
-                    showBullets={true}
-                  />
-                  ;
-                </div>
-              </Zoom>
+              <div id="Project">
+                <h3>Artes Digitais</h3>
+                <h4>2019</h4>
+                <Zoom top>
+                  <div id="Gallery">
+                    <ImageGallery
+                      items={drawnings2019}
+                      showThumbnails={false}
+                      showBullets={true}
+                    />
+                    ;
+                  </div>
+                </Zoom>
+                <h4>2020</h4>
+                <Zoom top>
+                  <div id="Gallery">
+                    <ImageGallery
+                      items={drawnings2020}
+                      showThumbnails={false}
+                      showBullets={true}
+                    />
+                    ;
+                  </div>
+                </Zoom>
+                <h4>2022</h4>
+                <Zoom top>
+                  <div id="Gallery">
+                    <ImageGallery
+                      items={drawnings2022}
+                      showThumbnails={false}
+                      showBullets={true}
+                    />
+                    ;
+                  </div>
+                </Zoom>
+              </div>
             </div>
           </div>
         </div>

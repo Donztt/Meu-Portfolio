@@ -1,5 +1,9 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+#PersonalContentBackground{
+    background-color: #3a0707;
+}
+
 #Personal-Content{
     margin-top: 50px;
     padding-top: 40px;
