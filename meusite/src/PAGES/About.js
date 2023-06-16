@@ -88,14 +88,14 @@ class About extends React.Component {
                           <div className="container text-center">
                             <div className="row">
                               <div className="justify-content-center">
-                                <h4>Sistema de geração de boletos</h4>
+                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT1}</h4>
                                 <ul>
                                   <li>C#</li>
                                   <li>MySQL</li>
                                 </ul>
                               </div>
                               <div className="justify-content-center">
-                                <h4>Retaguarda</h4>
+                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT2}</h4>
                                 <ul>
                                   <li>Visual Basic 6</li>
                                   <li>
@@ -106,21 +106,21 @@ class About extends React.Component {
                                 </ul>
                               </div>
                               <div className="justify-content-center">
-                                <h4>Frente de caixa</h4>
+                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT3}</h4>
                                 <ul>
                                   <li>Visual Basic 6</li>
                                   <li>SQL Server</li>
                                 </ul>
                               </div>
                               <div className="justify-content-center">
-                                <h4>Sistema de Gráficos</h4>
+                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT4}</h4>
                                 <ul>
                                   <li>C#</li>
                                   <li>SQL Server</li>
                                 </ul>
                               </div>
                               <div className="justify-content-center">
-                                <h4>Integração IFood</h4>
+                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT5}</h4>
                                 <ul>
                                   <li>C#</li>
                                   <li>SQL Server</li>
@@ -163,9 +163,7 @@ class About extends React.Component {
                           <div className="container text-center">
                             <div className="row">
                               <div className="justify-content-center">
-                                <h4>
-                                  Portal Telemedicina (Sistema Hospitalar)
-                                </h4>
+                                <h4>{TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS.PROJECT1}</h4>
                                 <ul>
                                   <li>ASP.NET</li>
                                   <li>AngularTS</li>
@@ -177,7 +175,7 @@ class About extends React.Component {
                                 </ul>
                               </div>
                               <div className="justify-content-center">
-                                <h4>Prático (Sistema de gestão)</h4>
+                                <h4>{TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS.PROJECT2}</h4>
                                 <ul>
                                   <li>Java</li>
                                   <li>SpringBoot</li>
@@ -188,7 +186,7 @@ class About extends React.Component {
                                 </ul>
                               </div>
                               <div className="justify-content-center">
-                                <h4>Lentec (Monitoramento automatizado)</h4>
+                                <h4>{TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS.PROJECT3}</h4>
                                 <ul>
                                   <li>Java</li>
                                   <li>SpringBoot</li>
@@ -201,7 +199,7 @@ class About extends React.Component {
                               </div>
                               <div className="justify-content-center">
                                 <h4>
-                                  App da Turma (Sistema de gestão de formaturas)
+                                  {TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS.PROJECT4}
                                 </h4>
                                 <ul>
                                   <li>Java</li>
@@ -249,7 +247,9 @@ class About extends React.Component {
                           <div className="container text-center">
                             <div className="row">
                               <div className="justify-content-center">
-                                <h4>Sistema de geração de boletos</h4>
+                                <h4>
+                                {TRANSLATION.ABOUT_ME.AMLABS.STACK_DETAILS.PROJECT1}
+                                 </h4>
                                 <ul>
                                   <li>C#</li>
                                   <li>ASP.NET</li>

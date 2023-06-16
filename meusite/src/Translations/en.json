@@ -25,21 +25,37 @@
             "STACKS": "Programming Languages: Visual Basic 6 / C#",
             "DATABASES": "Used Databases: SQL Server and MySQL",
             "FRAMEWORKS": "Frameworks: Rest API",
-            "ABOUT": "At the company specialized in developing enterprise management systems (ERP), I had the opportunity to learn Visual Basic 6 and use that skill to start my professional journey. It was there that I gained valuable programming experience and worked alongside a highly qualified team of professionals in the field."
+            "ABOUT": "At the company specialized in developing enterprise management systems (ERP), I had the opportunity to learn Visual Basic 6 and use that skill to start my professional journey. It was there that I gained valuable programming experience and worked alongside a highly qualified team of professionals in the field.",
+            "STACK_DETAILS": {
+                "PROJECT1": "Ticket Generation System",
+                "PROJECT2": "Back Office",
+                "PROJECT3": "Point of Sale",
+                "PROJECT4": "Graphics System",
+                "PROJECT5": "IFood Integration"
+            }
         },
         "TRULOGIC": {
             "STACKS": "Programming Languages: C# / Java / Javascript / HTML / CSS",
             "DATABASES": "Used Databases: SQL Server and Postgres",
             "FRAMEWORKS": "Frameworks: ASP.NET / React-Native / Angular 12 / Vue.Js / Spring Boot / Hibernate / Rest API / Entity Framework",
             "WORK_METODOLOGY": "Work Methodology: SCRUM",
-            "ABOUT": "Trulogic was a true knowledge and camaraderie oasis for me. Focused on listening to the needs and ideas of its clients and turning them into reality, Trulogic provided me with a wide variety of projects and, as a result, a wealth of knowledge and acquired skills. I had the opportunity to work with several highly utilized tools in the industry, which significantly boosted my journey as a developer."
+            "ABOUT": "Trulogic was a true knowledge and camaraderie oasis for me. Focused on listening to the needs and ideas of its clients and turning them into reality, Trulogic provided me with a wide variety of projects and, as a result, a wealth of knowledge and acquired skills. I had the opportunity to work with several highly utilized tools in the industry, which significantly boosted my journey as a developer.",
+            "STACK_DETAILS": {
+                "PROJECT1": "Portal Telemedicina (Hospital System)",
+                "PROJECT2": "Prático (Management System)",
+                "PROJECT3": "Lentec (Automated Monitoring)",
+                "PROJECT4": "App Da Turma (Graduation Management System)"
+            }
         },
         "AMLABS": {
             "STACKS": "Programming Languages: C# / Javascript / HTML / CSS",
             "DATABASES": "Used Databases: SQL Server",
             "FRAMEWORKS": "Frameworks: ASP.NET / AngularJs / Git Flow / Entity Framework",
             "WORK_METODOLOGY": "Work Methodology: SCRUM",
-            "ABOUT": "Working in a company focused on the foreign market, I had the opportunity to challenge myself and learn new tools like AngularJS and GitFlow. Additionally, I participated in daily meetings in English, which allowed me to improve my language skills while collaborating on exciting and challenging projects."
+            "ABOUT": "Working in a company focused on the foreign market, I had the opportunity to challenge myself and learn new tools like AngularJS and GitFlow. Additionally, I participated in daily meetings in English, which allowed me to improve my language skills while collaborating on exciting and challenging projects.",
+            "STACK_DETAILS": {
+                "PROJECT1": "Service Order Management System"
+            }
         }
     },
     "PERSONAL_PROJECTS": {

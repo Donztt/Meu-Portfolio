@@ -25,21 +25,37 @@
             "STACKS": "Linguagens de programação: VisualBasic 6 / C#",
             "DATABASES": "Banco de dados utilizados: SQL Server e MySQL",
             "FRAMEWORKS": "Frameworks: Rest API",
-            "ABOUT": "Na empresa especializada em desenvolvimento de sistemas para gestão empresarial (ERP), tive a oportunidade de aprender a linguagem Visual Basic 6 e utilizar essa habilidade para iniciar minha jornada de trabalho. Foi lá que adquiri uma valiosa experiência profissional em programação e trabalhei em conjunto com uma equipe altamente qualificada de profissionais da área."
+            "ABOUT": "Na empresa especializada em desenvolvimento de sistemas para gestão empresarial (ERP), tive a oportunidade de aprender a linguagem Visual Basic 6 e utilizar essa habilidade para iniciar minha jornada de trabalho. Foi lá que adquiri uma valiosa experiência profissional em programação e trabalhei em conjunto com uma equipe altamente qualificada de profissionais da área.",
+            "STACK_DETAILS":{
+                "PROJECT1": "Sistema de geração de boletos",
+                "PROJECT2": "Retaguarda",
+                "PROJECT3": "Frente de caixa",
+                "PROJECT4": "Sistema de Gráficos",
+                "PROJECT5": "Integração IFood"
+            }
         },
         "TRULOGIC": {
             "STACKS": "Linguagens de programação: C# / Java / Javascript / HTML / CSS",
             "DATABASES": "Banco de dados utilizados: SQL Server e Postgres",
             "FRAMEWORKS": "Frameworks: ASP.NET / React-Native / Angular 12 / Vue.Js / Spring Boot / Hibernate / Rest API / Entity Framework",
             "WORK_METODOLOGY": "Tipo de Metodologia de trabalho: SCRUM",
-            "ABOUT": "A empresa Trulogic foi, para mim, um verdadeiro oásis de conhecimento e companheirismo. Focada em ouvir as necessidades e ideias de seus clientes e transformá-las em realidade, Trulogic me proporcionou uma grande diversidade de projetos e, como resultado, uma riqueza de conhecimentos e habilidades adquiridas. Tive a oportunidade de trabalhar com várias ferramentas altamente utilizadas atualmente, o que impulsionou significativamente a minha jornada como desenvolvedor."
+            "ABOUT": "A empresa Trulogic foi, para mim, um verdadeiro oásis de conhecimento e companheirismo. Focada em ouvir as necessidades e ideias de seus clientes e transformá-las em realidade, Trulogic me proporcionou uma grande diversidade de projetos e, como resultado, uma riqueza de conhecimentos e habilidades adquiridas. Tive a oportunidade de trabalhar com várias ferramentas altamente utilizadas atualmente, o que impulsionou significativamente a minha jornada como desenvolvedor.",
+            "STACK_DETAILS":{
+                "PROJECT1": "Portal Telemedicina (Sistema Hospitalar)",
+                "PROJECT2": "Prático (Sistema de gestão)",
+                "PROJECT3": "Lentec (Monitoramento automatizado)",
+                "PROJECT4": "App da Turma (Sistema de gestão de formaturas)"
+            }
         },
         "AMLABS": {
             "STACKS": "Linguagens de programação: C# / Javascript / HTML / CSS",
             "DATABASES": "Banco de dados utilizados: SQL Server",
             "FRAMEWORKS": "Frameworks: ASP.NET / AngularJs / Git Flow / Entity Framework",
             "WORK_METODOLOGY": "Tipo de Metodologia de trabalho: SCRUM",
-            "ABOUT": "Trabalhando em uma empresa com foco no mercado estrangeiro, eu tive a oportunidade de me desafiar e aprender novas ferramentas como AngularJS e GitFlow. Além disso, participei de reuniões diárias em inglês, o que me permitiu aprimorar minhas habilidades linguísticas enquanto colaborava em projetos emocionantes e desafiadores."
+            "ABOUT": "Trabalhando em uma empresa com foco no mercado estrangeiro, eu tive a oportunidade de me desafiar e aprender novas ferramentas como AngularJS e GitFlow. Além disso, participei de reuniões diárias em inglês, o que me permitiu aprimorar minhas habilidades linguísticas enquanto colaborava em projetos emocionantes e desafiadores.",
+            "STACK_DETAILS":{
+                "PROJECT1": "Sistema de gestão de ordem de serviço"
+            }
         }
     },
     "PERSONAL_PROJECTS":{

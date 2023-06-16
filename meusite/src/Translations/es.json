@@ -25,21 +25,37 @@
             "STACKS": "Lenguajes de programación: Visual Basic 6 / C#",
             "DATABASES": "Bases de datos utilizadas: SQL Server y MySQL",
             "FRAMEWORKS": "Frameworks: Rest API",
-            "ABOUT": "En la empresa especializada en el desarrollo de sistemas de gestión empresarial (ERP), tuve la oportunidad de aprender Visual Basic 6 y utilizar esa habilidad para comenzar mi trayectoria profesional. Fue allí donde adquirí valiosa experiencia en programación y trabajé junto a un equipo altamente calificado de profesionales en el campo."
+            "ABOUT": "En la empresa especializada en el desarrollo de sistemas de gestión empresarial (ERP), tuve la oportunidad de aprender Visual Basic 6 y utilizar esa habilidad para comenzar mi trayectoria profesional. Fue allí donde adquirí valiosa experiencia en programación y trabajé junto a un equipo altamente calificado de profesionales en el campo.",
+            "STACK_DETAILS": {
+                "PROJECT1": "Sistema de generación de boletos",
+                "PROJECT2": "Retaguardia",
+                "PROJECT3": "Punto de venta",
+                "PROJECT4": "Sistema de gráficos",
+                "PROJECT5": "Integración IFood"
+            }
         },
         "TRULOGIC": {
             "STACKS": "Lenguajes de programación: C# / Java / Javascript / HTML / CSS",
             "DATABASES": "Bases de datos utilizadas: SQL Server y Postgres",
             "FRAMEWORKS": "Frameworks: ASP.NET / React-Native / Angular 12 / Vue.Js / Spring Boot / Hibernate / Rest API / Entity Framework",
             "WORK_METODOLOGY": "Metodología de trabajo: SCRUM",
-            "ABOUT": "Trulogic fue un verdadero oasis de conocimiento y camaradería para mí. Enfocado en escuchar las necesidades e ideas de sus clientes y convertirlas en realidad, Trulogic me brindó una amplia variedad de proyectos y, como resultado, una gran cantidad de conocimientos y habilidades adquiridas. Tuve la oportunidad de trabajar con varias herramientas altamente utilizadas en la industria, lo que impulsó significativamente mi trayectoria como desarrollador."
+            "ABOUT": "Trulogic fue un verdadero oasis de conocimiento y camaradería para mí. Enfocado en escuchar las necesidades e ideas de sus clientes y convertirlas en realidad, Trulogic me brindó una amplia variedad de proyectos y, como resultado, una gran cantidad de conocimientos y habilidades adquiridas. Tuve la oportunidad de trabajar con varias herramientas altamente utilizadas en la industria, lo que impulsó significativamente mi trayectoria como desarrollador.",
+            "STACK_DETAILS": {
+                "PROJECT1": "Portal Telemedicina (Sistema Hospitalario)",
+                "PROJECT2": "Prático (Sistema de gestión)",
+                "PROJECT3": "Lentec (Monitoreo automatizado)",
+                "PROJECT4": "App da Turma (Sistema de gestión de graduaciones)"
+            }
         },
         "AMLABS": {
             "STACKS": "Lenguajes de programación: C# / Javascript / HTML / CSS",
             "DATABASES": "Bases de datos utilizadas: SQL Server",
             "FRAMEWORKS": "Frameworks: ASP.NET / AngularJs / Git Flow / Entity Framework",
             "WORK_METODOLOGY": "Metodología de trabajo: SCRUM",
-            "ABOUT": "Trabajando en una empresa enfocada en el mercado extranjero, tuve la oportunidad de desafiarme a mí mismo y aprender nuevas herramientas como AngularJS y GitFlow. Además, participé en reuniones diarias en inglés, lo que me permitió mejorar mis habilidades lingüísticas mientras colaboraba en proyectos emocionantes y desafiantes."
+            "ABOUT": "Trabajando en una empresa enfocada en el mercado extranjero, tuve la oportunidad de desafiarme a mí mismo y aprender nuevas herramientas como AngularJS y GitFlow. Además, participé en reuniones diarias en inglés, lo que me permitió mejorar mis habilidades lingüísticas mientras colaboraba en proyectos emocionantes y desafiantes.",
+            "STACK_DETAILS": {
+                "PROJECT1": "Sistema de gestión de órdenes de servicio"
+            }
         }
     },
     "PERSONAL_PROJECTS": {
