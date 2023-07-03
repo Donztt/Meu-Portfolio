@@ -19,7 +19,8 @@
     },
     "ABOUT_ME":{
         "COLLEGE": "Curso: Ciência da Computação (termino - Janeiro/2022)",
-        "YO": "Idade: 25 Anos",
+        "YO": "Idade: ",
+        "YEARS": "Anos",
         "SHOWMORE": "Mostrar mais",
         "IDEIA_SISTEMAS": {
             "STACKS": "Linguagens de programação: VisualBasic 6 / C#",

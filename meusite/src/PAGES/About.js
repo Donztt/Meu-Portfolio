@@ -50,7 +50,23 @@ class About extends React.Component {
     }));
   };
 
+  getYo = (birthDay) => {
+    var today = new Date();
+    var newbirthDay = new Date(birthDay);
+    var yo = today.getFullYear() - newbirthDay.getFullYear();
+    var month = today.getMonth() - newbirthDay.getMonth();
+  
+    if (month < 0 || (month === 0 && today.getDate() < newbirthDay.getDate())) {
+      yo--;
+    }
+  
+    return yo;
+  }
+
   render() {
+    var birthDay = new Date('1997-06-24');
+    var myYo = this.getYo(birthDay);
+
     const TRANSLATION = Translations(this.state.language);
     const { isVisibleExp1, isVisibleExp2, isVisibleExp3 } = this.state;
     return (
@@ -63,8 +79,10 @@ class About extends React.Component {
                 <div id="Data">
                   <h3>Donizetti José Fernando de Oliveira Junior</h3>
                   <p className="text-center">{TRANSLATION.ABOUT_ME.COLLEGE}</p>
-                  <p className="text-center"> {TRANSLATION.ABOUT_ME.YO}</p>
+                  <p className="text-center"> {TRANSLATION.ABOUT_ME.YO} {myYo} {TRANSLATION.ABOUT_ME.YEARS}</p>
                 </div>
+              </Fade>
+              <Fade top>
                 <div id="Experiences">
                   <h3>Ideia Sistemas</h3>
                   <div className="container">
@@ -139,6 +157,8 @@ class About extends React.Component {
                     {TRANSLATION.ABOUT_ME.SHOWMORE}
                   </button>
                 </>
+                </Fade>
+                <Fade top>
                 <div id="Experiences">
                   <h3>Trulogic</h3>
                   <div className="container">
@@ -223,6 +243,8 @@ class About extends React.Component {
                     {TRANSLATION.ABOUT_ME.SHOWMORE}
                   </button>
                 </>
+                </Fade>
+                <Fade top>
                 <div id="Experiences">
                   <h3>AMLabs</h3>
                   <div className="container">

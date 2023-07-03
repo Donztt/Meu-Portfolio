@@ -19,7 +19,8 @@
     },
     "ABOUT_ME": {
         "COLLEGE": "Grado: Ciencias de la Computación (completado - enero de 2022)",
-        "YO": "Edad: 25 años",
+        "YO": "Edad: ",
+        "YEARS": "años",
         "SHOWMORE": "Mostrar más",
         "IDEIA_SISTEMAS": {
             "STACKS": "Lenguajes de programación: Visual Basic 6 / C#",

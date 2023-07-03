@@ -19,7 +19,8 @@
     },
     "ABOUT_ME": {
         "COLLEGE": "Degree: Computer Science (completed - January 2022)",
-        "YO": "Age: 25 years",
+        "YO": "Age: ",
+        "YEARS": "years",
         "SHOWMORE": "Show More",
         "IDEIA_SISTEMAS": {
             "STACKS": "Programming Languages: Visual Basic 6 / C#",
