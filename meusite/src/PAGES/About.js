@@ -294,7 +294,6 @@ class About extends React.Component {
                     {TRANSLATION.ABOUT_ME.SHOWMORE}
                   </button>
                 </>
-                <div id="About-Footer"></div>
               </Fade>
             </div>
           </div>

@@ -75,6 +75,34 @@
             "TEXT3": "Este juego es una emocionante mezcla del clásico Bomberman y un sistema de puzzles, donde el jugador debe recolectar todos los objetos de la escena para completar cada nivel. Sin embargo, la jugabilidad es más desafiante de lo que parece, ya que hay obstáculos que solo se pueden superar detonando las bombas que lleva el personaje. Para hacer el juego aún más estratégico, las bombas son limitadas y el jugador debe usarlas inteligentemente para destruir los obstáculos correctos y recolectar todos los objetos dispersos por el nivel. Con esta dinámica, el juego se convierte en un verdadero puzzle, que requiere estrategia y pensamiento crítico del jugador para superar cada desafío.",
             "FONT_CODE": "Código fuente",
             "DOWNLOAD_GAME": "Descargar juego"
+        },
+        "ORDER_MANAGEMENT": {
+            "TITLE": "Sistema de Gestión de Pedidos",
+            "TEXT1": "Este proyecto presenta dos variantes, ambas compartiendo el mismo frontend pero diferenciándose en los backends, una implementada en Java y la otra en .NET. Ambas aplicaciones utilizan API REST como estilo de arquitectura de software.",
+            "TEXT2": "Tecnologías utilizadas: AngularJs / Java",
+            "TEXT3": "Un sistema que utiliza AngularJS en el frontend y Java con Spring Boot en el backend. Para mejorar la eficiencia del desarrollo, se han incorporado herramientas poderosas como Lombok, Swagger y Hibernate. Esta combinación de tecnologías proporciona una experiencia de desarrollo ágil y efectiva, garantizando la calidad y escalabilidad del sistema.",
+            "TEXT4": "Tecnologías utilizadas: AngularJs / .NET",
+            "TEXT5": "El sistema está construido con AngularJS en el frontend y .NET en el backend, también integrando Swagger para mejorar la documentación y facilitar la interacción con la API.",
+            "FONT_CODE1": "Código Fuente con Java",
+            "FONT_CODE2": "Código Fuente con .NET"
+        },
+        "DOLLAR_EXCHANGE_RATE": {
+            "TITLE": "Tasa de Cambio del Dólar",
+            "TEXT1": "Tecnologías utilizadas: Angular 12 / Java",
+            "TEXT2": "Un sistema simplificado para monitorear las cotizaciones del dólar; este proyecto utiliza la API del banco central para la obtención de datos, los cuales son filtrados por el backend y enviados al frontend.",
+            "FONT_CODE": "Código Fuente"
+        },
+        "PORTFOLIO": {
+            "TITLE": "Mi Propio Portafolio",
+            "TEXT1": "Tecnología Utilizada: ReactJS",
+            "TEXT2": "Este portafolio fue construido exclusivamente con ReactJS, representando mi primer encuentro con un framework de desarrollo web. A través de él, mejoré significativamente mis habilidades en desarrollo web. Actualizado continuamente, el portafolio incorpora nuevas funcionalidades y contenido que ofrecen una visión integral de mi trayectoria y habilidades.",
+            "FONT_CODE": "Código Fuente"
+        },
+        "CRUD_REACTJS": {
+            "TITLE": "Sistema de Registro y Inicio de Sesión",
+            "TEXT1": "Tecnologías Utilizadas: ReactJS / .NET",
+            "TEXT2": "Desarrollé este sistema de registro simplificado, que abarca todas las operaciones básicas de una aplicación (CRUD) e incorpora la funcionalidad de inicio de sesión, con soporte para la emisión y validación de tokens durante el proceso de autenticación del usuario. Utilicé las tecnologías ReactJS y ASP.NET para la realización de esta aplicación.",
+            "FONT_CODE": "Código Fuente"
         }
     }
 }

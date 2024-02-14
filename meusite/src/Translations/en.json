@@ -75,6 +75,34 @@
             "TEXT3": "This game is an exciting mix of the classic Bomberman and a puzzle system, where the player must collect all objects in the scene to complete each level. However, the gameplay is more challenging than it seems, as there are obstacles that can only be overcome by detonating the bombs carried by the character. To make the game even more strategic, bombs are limited, and the player must use them intelligently to destroy the right obstacles and collect all the items scattered throughout the level. With this dynamic, the game becomes a true puzzle, requiring strategy and critical thinking from the player to overcome each challenge.",
             "FONT_CODE": "Source Code",
             "DOWNLOAD_GAME": "Download Game"
+        },
+        "ORDER_MANAGEMENT": {
+            "TITLE": "Order Management System",
+            "TEXT1": "This project features two variants, both sharing the same frontend but differing in the backends. One is implemented in Java, and the other in .NET. Both applications utilize REST API as their software architecture style.",
+            "TEXT2": "Used Stacks: AngularJs / Java",
+            "TEXT3": "A system that employs AngularJS on the frontend and Java with Spring Boot on the backend. To enhance development efficiency, powerful tools like Lombok, Swagger, and Hibernate have been incorporated. This combination of technologies provides an agile and effective development experience, ensuring the quality and scalability of the system.",
+            "TEXT4": "Used Stacks: AngularJs / .NET",
+            "TEXT5": "The system is built with AngularJS on the frontend and .NET on the backend, also integrating Swagger to enhance documentation and facilitate interaction with the API.",
+            "FONT_CODE1": "Source Code with Java",
+            "FONT_CODE2": "Source Code with .NET"
+        },
+        "DOLLAR_EXCHANGE_RATE": {
+            "TITLE": "Dollar Exchange Rate",
+            "TEXT1": "Used Stacks: Angular 12 / Java",
+            "TEXT2": "A simplified system to monitor dollar exchange rates, this project utilizes the central bank's API for data retrieval, which is filtered by the backend and sent to the frontend.",
+            "FONT_CODE": "Source Code"
+        },
+        "PORTFOLIO": {
+            "TITLE": "My Own Portfolio",
+            "TEXT1": "Used Stack: ReactJS",
+            "TEXT2": "This portfolio was exclusively built using ReactJS, marking my initial encounter with a web development framework. Through it, I significantly enhanced my web development skills. Continuously updated, the portfolio incorporates new features and content that provide a comprehensive view of my journey and abilities.",
+            "FONT_CODE": "Source Code"
+        },
+        "CRUD_REACTJS": {
+            "TITLE": "Registration and Login System",
+            "TEXT1": "Used Stacks: ReactJS / .NET",
+            "TEXT2": "I developed this simplified registration system, covering all basic operations of an application (CRUD), and incorporating the login functionality, with support for token issuance and validation during the user authentication process. I used ReactJS and ASP.NET technologies for the development of this application.",
+            "FONT_CODE": "Source Code"
         }
     }
 }

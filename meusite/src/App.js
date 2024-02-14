@@ -4,7 +4,6 @@ import About from './PAGES/About';
 import PersonalProjects from './PAGES/PersonalProjects';
 import './CSS/default.css';
 
-
 function App() {
   return (
       <div className="App">

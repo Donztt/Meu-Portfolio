@@ -75,6 +75,34 @@
             "TEXT3": "Este jogo é uma mistura emocionante do clássico Bomberman com um sistema de puzzle, onde o jogador deve coletar todos os objetos da cena para concluir a fase. No entanto, a jogabilidade é mais desafiadora do que parece, pois existem obstáculos que só podem ser ultrapassados ao estourar as bombas que o personagem carrega. Para tornar o jogo ainda mais estratégico, as bombas são limitadas, e o jogador deve usá-las de forma inteligente para destruir os obstáculos certos e coletar todos os itens espalhados pela fase. Com essa dinâmica, este jogo se torna um verdadeiro quebra-cabeças, exigindo do jogador estratégia e pensamento crítico para vencer cada desafio.",
             "FONT_CODE": "Código Fonte",
             "DOWNLOAD_GAME": "Baixar Jogo"
+        },
+        "ORDER_MANAGEMENT": {
+            "TITLE": "Sistema de gestão de pedidos",
+            "TEXT1": "Este projeto apresenta duas variantes, ambas compartilhando o mesmo frontend, porém distinguindo-se nos backends, sendo uma implementada em Java e a outra em .NET, ambas as aplicações utilizam API REST como estilo de arquitetura de software. ",
+            "TEXT2": "Stacks utilizadas: AngularJs / Java",
+            "TEXT3": "Um sistema que emprega AngularJS no frontend e Java com Spring Boot no backend. Para aprimorar a eficiência do desenvolvimento, incorporei ferramentas poderosas, como Lombok, Swagger e Hibernate. Essa combinação de tecnologias proporciona uma experiência de desenvolvimento ágil e eficaz, garantindo a qualidade e a escalabilidade do sistema.",
+            "TEXT4": "Stacks utilizadas: AngularJs / .NET",
+            "TEXT5": "O sistema é construído com AngularJS no frontend e .NET no backend, contando ainda com a integração do Swagger para aprimorar a documentação e facilitar a interação com a API.",
+            "FONT_CODE1": "Código Fonte com Java",
+            "FONT_CODE2": "Código Fonte com .NET"
+        },
+        "DOLLAR_EXCHANGE_RATE": {
+            "TITLE": "Cotação do dolar",
+            "TEXT1": "Stacks utilizadas: Angular12 / Java",
+            "TEXT2": "Este é um sistema simplificado para acompanhar as cotações do dólar. O projeto utiliza a API do Banco Central para a obtenção de dados, os quais são filtrados pelo backend e enviados para o frontend.",
+            "FONT_CODE": "Código Fonte"
+        },
+        "PORTFOLIO": {
+            "TITLE": "Meu próprio portifólio",
+            "TEXT1": "Stack utilizada: Reactjs",
+            "TEXT2": "Este portfólio foi construído exclusivamente usando ReactJS, representando meu primeiro encontro com um framework de desenvolvimento web. Através dele, pude significativamente aprimorar minhas habilidades em desenvolvimento web. Atualizado continuamente, o portfólio incorpora novas funcionalidades e conteúdos que oferecem uma visão abrangente sobre minha jornada e habilidades.",
+            "FONT_CODE": "Código Fonte"
+        },
+        "CRUD_REACTJS": {
+            "TITLE": "Sistema de Cadastro e Login",
+            "TEXT1": "Stacks utilizadas: Reactjs / .NET",
+            "TEXT2": "Desenvolvi este sistema de cadastro simplificado, abrangendo todas as operações básicas de uma aplicação (CRUD), e que incorpora a funcionalidade de login, com suporte para a emissão e validação de tokens durante o processo de autenticação do usuário. Utilizei as tecnologias ReactJS e ASP.NET para a realização dessa aplicação.",
+            "FONT_CODE": "Código Fonte"
         }
     }
 }
