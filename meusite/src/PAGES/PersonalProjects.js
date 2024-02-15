@@ -34,6 +34,7 @@ import {
 import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
 import { Player } from "video-react";
+import "video-react/dist/video-react.css";
 
 const imagesGallery = [
   {
@@ -155,10 +156,6 @@ class PersonalProjects extends React.Component {
 
     return (
       <div>
-        <link
-          rel="stylesheet"
-          href="https://video-react.github.io/assets/video-react.css"
-        />
         <NavBar />
         <div id="PersonalContentBackground">
           <div id="Personal-Content">
