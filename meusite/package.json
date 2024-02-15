@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-icons/all-files": "^4.1.0",
     "@react-three/drei": "^6.1.1",
     "@react-three/fiber": "^7.0.1",
     "@testing-library/jest-dom": "^5.12.0",

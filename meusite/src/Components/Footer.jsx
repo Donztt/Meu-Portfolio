@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import '../CSS/Footer.css';
 import EnCurriculo from '../Curriculos/Donizetti Oliveira En Curriculo.pdf';
 import PtCurriculo from '../Curriculos/Donizetti Oliveira PTBR Curriculo.pdf';
