@@ -22,6 +22,7 @@
         "YO": "Edad: ",
         "YEARS": "años",
         "SHOWMORE": "Mostrar más",
+        "SKILLS":"Habilidades",
         "IDEIA_SISTEMAS": {
             "STACKS": "Lenguajes de programación: Visual Basic 6 / C#",
             "DATABASES": "Bases de datos utilizadas: SQL Server y MySQL",
@@ -86,10 +87,10 @@
             "FONT_CODE1": "Código Fuente con Java",
             "FONT_CODE2": "Código Fuente con .NET"
         },
-        "DOLLAR_EXCHANGE_RATE": {
-            "TITLE": "Tasa de Cambio del Dólar",
+        "EXCHANGE_RATE": {
+            "TITLE": "Filtro de cotización por moneda",
             "TEXT1": "Tecnologías utilizadas: Angular 12 / Java",
-            "TEXT2": "Un sistema simplificado para monitorear las cotizaciones del dólar; este proyecto utiliza la API del banco central para la obtención de datos, los cuales son filtrados por el backend y enviados al frontend.",
+            "TEXT2": "Desarrollé un proyecto simple que filtra por fecha para la moneda seleccionada y resta valores según el tipo de cambio actual. Además, es posible mostrar solo los valores inferiores al tipo de cambio actual. Este sistema fue construido utilizando Angular 12 exclusivamente para el frontend y Java Spring Boot para el backend.",
             "FONT_CODE": "Código Fuente"
         },
         "PORTFOLIO": {

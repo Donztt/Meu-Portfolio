@@ -2,9 +2,35 @@ import React from "react";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import "../CSS/About.css";
-import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
+import { Fade, Slide } from "react-reveal";
 import { Translations } from "../Components/Translations.js";
+import ToolTipDefault from "../Components/ToolTipDefault.jsx";
+
+import { FaJava, FaReact, FaUnity } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
+import { ImGithub } from "react-icons/im";
+import { GiAutoRepair } from "react-icons/gi";
+
+import {
+  SiAngular,
+  SiBootstrap,
+  SiDotNet,
+  SiSpring,
+  SiCsharp,
+  SiOracle,
+  SiJavascript,
+  SiCss3,
+  SiHtml5,
+  SiVisualstudiocode,
+  SiBlender,
+  SiMicrosoftsqlserver,
+  SiPostgresql,
+  SiBitbucket,
+  SiAdobephotoshop,
+  SiIntellijidea,
+  SiEclipseide,
+  SiTypescript,
+} from "react-icons/si";
 
 class About extends React.Component {
   constructor(props) {
@@ -55,16 +81,16 @@ class About extends React.Component {
     var newbirthDay = new Date(birthDay);
     var yo = today.getFullYear() - newbirthDay.getFullYear();
     var month = today.getMonth() - newbirthDay.getMonth();
-  
+
     if (month < 0 || (month === 0 && today.getDate() < newbirthDay.getDate())) {
       yo--;
     }
-  
+
     return yo;
-  }
+  };
 
   render() {
-    var birthDay = new Date('1997-06-24');
+    var birthDay = new Date("1997-06-24");
     var myYo = this.getYo(birthDay);
 
     const TRANSLATION = Translations(this.state.language);
@@ -75,13 +101,192 @@ class About extends React.Component {
         <div id="AboutContentBackground">
           <div id="About-Content">
             <div className="container-md">
-              <Fade top>
-                <div id="Data">
-                  <h3>Donizetti José Fernando de Oliveira Junior</h3>
-                  <p className="text-center">{TRANSLATION.ABOUT_ME.COLLEGE}</p>
-                  <p className="text-center"> {TRANSLATION.ABOUT_ME.YO} {myYo} {TRANSLATION.ABOUT_ME.YEARS}</p>
-                </div>
-              </Fade>
+              <div id="Data">
+                <h3>Donizetti José Fernando de Oliveira Junior</h3>
+                <p className="text-center">{TRANSLATION.ABOUT_ME.COLLEGE}</p>
+                <p className="text-center">
+                  {TRANSLATION.ABOUT_ME.YO} {myYo} {TRANSLATION.ABOUT_ME.YEARS}
+                </p>
+              </div>
+              <div>
+                <Slide top>
+                  <div id="Skills">
+                    <h2 className="text-center my-3">{TRANSLATION.ABOUT_ME.SKILLS}</h2>
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="90"
+                            text="Java"
+                            icon={<FaJava id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text="Spring Boot"
+                            icon={<SiSpring id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text="React"
+                            icon={<FaReact id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="60"
+                            text="AngularJs"
+                            icon={<SiAngular id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="90"
+                            text="CSharp"
+                            icon={<SiCsharp id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text=".NET"
+                            icon={<SiDotNet id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="50"
+                            text="MySQL"
+                            icon={<DiMysql id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text="SQL Server"
+                            icon={<SiMicrosoftsqlserver id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text="PostgresSQL"
+                            icon={<SiPostgresql id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="40"
+                            text="Oracle SQL"
+                            icon={<SiOracle id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="90"
+                            text="VS Code"
+                            icon={<SiVisualstudiocode id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text="IntelliJ"
+                            icon={<SiIntellijidea id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="70"
+                            text="Eclipse"
+                            icon={<SiEclipseide id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="90"
+                            text="Github"
+                            icon={<ImGithub id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="60"
+                            text="Bitbucket"
+                            icon={<SiBitbucket id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text="HTML 5"
+                            icon={<SiHtml5 id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text="CSS 3"
+                            icon={<SiCss3 id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text="Javascript"
+                            icon={<SiJavascript id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="50"
+                            text="Typescript"
+                            icon={<SiTypescript id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="66"
+                            text="Bootstrap"
+                            icon={<SiBootstrap id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="90"
+                            text="Unity"
+                            icon={<FaUnity id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="60"
+                            text="Blender"
+                            icon={<SiBlender id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="50"
+                            text="Photoshop"
+                            icon={<SiAdobephotoshop id="SkillIcon" />}
+                          />
+                        </div>
+                        <div className="col-md-2 col-sm-4">
+                          <ToolTipDefault
+                            percentage="80"
+                            text="Infraestrutura"
+                            icon={<GiAutoRepair id="SkillIcon" />}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Slide>
+              </div>
               <Fade top>
                 <div id="Experiences">
                   <h3>Ideia Sistemas</h3>
@@ -105,42 +310,67 @@ class About extends React.Component {
                         <div id="Stacks">
                           <div className="container text-center">
                             <div className="row">
-                              <div className="justify-content-center">
-                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT1}</h4>
+                              <div className="col justify-content-center">
+                                <h4>
+                                  {
+                                    TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
+                                      .STACK_DETAILS.PROJECT1
+                                  }
+                                </h4>
                                 <ul>
                                   <li>C#</li>
                                   <li>MySQL</li>
                                 </ul>
                               </div>
+                              <div className="col justify-content-center">
+                                <h4>
+                                  {
+                                    TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
+                                      .STACK_DETAILS.PROJECT3
+                                  }
+                                </h4>
+                                <ul>
+                                  <li>Visual Basic 6</li>
+                                  <li>SQL Server</li>
+                                </ul>
+                              </div>
+                              <div className="col justify-content-center">
+                                <h4>
+                                  {
+                                    TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
+                                      .STACK_DETAILS.PROJECT4
+                                  }
+                                </h4>
+                                <ul>
+                                  <li>C#</li>
+                                  <li>SQL Server</li>
+                                </ul>
+                              </div>
+                              <div className="col justify-content-center">
+                                <h4>
+                                  {
+                                    TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
+                                      .STACK_DETAILS.PROJECT5
+                                  }
+                                </h4>
+                                <ul>
+                                  <li>C#</li>
+                                  <li>SQL Server</li>
+                                </ul>
+                              </div>
                               <div className="justify-content-center">
-                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT2}</h4>
+                                <h4>
+                                  {
+                                    TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
+                                      .STACK_DETAILS.PROJECT2
+                                  }
+                                </h4>
                                 <ul>
                                   <li>Visual Basic 6</li>
                                   <li>
                                     Geração de Relatórios (Crystal Reports)
                                   </li>
                                   <li>Notas Fiscais (CFE, NFE, NFCE, CTE)</li>
-                                  <li>SQL Server</li>
-                                </ul>
-                              </div>
-                              <div className="justify-content-center">
-                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT3}</h4>
-                                <ul>
-                                  <li>Visual Basic 6</li>
-                                  <li>SQL Server</li>
-                                </ul>
-                              </div>
-                              <div className="justify-content-center">
-                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT4}</h4>
-                                <ul>
-                                  <li>C#</li>
-                                  <li>SQL Server</li>
-                                </ul>
-                              </div>
-                              <div className="justify-content-center">
-                                <h4>{TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS.STACK_DETAILS.PROJECT5}</h4>
-                                <ul>
-                                  <li>C#</li>
                                   <li>SQL Server</li>
                                 </ul>
                               </div>
@@ -157,8 +387,8 @@ class About extends React.Component {
                     {TRANSLATION.ABOUT_ME.SHOWMORE}
                   </button>
                 </>
-                </Fade>
-                <Fade top>
+              </Fade>
+              <Fade top>
                 <div id="Experiences">
                   <h3>Trulogic</h3>
                   <div className="container">
@@ -182,8 +412,13 @@ class About extends React.Component {
                         <div id="Stacks">
                           <div className="container text-center">
                             <div className="row">
-                              <div className="justify-content-center">
-                                <h4>{TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS.PROJECT1}</h4>
+                              <div className="col justify-content-center">
+                                <h4>
+                                  {
+                                    TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS
+                                      .PROJECT1
+                                  }
+                                </h4>
                                 <ul>
                                   <li>ASP.NET</li>
                                   <li>AngularTS</li>
@@ -194,8 +429,13 @@ class About extends React.Component {
                                   <li>SQL Server</li>
                                 </ul>
                               </div>
-                              <div className="justify-content-center">
-                                <h4>{TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS.PROJECT2}</h4>
+                              <div className="col justify-content-center">
+                                <h4>
+                                  {
+                                    TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS
+                                      .PROJECT2
+                                  }
+                                </h4>
                                 <ul>
                                   <li>Java</li>
                                   <li>SpringBoot</li>
@@ -205,8 +445,13 @@ class About extends React.Component {
                                   <li>Postgres</li>
                                 </ul>
                               </div>
-                              <div className="justify-content-center">
-                                <h4>{TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS.PROJECT3}</h4>
+                              <div className="col justify-content-center">
+                                <h4>
+                                  {
+                                    TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS
+                                      .PROJECT3
+                                  }
+                                </h4>
                                 <ul>
                                   <li>Java</li>
                                   <li>SpringBoot</li>
@@ -217,9 +462,12 @@ class About extends React.Component {
                                   <li>Postgres</li>
                                 </ul>
                               </div>
-                              <div className="justify-content-center">
+                              <div className="col justify-content-center">
                                 <h4>
-                                  {TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS.PROJECT4}
+                                  {
+                                    TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS
+                                      .PROJECT4
+                                  }
                                 </h4>
                                 <ul>
                                   <li>Java</li>
@@ -243,8 +491,8 @@ class About extends React.Component {
                     {TRANSLATION.ABOUT_ME.SHOWMORE}
                   </button>
                 </>
-                </Fade>
-                <Fade top>
+              </Fade>
+              <Fade top>
                 <div id="Experiences">
                   <h3>AMLabs</h3>
                   <div className="container">
@@ -270,8 +518,11 @@ class About extends React.Component {
                             <div className="row">
                               <div className="justify-content-center">
                                 <h4>
-                                {TRANSLATION.ABOUT_ME.AMLABS.STACK_DETAILS.PROJECT1}
-                                 </h4>
+                                  {
+                                    TRANSLATION.ABOUT_ME.AMLABS.STACK_DETAILS
+                                      .PROJECT1
+                                  }
+                                </h4>
                                 <ul>
                                   <li>C#</li>
                                   <li>ASP.NET</li>

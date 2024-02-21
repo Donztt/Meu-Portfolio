@@ -19,7 +19,7 @@ import orderManagmentPhoto2 from "../Photos/orderManagementPhotos/gestão2.PNG";
 import orderManagmentPhoto3 from "../Photos/orderManagementPhotos/gestão3.PNG";
 import orderManagmentPhoto4 from "../Photos/orderManagementPhotos/gestão4.PNG";
 import orderManagmentPhoto5 from "../Photos/orderManagementPhotos/gestão5.PNG";
-import dollarExchangeVideo from "../Videos/dollarExchange.mp4";
+import ExchangeRateVideo from "../Videos/ExchangeRate.mp4";
 import crudReactJsAspNet from "../Videos/CRUDReactJsASPNET.mp4";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera, Stars } from "@react-three/drei";
@@ -208,27 +208,27 @@ class PersonalProjects extends React.Component {
               </div>
               <div id="Project">
                 <h3>
-                  {TRANSLATION.PERSONAL_PROJECTS.DOLLAR_EXCHANGE_RATE.TITLE}
+                  {TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TITLE}
                 </h3>
                 <p>
-                  {TRANSLATION.PERSONAL_PROJECTS.DOLLAR_EXCHANGE_RATE.TEXT1}
+                  {TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TEXT1}
                 </p>
                 <p>
-                  {TRANSLATION.PERSONAL_PROJECTS.DOLLAR_EXCHANGE_RATE.TEXT2}
+                  {TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TEXT2}
                 </p>
                 <Zoom top>
                   <div className="my-5">
-                    <Player autoPlay muted loop src={dollarExchangeVideo} />
+                    <Player autoPlay muted loop src={ExchangeRateVideo} />
                   </div>
                 </Zoom>
                 <div className="container">
                   <div className="row">
                     <div className="col-md-12">
                       <DefaultButton
-                        href="https://github.com/Donztt/cotacao-dolar-challenge-Java-Angular"
+                        href="https://github.com/Donztt/cotacao-moedas-challenge-Java-Angular"
                         externalLink
                         text={
-                          TRANSLATION.PERSONAL_PROJECTS.DOLLAR_EXCHANGE_RATE
+                          TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE
                             .FONT_CODE
                         }
                       />

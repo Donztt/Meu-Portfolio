@@ -22,6 +22,7 @@
         "YO": "Idade: ",
         "YEARS": "Anos",
         "SHOWMORE": "Mostrar mais",
+        "SKILLS":"Habilidades",
         "IDEIA_SISTEMAS": {
             "STACKS": "Linguagens de programação: VisualBasic 6 / C#",
             "DATABASES": "Banco de dados utilizados: SQL Server e MySQL",
@@ -86,10 +87,10 @@
             "FONT_CODE1": "Código Fonte com Java",
             "FONT_CODE2": "Código Fonte com .NET"
         },
-        "DOLLAR_EXCHANGE_RATE": {
-            "TITLE": "Cotação do dolar",
+        "EXCHANGE_RATE": {
+            "TITLE": "Filtro de cotação pela moeda",
             "TEXT1": "Stacks utilizadas: Angular12 / Java",
-            "TEXT2": "Este é um sistema simplificado para acompanhar as cotações do dólar. O projeto utiliza a API do Banco Central para a obtenção de dados, os quais são filtrados pelo backend e enviados para o frontend.",
+            "TEXT2": "Desenvolvi um projeto simples que realiza filtros com base em datas para a moeda selecionada, e subtrai os valores de acordo com a cotação atual. Além disso, é possível visualizar apenas os valores que são inferiores à cotação atual. Este sistema foi construído exclusivamente utilizando Angular 12 no frontend e Java Spring Boot no backend.",
             "FONT_CODE": "Código Fonte"
         },
         "PORTFOLIO": {

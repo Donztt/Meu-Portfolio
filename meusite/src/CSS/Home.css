@@ -1,7 +1,6 @@
 #Home-Content {
   margin-top: 80px;
   position: relative;
-  z-index: 500;
   padding-top: 40px;
   background-color: #ffc895;
   padding-bottom: 50px;
@@ -33,7 +32,6 @@
   padding: 15px;
   font-size: 1.2rem;
   color: #e7e7e7;
-  z-index: 1;
 }
 
 #Perfil-Photo img {
@@ -52,26 +50,4 @@
 
 #Perfil-Photo img:hover {
   transform: translateY(-10px);
-}
-
-#Skills {
-  width: 99%;
-  margin: auto;
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 20px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-  background-color: #e7e7e7;
-}
-
-#SkillsBackground{
-  background-color: #3a0707;
-}
-
-#SkillItem{
-  text-align: center;
-  position: relative;
-  display: inline-block;
 }

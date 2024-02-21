@@ -3,7 +3,7 @@
 }
 
 #About-Content {
-    margin-top: 50px;
+    margin-top: 70px;
     padding-top: 40px;
     background-color: #ffc895;
     border-bottom: 20px;
@@ -31,12 +31,33 @@
 }
 
 #Data {
+    position: relative;
+    z-index: 5;
     background-color: #3a0707;
     border-top: 10px solid;
     border-right: 5px solid;
     border-left: 5px solid;
     border-color: #e7e7e7;
     filter: drop-shadow(0 6px 8px #220404);
+}
+#Skills {
+    z-index: 1;
+    width: 99%;
+    top: -15px;
+    margin: auto;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 20px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-color: #e7e7e7;
+}
+
+#SkillItem {
+    text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
 #Experiences {
@@ -83,6 +104,10 @@
 
 #Stacks ul {
     list-style-type: none;
+}
+
+#Stacks h4 {
+    height: 60px;
 }
 
 #Stack-Details {

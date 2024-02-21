@@ -11,7 +11,7 @@
     },
     "HOME": {
         "WELCOME": "Welcome!",
-        "INTRODUCTION": "My name is",
+        "INTRODUCTION": "I am",
         "OFFICE": "Full-Stack Developer",
         "TEXT": "As a programmer, I have a great interest in expanding my knowledge base and skills. I am always seeking to learn new technologies and emerging trends in my field to further enhance my ability to develop innovative and effective solutions. I am always excited to explore and experiment with new tools and technologies that can add value to the projects I'm involved in.",
         "TEXT2": "This Portfolio showcases personal projects that I would like to present to you!",
@@ -22,6 +22,7 @@
         "YO": "Age: ",
         "YEARS": "years",
         "SHOWMORE": "Show More",
+        "SKILLS":"Skills",
         "IDEIA_SISTEMAS": {
             "STACKS": "Programming Languages: Visual Basic 6 / C#",
             "DATABASES": "Used Databases: SQL Server and MySQL",
@@ -86,10 +87,10 @@
             "FONT_CODE1": "Source Code with Java",
             "FONT_CODE2": "Source Code with .NET"
         },
-        "DOLLAR_EXCHANGE_RATE": {
-            "TITLE": "Dollar Exchange Rate",
+        "EXCHANGE_RATE": {
+            "TITLE": "Quote filter by currency",
             "TEXT1": "Used Stacks: Angular 12 / Java",
-            "TEXT2": "A simplified system to monitor dollar exchange rates, this project utilizes the central bank's API for data retrieval, which is filtered by the backend and sent to the frontend.",
+            "TEXT2": "I developed a simple project that filters by date for the selected currency and subtracts values based on the current exchange rate. Additionally, it is possible to display only values lower than the current exchange rate. This system was built using Angular 12 exclusively for the frontend and Java Spring Boot for the backend.",
             "FONT_CODE": "Source Code"
         },
         "PORTFOLIO": {
