@@ -2,9 +2,9 @@ import "../CSS/NavBar.css";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Translations } from "./Translations.js";
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
-import DefaultButton from "./ButtonDefault"
+import Dropdown from "react-dropdown";
+import "react-dropdown/style.css";
+import DefaultButton from "./ButtonDefault";
 
 function NavBar() {
   const storage = localStorage.getItem("language");
@@ -23,17 +23,17 @@ function NavBar() {
   };
 
   const options = [
-    { value: 'en', label: 'English' },
-    { value: 'pt', label: 'Português' },
-    { value: 'es', label: 'Español' },
+    { value: "en", label: "English" },
+    { value: "pt", label: "Português" },
+    { value: "es", label: "Español" },
   ];
 
   return (
     <div className="NavBar-Content">
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            Donztt Olv
+          <Link id="logo-container" className="navbar-brand" to="/">
+            <div id="logo">Donztt Olv</div>
           </Link>
           <button
             className="navbar-toggler"
@@ -46,23 +46,32 @@ function NavBar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="nav mx-auto">
-              <li className="nav-item">
-                <DefaultButton href="/" text={TRANSLATION.NAV.HOME}/>
+          <div className="collapse navbar-collapse " id="navbarNav">
+            <ul className="nav mx-auto d-flex justify-content-center">
+              <li className="nav-item my-1">
+                <DefaultButton href="/" text={TRANSLATION.NAV.HOME} />
               </li>
-              <li className="nav-item">
-                <DefaultButton href="/sobremim" text={TRANSLATION.NAV.ABOUT_ME}/>
+              <li className="nav-item my-1">
+                <DefaultButton
+                  href="/sobremim"
+                  text={TRANSLATION.NAV.ABOUT_ME}
+                />
               </li>
-              <li className="nav-item">
-                <DefaultButton href="/projetospessoais" text={TRANSLATION.NAV.PERSONAL_PROJECTS}/>
-              </li>
-              <li className="nav-item">
-                <div style={{marginTop: 15}}>
-                  <Dropdown options={options} onChange={handleLanguageChange} value={language} className="languageChangeSelect" />
-                </div>
+              <li className="nav-item my-1">
+                <DefaultButton
+                  href="/projetospessoais"
+                  text={TRANSLATION.NAV.PERSONAL_PROJECTS}
+                />
               </li>
             </ul>
+          </div>
+          <div className="my-1 mx-auto">
+            <Dropdown
+              options={options}
+              onChange={handleLanguageChange}
+              value={language}
+              className="languageChangeSelect"
+            />
           </div>
         </div>
       </nav>

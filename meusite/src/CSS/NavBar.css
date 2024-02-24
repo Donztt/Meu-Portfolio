@@ -1,4 +1,4 @@
-.navbar-brand{
+#logo-container{
     padding-right: 20px;
     padding-left: 20px;
     border-right: 5px solid;
@@ -10,6 +10,12 @@
     border-color: #e7e7e7;
     color: #e7e7e7;
 }
+#logo {
+    transition: transform 0.3s ease-in-out;
+}
+#logo:hover {
+    transform: scale(0.8);
+  }
 .navbar li{
     padding-left: 50px;
     padding-right: 50px;
@@ -49,6 +55,7 @@
     border-radius: 10px;
     width: 120px;
     height: 40px;
+    font-weight: bold;
 }
 
 
