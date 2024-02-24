@@ -111,175 +111,188 @@ class About extends React.Component {
               <div>
                 <Slide top>
                   <div id="Skills">
-                    <h2 className="text-center my-3">{TRANSLATION.ABOUT_ME.SKILLS}</h2>
+                    <h2 className="text-center my-3">Soft Skills</h2>
+                    <div className="d-flex justify-content-center">
+                      <ul id="SoftSkills" className="text-center">
+                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL1}</li>
+                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL2}</li>
+                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL3}</li>
+                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL4}</li>
+                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL5}</li>
+                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL6}</li>
+                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL7}</li>
+                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL8}</li>
+                      </ul>
+                    </div>
+                    <h2 className="text-center my-3">Hard Skills</h2>
                     <div className="container">
                       <div className="row">
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="90"
                             text="Java"
-                            icon={<FaJava id="SkillIcon" />}
+                            icon={<FaJava/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text="Spring Boot"
-                            icon={<SiSpring id="SkillIcon" />}
+                            icon={<SiSpring/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text="React"
-                            icon={<FaReact id="SkillIcon" />}
+                            icon={<FaReact/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="60"
                             text="AngularJs"
-                            icon={<SiAngular id="SkillIcon" />}
+                            icon={<SiAngular/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="90"
                             text="CSharp"
-                            icon={<SiCsharp id="SkillIcon" />}
+                            icon={<SiCsharp/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text=".NET"
-                            icon={<SiDotNet id="SkillIcon" />}
+                            icon={<SiDotNet/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="50"
                             text="MySQL"
-                            icon={<DiMysql id="SkillIcon" />}
+                            icon={<DiMysql/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text="SQL Server"
-                            icon={<SiMicrosoftsqlserver id="SkillIcon" />}
+                            icon={<SiMicrosoftsqlserver/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text="PostgresSQL"
-                            icon={<SiPostgresql id="SkillIcon" />}
+                            icon={<SiPostgresql/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="40"
                             text="Oracle SQL"
-                            icon={<SiOracle id="SkillIcon" />}
+                            icon={<SiOracle/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="90"
                             text="VS Code"
-                            icon={<SiVisualstudiocode id="SkillIcon" />}
+                            icon={<SiVisualstudiocode/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text="IntelliJ"
-                            icon={<SiIntellijidea id="SkillIcon" />}
+                            icon={<SiIntellijidea/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="70"
                             text="Eclipse"
-                            icon={<SiEclipseide id="SkillIcon" />}
+                            icon={<SiEclipseide/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="90"
                             text="Github"
-                            icon={<ImGithub id="SkillIcon" />}
+                            icon={<ImGithub/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="60"
                             text="Bitbucket"
-                            icon={<SiBitbucket id="SkillIcon" />}
+                            icon={<SiBitbucket/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text="HTML 5"
-                            icon={<SiHtml5 id="SkillIcon" />}
+                            icon={<SiHtml5/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text="CSS 3"
-                            icon={<SiCss3 id="SkillIcon" />}
+                            icon={<SiCss3/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text="Javascript"
-                            icon={<SiJavascript id="SkillIcon" />}
+                            icon={<SiJavascript/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="50"
                             text="Typescript"
-                            icon={<SiTypescript id="SkillIcon" />}
+                            icon={<SiTypescript/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="66"
                             text="Bootstrap"
-                            icon={<SiBootstrap id="SkillIcon" />}
+                            icon={<SiBootstrap/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="90"
                             text="Unity"
-                            icon={<FaUnity id="SkillIcon" />}
+                            icon={<FaUnity/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="60"
                             text="Blender"
-                            icon={<SiBlender id="SkillIcon" />}
+                            icon={<SiBlender/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="50"
                             text="Photoshop"
-                            icon={<SiAdobephotoshop id="SkillIcon" />}
+                            icon={<SiAdobephotoshop/>}
                           />
                         </div>
                         <div className="col-md-2 col-sm-4">
                           <ToolTipDefault
                             percentage="80"
                             text="Infraestrutura"
-                            icon={<GiAutoRepair id="SkillIcon" />}
+                            icon={<GiAutoRepair/>}
                           />
                         </div>
                       </div>
@@ -310,69 +323,81 @@ class About extends React.Component {
                         <div id="Stacks">
                           <div className="container text-center">
                             <div className="row">
-                              <div className="col justify-content-center">
+                              <div className="col">
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
                                       .STACK_DETAILS.PROJECT1
                                   }
                                 </h4>
-                                <ul>
-                                  <li>C#</li>
-                                  <li>MySQL</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>C#</li>
+                                    <li>MySQL</li>
+                                  </ul>
+                                </div>
                               </div>
-                              <div className="col justify-content-center">
+                              <div className="col">
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
                                       .STACK_DETAILS.PROJECT3
                                   }
                                 </h4>
-                                <ul>
-                                  <li>Visual Basic 6</li>
-                                  <li>SQL Server</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>Visual Basic 6</li>
+                                    <li>SQL Server</li>
+                                  </ul>
+                                </div>
                               </div>
-                              <div className="col justify-content-center">
+                              <div className="col">
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
                                       .STACK_DETAILS.PROJECT4
                                   }
                                 </h4>
-                                <ul>
-                                  <li>C#</li>
-                                  <li>SQL Server</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>C#</li>
+                                    <li>SQL Server</li>
+                                  </ul>
+                                </div>
                               </div>
-                              <div className="col justify-content-center">
+                              <div className="col">
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
                                       .STACK_DETAILS.PROJECT5
                                   }
                                 </h4>
-                                <ul>
-                                  <li>C#</li>
-                                  <li>SQL Server</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>C#</li>
+                                    <li>SQL Server</li>
+                                  </ul>
+                                </div>
                               </div>
-                              <div className="justify-content-center">
+                            </div>
+                            <div>
+                              <div className="row">
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.IDEIA_SISTEMAS
                                       .STACK_DETAILS.PROJECT2
                                   }
                                 </h4>
-                                <ul>
-                                  <li>Visual Basic 6</li>
-                                  <li>
-                                    Geração de Relatórios (Crystal Reports)
-                                  </li>
-                                  <li>Notas Fiscais (CFE, NFE, NFCE, CTE)</li>
-                                  <li>SQL Server</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>Visual Basic 6</li>
+                                    <li>
+                                      Geração de Relatórios (Crystal Reports)
+                                    </li>
+                                    <li>Notas Fiscais (CFE, NFE, NFCE, CTE)</li>
+                                    <li>SQL Server</li>
+                                  </ul>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -412,71 +437,79 @@ class About extends React.Component {
                         <div id="Stacks">
                           <div className="container text-center">
                             <div className="row">
-                              <div className="col justify-content-center">
+                              <div className="col">
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS
                                       .PROJECT1
                                   }
                                 </h4>
-                                <ul>
-                                  <li>ASP.NET</li>
-                                  <li>AngularTS</li>
-                                  <li>React-Native</li>
-                                  <li>Docker</li>
-                                  <li>BitBucket</li>
-                                  <li>Google Cloud</li>
-                                  <li>SQL Server</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>ASP.NET</li>
+                                    <li>AngularTS</li>
+                                    <li>React-Native</li>
+                                    <li>Docker</li>
+                                    <li>BitBucket</li>
+                                    <li>Google Cloud</li>
+                                    <li>SQL Server</li>
+                                  </ul>
+                                </div>
                               </div>
-                              <div className="col justify-content-center">
+                              <div className="col">
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS
                                       .PROJECT2
                                   }
                                 </h4>
-                                <ul>
-                                  <li>Java</li>
-                                  <li>SpringBoot</li>
-                                  <li>Firebase</li>
-                                  <li>VueJs</li>
-                                  <li>AWS</li>
-                                  <li>Postgres</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>Java</li>
+                                    <li>SpringBoot</li>
+                                    <li>Firebase</li>
+                                    <li>VueJs</li>
+                                    <li>AWS</li>
+                                    <li>Postgres</li>
+                                  </ul>
+                                </div>
                               </div>
-                              <div className="col justify-content-center">
+                              <div className="col">
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS
                                       .PROJECT3
                                   }
                                 </h4>
-                                <ul>
-                                  <li>Java</li>
-                                  <li>SpringBoot</li>
-                                  <li>React-Native</li>
-                                  <li>VueJs</li>
-                                  <li>Docker</li>
-                                  <li>AWS</li>
-                                  <li>Postgres</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>Java</li>
+                                    <li>SpringBoot</li>
+                                    <li>React-Native</li>
+                                    <li>VueJs</li>
+                                    <li>Docker</li>
+                                    <li>AWS</li>
+                                    <li>Postgres</li>
+                                  </ul>
+                                </div>
                               </div>
-                              <div className="col justify-content-center">
+                              <div className="col">
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.TRULOGIC.STACK_DETAILS
                                       .PROJECT4
                                   }
                                 </h4>
-                                <ul>
-                                  <li>Java</li>
-                                  <li>SpringBoot</li>
-                                  <li>VueJs</li>
-                                  <li>Docker</li>
-                                  <li>AWS</li>
-                                  <li>Postgres</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>Java</li>
+                                    <li>SpringBoot</li>
+                                    <li>VueJs</li>
+                                    <li>Docker</li>
+                                    <li>AWS</li>
+                                    <li>Postgres</li>
+                                  </ul>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -516,21 +549,23 @@ class About extends React.Component {
                         <div id="Stacks">
                           <div className="container text-center">
                             <div className="row">
-                              <div className="justify-content-center">
+                              <div>
                                 <h4>
                                   {
                                     TRANSLATION.ABOUT_ME.AMLABS.STACK_DETAILS
                                       .PROJECT1
                                   }
                                 </h4>
-                                <ul>
-                                  <li>C#</li>
-                                  <li>ASP.NET</li>
-                                  <li>AngularJs</li>
-                                  <li>Git Flow</li>
-                                  <li>SOAP</li>
-                                  <li>SQL Server</li>
-                                </ul>
+                                <div className="d-flex justify-content-center">
+                                  <ul>
+                                    <li>C#</li>
+                                    <li>ASP.NET</li>
+                                    <li>AngularJs</li>
+                                    <li>Git Flow</li>
+                                    <li>SOAP</li>
+                                    <li>SQL Server</li>
+                                  </ul>
+                                </div>
                               </div>
                             </div>
                           </div>

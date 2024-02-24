@@ -22,7 +22,16 @@
         "YO": "Edad: ",
         "YEARS": "años",
         "SHOWMORE": "Mostrar más",
-        "SKILLS":"Habilidades",
+        "SOFT_SKILLS": {
+            "SKILL1": "Pensamiento Crítico",
+            "SKILL2": "Resolución de Problemas",
+            "SKILL3": "Adaptabilidad",
+            "SKILL4": "Trabajo en Equipo",
+            "SKILL5": "Empatía",
+            "SKILL6": "Toma de Decisiones",
+            "SKILL7": "Iniciativa",
+            "SKILL8": "Gestión del Tiempo"
+        },
         "IDEIA_SISTEMAS": {
             "STACKS": "Lenguajes de programación: Visual Basic 6 / C#",
             "DATABASES": "Bases de datos utilizadas: SQL Server y MySQL",

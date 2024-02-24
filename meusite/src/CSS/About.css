@@ -60,6 +60,21 @@
     display: inline-block;
 }
 
+#SoftSkills {
+    display: inline-block;
+    list-style-type: none;
+    list-style: none;
+    width: 300px;
+    margin: auto;
+    padding-left: 0;
+}
+
+#SoftSkills li{
+    background-color: #b3b3b3;
+    border-radius: 20px;
+    margin-bottom: 3px;
+}
+
 #Experiences {
     position: relative;
     margin-top: 30px;
@@ -96,13 +111,15 @@
     z-index: 1;
 }
 
-#Stacks ul li {
+#Stacks li {
     background-color: #b3b3b3;
     border-radius: 20px;
-    margin-bottom: 3px
+    margin-bottom: 3px;
+    width: 200px;
 }
 
 #Stacks ul {
+    padding-left: 0;
     list-style-type: none;
 }
 
