@@ -30,7 +30,11 @@
             "SKILL5": "Empatia",
             "SKILL6": "Tomada de Decisão",
             "SKILL7": "Iniciativa",
-            "SKILL8": "Gestão do Tempo"
+            "SKILL8": "Gestão do Tempo",
+            "SKILL9": "Inteligência emocional",
+            "SKILL10": "Persistência",
+            "SKILL11": "Transparência",
+            "SKILL12": "Flexibilidade"
         },
         "IDEIA_SISTEMAS": {
             "STACKS": "Linguagens de programação: VisualBasic 6 / C#",

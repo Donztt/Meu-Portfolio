@@ -110,190 +110,212 @@ class About extends React.Component {
               </div>
               <div>
                 <Slide top>
-                  <div id="Skills">
-                    <h2 className="text-center my-3">Soft Skills</h2>
-                    <div className="d-flex justify-content-center">
-                      <ul id="SoftSkills" className="text-center">
-                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL1}</li>
-                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL2}</li>
-                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL3}</li>
-                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL4}</li>
-                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL5}</li>
-                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL6}</li>
-                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL7}</li>
-                        <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL8}</li>
-                      </ul>
+                  <div id="Skills" className="px-5">
+                    <div id="SoftSkills">
+                      <h2 className="text-center my-3">Soft Skills</h2>
+                      <div className="d-flex justify-content-center">
+                        <ul className="text-center">
+                        <div className="container">
+                          <div className="row">
+                            <div className="col">
+                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL1}</li>
+                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL2}</li>
+                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL3}</li>
+                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL4}</li>
+                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL5}</li>
+                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL6}</li>
+                            </div>
+                            <div className="col">
+                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL7}</li>
+                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL8}</li>
+                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL9}</li>
+                              <li>
+                                {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL10}
+                              </li>
+                              <li>
+                                {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL11}
+                              </li>
+                              <li>
+                                {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL12}
+                              </li>
+                            </div>
+                          </div>
+                          </div>
+                        </ul>
+                      </div>
                     </div>
-                    <h2 className="text-center my-3">Hard Skills</h2>
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="90"
-                            text="Java"
-                            icon={<FaJava/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text="Spring Boot"
-                            icon={<SiSpring/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text="React"
-                            icon={<FaReact/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="60"
-                            text="AngularJs"
-                            icon={<SiAngular/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="90"
-                            text="CSharp"
-                            icon={<SiCsharp/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text=".NET"
-                            icon={<SiDotNet/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="50"
-                            text="MySQL"
-                            icon={<DiMysql/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text="SQL Server"
-                            icon={<SiMicrosoftsqlserver/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text="PostgresSQL"
-                            icon={<SiPostgresql/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="40"
-                            text="Oracle SQL"
-                            icon={<SiOracle/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="90"
-                            text="VS Code"
-                            icon={<SiVisualstudiocode/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text="IntelliJ"
-                            icon={<SiIntellijidea/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="70"
-                            text="Eclipse"
-                            icon={<SiEclipseide/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="90"
-                            text="Github"
-                            icon={<ImGithub/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="60"
-                            text="Bitbucket"
-                            icon={<SiBitbucket/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text="HTML 5"
-                            icon={<SiHtml5/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text="CSS 3"
-                            icon={<SiCss3/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text="Javascript"
-                            icon={<SiJavascript/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="50"
-                            text="Typescript"
-                            icon={<SiTypescript/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="66"
-                            text="Bootstrap"
-                            icon={<SiBootstrap/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="90"
-                            text="Unity"
-                            icon={<FaUnity/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="60"
-                            text="Blender"
-                            icon={<SiBlender/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="50"
-                            text="Photoshop"
-                            icon={<SiAdobephotoshop/>}
-                          />
-                        </div>
-                        <div className="col-md-2 col-sm-4">
-                          <ToolTipDefault
-                            percentage="80"
-                            text="Infraestrutura"
-                            icon={<GiAutoRepair/>}
-                          />
+                    <div id="HardSkills">
+                      <h2 className="text-center my-3">Hard Skills</h2>
+                      <div className="container">
+                        <div className="row">
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="90"
+                              text="Java"
+                              icon={<FaJava />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text="Spring Boot"
+                              icon={<SiSpring />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text="React"
+                              icon={<FaReact />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="60"
+                              text="AngularJs"
+                              icon={<SiAngular />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="90"
+                              text="CSharp"
+                              icon={<SiCsharp />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text=".NET"
+                              icon={<SiDotNet />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="50"
+                              text="MySQL"
+                              icon={<DiMysql />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text="SQL Server"
+                              icon={<SiMicrosoftsqlserver />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text="PostgresSQL"
+                              icon={<SiPostgresql />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="40"
+                              text="Oracle SQL"
+                              icon={<SiOracle />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="90"
+                              text="VS Code"
+                              icon={<SiVisualstudiocode />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text="IntelliJ"
+                              icon={<SiIntellijidea />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="70"
+                              text="Eclipse"
+                              icon={<SiEclipseide />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="90"
+                              text="Github"
+                              icon={<ImGithub />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="60"
+                              text="Bitbucket"
+                              icon={<SiBitbucket />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text="HTML 5"
+                              icon={<SiHtml5 />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text="CSS 3"
+                              icon={<SiCss3 />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text="Javascript"
+                              icon={<SiJavascript />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="50"
+                              text="Typescript"
+                              icon={<SiTypescript />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="66"
+                              text="Bootstrap"
+                              icon={<SiBootstrap />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="90"
+                              text="Unity"
+                              icon={<FaUnity />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="60"
+                              text="Blender"
+                              icon={<SiBlender />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="50"
+                              text="Photoshop"
+                              icon={<SiAdobephotoshop />}
+                            />
+                          </div>
+                          <div className="col-md-2 col-sm-4">
+                            <ToolTipDefault
+                              percentage="80"
+                              text="Infraestrutura"
+                              icon={<GiAutoRepair />}
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>

@@ -30,8 +30,12 @@
             "SKILL5": "Empathy",
             "SKILL6": "Decision Making",
             "SKILL7": "Initiative",
-            "SKILL8": "Time Management"
-        },
+            "SKILL8": "Time Management",
+            "SKILL9": "Emotional Intelligence",
+            "SKILL10": "Persistence",
+            "SKILL11": "Transparency",
+            "SKILL12": "Flexibility"
+        },        
         "IDEIA_SISTEMAS": {
             "STACKS": "Programming Languages: Visual Basic 6 / C#",
             "DATABASES": "Used Databases: SQL Server and MySQL",

@@ -60,11 +60,11 @@
     display: inline-block;
 }
 
-#SoftSkills {
+#SoftSkills ul{
     display: inline-block;
     list-style-type: none;
     list-style: none;
-    width: 300px;
+    width: 80%;
     margin: auto;
     padding-left: 0;
 }
@@ -73,6 +73,12 @@
     background-color: #b3b3b3;
     border-radius: 20px;
     margin-bottom: 3px;
+}
+
+#HardSkills {
+    margin-top: 50px;
+    border-top: 1px solid;
+    border-color: #b3b3b3;
 }
 
 #Experiences {
