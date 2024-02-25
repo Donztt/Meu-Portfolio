@@ -1,5 +1,5 @@
 #homeButtonBackGround{
-    background: #220404;
+    background: var(--cor-sombra);
     border-radius: 25px;
 }
 #homeButton p{
@@ -14,16 +14,16 @@
     border-top-right-radius: 0px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    color: #ffffff;
+    color: var(--cor-texto-primario);
     border-top: 0px solid;
     border-right: 0px solid;
     border-left: 0px solid;
     border-bottom: 0px solid;
-    border-color: #e7e7e7;
+    border-color: var(--cor-borda);
     transition: color 0.2s ease
   }
   #homeButton p::before {
-    background: #ffc895;
+    background: var(--cor-primaria);
     content: "";
     inset: 0;
     position: absolute;
@@ -31,7 +31,7 @@
     transform-origin: top;
     transition: transform 0.2s ease-in-out;
     border-radius: 25px;
-    box-shadow: inset 0 0px 10px #220404;
+    box-shadow: inset 0 0px 10px var(--cor-sombra);
     z-index: -1;
   }
   
@@ -40,5 +40,5 @@
     transform-origin: top;
   }
   #homeButton p:hover{
-    color: #3a0707;
+    color: var(--cor-secundaria);
   }

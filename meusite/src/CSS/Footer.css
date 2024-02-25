@@ -1,7 +1,7 @@
 .footer-basic {
     padding:40px 0;
-    background-color:#3a0707;
-    color:#ffffff;
+    background-color:var(--cor-secundaria);
+    color:var(--cor-texto-primario);
   }
   
   .footer-basic ul {
@@ -55,7 +55,7 @@
   .footer-basic .col {
       border-right: 10px solid;
       border-left: 10px solid;
-      border-color: #e7e7e7;
+      border-color: var(--cor-borda);
       border-radius: 25px;
       margin: 10px;
   }

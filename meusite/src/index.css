@@ -1,3 +1,12 @@
+:root {
+  --cor-primaria: #ffc895;
+  --cor-secundaria: #3a0707;
+  --cor-terciaria: #b3b3b3; 
+  --cor-borda: #e7e7e7;
+  --cor-sombra:#220404;
+  --cor-texto-primario: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

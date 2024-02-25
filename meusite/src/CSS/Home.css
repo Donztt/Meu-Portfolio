@@ -2,9 +2,9 @@
   margin-top: 80px;
   position: relative;
   padding-top: 40px;
-  background-color: #ffc895;
+  background-color: var(--cor-primaria);
   padding-bottom: 50px;
-  filter: drop-shadow(0 7px 6px #220404);
+  filter: drop-shadow(0 7px 6px var(--cor-sombra));
 }
 #Welcome {
   margin-bottom: 30px;
@@ -14,24 +14,24 @@
 }
 #Donizetti {
   font-size: 1.8em;
-  color: #3a0707;
+  color: var(--cor-secundaria);
   background: none;
 }
 #introduction {
-  background-color: #3a0707;
+  background-color: var(--cor-secundaria);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   margin-bottom: 20px;
-  filter: drop-shadow(0 6px 12px #220404);
+  filter: drop-shadow(0 6px 12px var(--cor-sombra));
   border: 5px solid;
-  border-color: #e7e7e7;
+  border-color: var(--cor-borda);
 }
 #introduction p {
   font-style: oblique;
   font-weight: bold;
   padding: 15px;
   font-size: 1.2rem;
-  color: #e7e7e7;
+  color: var(--cor-texto-primario);
 }
 
 #Perfil-Photo img {
@@ -42,9 +42,9 @@
   background-color: #d2e1ed;
   margin-bottom: 90px;
   border: 5px solid;
-  border-color: #e7e7e7;
+  border-color: var(--cor-borda);
   border-radius: 100% !important;
-  filter: drop-shadow(0 6px 15px #220404);
+  filter: drop-shadow(0 6px 15px var(--cor-sombra));
   transition: transform 0.3s ease;
 }
 

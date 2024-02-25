@@ -22,9 +22,9 @@
     top: 50px;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: drop-shadow(0 6px 15px #220404);
+    filter: drop-shadow(0 6px 15px var(--cor-sombra));
     background-color: black;
-    color: #e7e7e7;
+    color: var(--cor-texto-primario);
     text-align: center;
     border-radius: 100%;
     opacity: 0.8;
@@ -39,5 +39,5 @@
 }
 #tooltip:hover {
     z-index: 9999;
-    filter: drop-shadow(0 6px 15px #220404);
+    filter: drop-shadow(0 6px 15px var(--cor-sombra));
   }
