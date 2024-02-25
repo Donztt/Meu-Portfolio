@@ -103,6 +103,9 @@ class About extends React.Component {
             <div className="container-md">
               <div id="Data">
                 <h3>Donizetti José Fernando de Oliveira Junior</h3>
+                <p className="text-center">
+                  {TRANSLATION.ABOUT_ME.DESCRIPTION}
+                </p>
                 <p className="text-center">{TRANSLATION.ABOUT_ME.COLLEGE}</p>
                 <p className="text-center">
                   {TRANSLATION.ABOUT_ME.YO} {myYo} {TRANSLATION.ABOUT_ME.YEARS}
