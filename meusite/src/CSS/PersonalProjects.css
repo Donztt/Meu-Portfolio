@@ -31,28 +31,19 @@
     font-weight: bold;
     padding: 30px;
     font-size: 1.2rem;
-    color: var(--cor-borda);
+    color: var(--cor-texto-primario);
 }
 #Project h3 {
     font-size: 1.8em;
     font-weight: bold;
-    color: var(--cor-borda);
+    color: var(--cor-texto-primario);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 2px solid;
+    border-color: var(--cor-borda);
 }
-#Project h4 {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: var(--cor-borda);
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid;
-    width: 50%;
-    margin: 0 auto;
-}
+
 #Project img{
     min-width: 150px;
     min-height: 150px;

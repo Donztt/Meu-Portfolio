@@ -35,15 +35,9 @@
 }
 
 #Perfil-Photo img {
-  min-width: 250px;
-  min-height: 250px;
   height: 70%;
   width: 70%;
-  background-color: #d2e1ed;
   margin-bottom: 90px;
-  border: 5px solid;
-  border-color: var(--cor-borda);
-  border-radius: 100% !important;
   filter: drop-shadow(0 6px 15px var(--cor-sombra));
   transition: transform 0.3s ease;
 }
