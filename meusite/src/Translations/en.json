@@ -76,6 +76,7 @@
     },
     "PERSONAL_PROJECTS": {
         "RPG_SURVIVAL_GAME": {
+            "RESUME": "Game made in Unity3D",
             "TITLE": "RPG Survival Game",
             "TEXT1": "Project made in Unity 3D engine using C# language.",
             "TEXT2": "This game has a medieval fantasy theme with a cartoon-based visual style. Inspired by successes like Terraria and Dark Souls, the game will feature a rich story with elements of fantasy and adventure that will captivate the player from beginning to end. With an immersive and visually captivating atmosphere, the game will offer a unique and engaging experience for action RPG fans.",
@@ -86,6 +87,7 @@
             "VIDEO_TITLE2": "Update: Crafting System"
         },
         "BOMBERMAN_ECOLOGICO": {
+            "RESUME": "I play games using Java only.",
             "TITLE": "Ecological Bomberman",
             "TEXT1": "Project made in Java using the Swing library predominantly.",
             "TEXT2": "It was created to be presented as one of the semester projects at college (4th semester).",
@@ -94,6 +96,7 @@
             "DOWNLOAD_GAME": "Download Game"
         },
         "ORDER_MANAGEMENT": {
+            "RESUME": "Full-stack project for order management",
             "TITLE": "Order Management System",
             "TEXT1": "This project features two variants, both sharing the same frontend but differing in the backends. One is implemented in Java, and the other in .NET. Both applications utilize REST API as their software architecture style.",
             "TEXT2": "Used Stacks: AngularJs / Java",
@@ -104,18 +107,21 @@
             "FONT_CODE2": "Source Code with .NET"
         },
         "EXCHANGE_RATE": {
+            "RESUME": "Full-stack project for comparing currency exchange history",
             "TITLE": "Quote filter by currency",
             "TEXT1": "Used Stacks: Angular 12 / Java",
             "TEXT2": "I developed a simple project that filters by date for the selected currency and subtracts values based on the current exchange rate. Additionally, it is possible to display only values lower than the current exchange rate. This system was built using Angular 12 exclusively for the frontend and Java Spring Boot for the backend.",
             "FONT_CODE": "Source Code"
         },
         "PORTFOLIO": {
+            "RESUME": "Front-end project of my own portfolio",
             "TITLE": "My Own Portfolio",
             "TEXT1": "Used Stack: ReactJS",
             "TEXT2": "This portfolio was exclusively built using ReactJS, marking my initial encounter with a web development framework. Through it, I significantly enhanced my web development skills. Continuously updated, the portfolio incorporates new features and content that provide a comprehensive view of my journey and abilities.",
             "FONT_CODE": "Source Code"
         },
         "CRUD_REACTJS": {
+            "RESUME": "Full-stack project for registration and login management",
             "TITLE": "Registration and Login System",
             "TEXT1": "Used Stacks: ReactJS / .NET",
             "TEXT2": "I developed this simplified registration system, covering all basic operations of an application (CRUD), and incorporating the login functionality, with support for token issuance and validation during the user authentication process. I used ReactJS and ASP.NET technologies for the development of this application.",

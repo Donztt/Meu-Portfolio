@@ -189,7 +189,6 @@ function RPGSurvivalGame(props) {
                     </div>
                   </div>
                 </div>
-
                 <Canvas3dModels />
               </div>
             </div>

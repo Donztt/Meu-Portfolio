@@ -76,6 +76,7 @@
     },
     "PERSONAL_PROJECTS": {
         "RPG_SURVIVAL_GAME": {
+            "RESUME": "Juego hecho en Unity3D",
             "TITLE": "RPG de supervivencia",
             "TEXT1": "Proyecto realizado en el motor Unity 3D utilizando el lenguaje C#.",
             "TEXT2": "Este juego tiene un tema de fantasía medieval con un estilo visual basado en caricaturas. Inspirado en éxitos como Terraria y Dark Souls, el juego contará con una historia rica con elementos de fantasía y aventura que cautivarán al jugador de principio a fin. Con una atmósfera envolvente y visualmente cautivadora, el juego ofrecerá una experiencia única y atractiva para los fanáticos de los RPG de acción.",
@@ -86,6 +87,7 @@
             "VIDEO_TITLE2": "Actualización: Sistema de elaboración"
         },
         "BOMBERMAN_ECOLOGICO": {
+            "RESUME": "Juego solo utilizando Java.",
             "TITLE": "Bomberman ecológico",
             "TEXT1": "Proyecto realizado en Java utilizando predominantemente la biblioteca Swing.",
             "TEXT2": "Fue creado para ser presentado como uno de los proyectos del semestre en la universidad (4º semestre).",
@@ -94,6 +96,7 @@
             "DOWNLOAD_GAME": "Descargar juego"
         },
         "ORDER_MANAGEMENT": {
+            "RESUME": "Proyecto full-stack para gestión de pedidos",
             "TITLE": "Sistema de Gestión de Pedidos",
             "TEXT1": "Este proyecto presenta dos variantes, ambas compartiendo el mismo frontend pero diferenciándose en los backends, una implementada en Java y la otra en .NET. Ambas aplicaciones utilizan API REST como estilo de arquitectura de software.",
             "TEXT2": "Tecnologías utilizadas: AngularJs / Java",
@@ -104,18 +107,21 @@
             "FONT_CODE2": "Código Fuente con .NET"
         },
         "EXCHANGE_RATE": {
+            "RESUME": "Proyecto full-stack para comparar historial de cambio de monedas",
             "TITLE": "Filtro de cotización por moneda",
             "TEXT1": "Tecnologías utilizadas: Angular 12 / Java",
             "TEXT2": "Desarrollé un proyecto simple que filtra por fecha para la moneda seleccionada y resta valores según el tipo de cambio actual. Además, es posible mostrar solo los valores inferiores al tipo de cambio actual. Este sistema fue construido utilizando Angular 12 exclusivamente para el frontend y Java Spring Boot para el backend.",
             "FONT_CODE": "Código Fuente"
         },
         "PORTFOLIO": {
+            "RESUME": "Proyecto de front-end de mi propio portafolio",
             "TITLE": "Mi Propio Portafolio",
             "TEXT1": "Tecnología Utilizada: ReactJS",
             "TEXT2": "Este portafolio fue construido exclusivamente con ReactJS, representando mi primer encuentro con un framework de desarrollo web. A través de él, mejoré significativamente mis habilidades en desarrollo web. Actualizado continuamente, el portafolio incorpora nuevas funcionalidades y contenido que ofrecen una visión integral de mi trayectoria y habilidades.",
             "FONT_CODE": "Código Fuente"
         },
         "CRUD_REACTJS": {
+            "RESUME": "Proyecto full-stack para gestión de registros y inicio de sesión",
             "TITLE": "Sistema de Registro y Inicio de Sesión",
             "TEXT1": "Tecnologías Utilizadas: ReactJS / .NET",
             "TEXT2": "Desarrollé este sistema de registro simplificado, que abarca todas las operaciones básicas de una aplicación (CRUD) e incorpora la funcionalidad de inicio de sesión, con soporte para la emisión y validación de tokens durante el proceso de autenticación del usuario. Utilicé las tecnologías ReactJS y ASP.NET para la realización de esta aplicación.",

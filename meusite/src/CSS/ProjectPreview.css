@@ -8,9 +8,10 @@
     background-color: var(--cor-secundaria);
     padding-bottom: 50px;
     filter: drop-shadow(0 7px 6px var(--cor-sombra));
+    border-radius: 25px;
 }
 
-#projectPreviewBackground h3{
+#projectPreviewBackground h3, p{
     color:var(--cor-texto-primario);
 }
 

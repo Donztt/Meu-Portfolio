@@ -27,8 +27,9 @@ function ProjectPreview(props) {
   return (
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <Link to={props.to} id="ProjectLink">
-        <div id="projectPreviewBackground" className="text-center my-3">
+        <div id="projectPreviewBackground" className="text-center my-3 py-2">
           <h3>{props.title}</h3>
+          <p>{props.resume}</p>
         </div>
       </Link>
       {isMouseOver && (
