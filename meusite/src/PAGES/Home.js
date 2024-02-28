@@ -63,7 +63,7 @@ class Home extends React.Component {
                       <p>
                       {TRANSLATION.HOME.TEXT2}
                       </p>
-                      <DefaultButton href="/projetospessoais" text={TRANSLATION.HOME.DISCOVERY_PROJECTS}/>
+                      <DefaultButton href="/personalProjects" text={TRANSLATION.HOME.DISCOVERY_PROJECTS}/>
                     </div>
                   </Fade>
                 </div>
@@ -72,7 +72,7 @@ class Home extends React.Component {
                 <Fade right>
                   <div id="Photo-Canvas">
                     <div id="Perfil-Photo">
-                      <Link to="/sobremim">
+                      <Link to="/about">
                       <img
                         src={Image}
                         className="rounded mx-auto d-block"

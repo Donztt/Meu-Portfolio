@@ -2,6 +2,7 @@
     padding:40px 0;
     background-color:var(--cor-secundaria);
     color:var(--cor-terciaria);
+    height: 100%;
   }
   
   .footer-basic ul {

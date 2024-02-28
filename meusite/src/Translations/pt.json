@@ -76,6 +76,7 @@
     },
     "PERSONAL_PROJECTS":{
         "RPG_SURVIVAL_GAME": {
+            "TITLE": "RPG de sobreviência",
             "TEXT1": "Projeto feito na engine Unity 3D na linguagem C#.",
             "TEXT2": "Este jogo tem uma temática medieval de fantasia, com um estilo visual baseado em formas cartoon. Inspirado em sucessos como Terraria e Dark Souls, o jogo apresentará uma rica história com elementos de fantasia e aventura, que irão prender o jogador do começo ao fim. Com uma atmosfera envolvente e visualmente cativante, o jogo oferecerá uma experiência única e imersiva para os fãs de RPGs de ação.",
             "TEXT3": "O jogo apresenta um sistema completo de gerenciamento de inventário, com uma mecânica de montagem de itens (Crafting) que permite ao jogador criar novos equipamentos e ferramentas a partir de recursos coletados durante a exploração. Além disso, o jogo conta com um sistema de equipamentos que permite ao jogador personalizar o personagem com armaduras e armas poderosas, e ainda permite a construção de estruturas e fortificações para proteger o personagem e criar um ambiente mais seguro para a exploração. Com esses recursos, o jogador terá total controle sobre seu personagem e poderá experimentar diferentes estratégias para enfrentar os desafios do jogo.",
@@ -85,6 +86,7 @@
             "VIDEO_TITLE2": "Update: Sistema de Crafting"
         },
         "BOMBERMAN_ECOLOGICO": {
+            "TITLE": "Bomberman Ecológico",
             "TEXT1": "Projeto feito em Java, usando a biblioteca Swing predominantemente.",
             "TEXT2": "Foi criado para ser apresentado em um dos trabalhos semestrais da faculdade (4° semestre)",
             "TEXT3": "Este jogo é uma mistura emocionante do clássico Bomberman com um sistema de puzzle, onde o jogador deve coletar todos os objetos da cena para concluir a fase. No entanto, a jogabilidade é mais desafiadora do que parece, pois existem obstáculos que só podem ser ultrapassados ao estourar as bombas que o personagem carrega. Para tornar o jogo ainda mais estratégico, as bombas são limitadas, e o jogador deve usá-las de forma inteligente para destruir os obstáculos certos e coletar todos os itens espalhados pela fase. Com essa dinâmica, este jogo se torna um verdadeiro quebra-cabeças, exigindo do jogador estratégia e pensamento crítico para vencer cada desafio.",

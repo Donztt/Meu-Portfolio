@@ -6,7 +6,7 @@ import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import DefaultButton from "./ButtonDefault";
 
-function NavBar() {
+function NavBar(props) {
   const storage = localStorage.getItem("language");
 
   const [language, setLanguage] = useState(storage ? storage : "en");
@@ -28,7 +28,7 @@ function NavBar() {
     { value: "es", label: "Español" },
   ];
 
-  return (
+  return !props.notShow? (
     <div className="NavBar-Content">
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
         <div className="container-fluid">
@@ -53,13 +53,13 @@ function NavBar() {
               </li>
               <li className="nav-item my-1">
                 <DefaultButton
-                  href="/sobremim"
+                  href="/about"
                   text={TRANSLATION.NAV.ABOUT_ME}
                 />
               </li>
               <li className="nav-item my-1">
                 <DefaultButton
-                  href="/projetospessoais"
+                  href="/personalProjects"
                   text={TRANSLATION.NAV.PERSONAL_PROJECTS}
                 />
               </li>
@@ -76,7 +76,7 @@ function NavBar() {
         </div>
       </nav>
     </div>
-  );
+  ) : null;
 }
 
 export default NavBar;

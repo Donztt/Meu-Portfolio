@@ -76,6 +76,7 @@
     },
     "PERSONAL_PROJECTS": {
         "RPG_SURVIVAL_GAME": {
+            "TITLE": "RPG Survival Game",
             "TEXT1": "Project made in Unity 3D engine using C# language.",
             "TEXT2": "This game has a medieval fantasy theme with a cartoon-based visual style. Inspired by successes like Terraria and Dark Souls, the game will feature a rich story with elements of fantasy and adventure that will captivate the player from beginning to end. With an immersive and visually captivating atmosphere, the game will offer a unique and engaging experience for action RPG fans.",
             "TEXT3": "The game features a complete inventory management system with a crafting mechanic that allows the player to create new equipment and tools from resources collected during exploration. Additionally, the game includes an equipment system that allows the player to customize the character with powerful armor and weapons, as well as the ability to build structures and fortifications to protect the character and create a safer environment for exploration. With these features, the player will have full control over their character and can experiment with different strategies to face the challenges of the game.",
@@ -85,6 +86,7 @@
             "VIDEO_TITLE2": "Update: Crafting System"
         },
         "BOMBERMAN_ECOLOGICO": {
+            "TITLE": "Ecological Bomberman",
             "TEXT1": "Project made in Java using the Swing library predominantly.",
             "TEXT2": "It was created to be presented as one of the semester projects at college (4th semester).",
             "TEXT3": "This game is an exciting mix of the classic Bomberman and a puzzle system, where the player must collect all objects in the scene to complete each level. However, the gameplay is more challenging than it seems, as there are obstacles that can only be overcome by detonating the bombs carried by the character. To make the game even more strategic, bombs are limited, and the player must use them intelligently to destroy the right obstacles and collect all the items scattered throughout the level. With this dynamic, the game becomes a true puzzle, requiring strategy and critical thinking from the player to overcome each challenge.",
