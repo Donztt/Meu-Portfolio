@@ -87,7 +87,7 @@
             "VIDEO_TITLE2": "Actualización: Sistema de elaboración"
         },
         "BOMBERMAN_ECOLOGICO": {
-            "RESUME": "Juego solo utilizando Java.",
+            "RESUME": "Juego hecho en Java",
             "TITLE": "Bomberman ecológico",
             "TEXT1": "Proyecto realizado en Java utilizando predominantemente la biblioteca Swing.",
             "TEXT2": "Fue creado para ser presentado como uno de los proyectos del semestre en la universidad (4º semestre).",

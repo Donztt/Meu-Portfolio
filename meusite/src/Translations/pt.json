@@ -87,7 +87,7 @@
             "VIDEO_TITLE2": "Update: Sistema de Crafting"
         },
         "BOMBERMAN_ECOLOGICO": {
-            "RESUME": "Jogo apenas utilizando Java",
+            "RESUME": "Jogo feito apenas utilizando Java",
             "TITLE": "Bomberman Ecológico",
             "TEXT1": "Projeto feito em Java, usando a biblioteca Swing predominantemente.",
             "TEXT2": "Foi criado para ser apresentado em um dos trabalhos semestrais da faculdade (4° semestre)",
