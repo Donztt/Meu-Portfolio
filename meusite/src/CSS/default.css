@@ -1,3 +1,15 @@
-body{
+:root {
+    --cor-primaria: #e0bb98;
+    --cor-secundaria: #502525;
+    --cor-terciaria: #b3b3b3;
+    --cor-borda: #e7e7e7;
+    --cor-sombra: #220404;
+    --cor-texto-primario: #d1d1d1;
+    --cor-texto-secundario: #220404;
+    --cor-texto-terciario: #ffffff;
+}
+
+
+body {
     background-color: var(--cor-secundaria);
 }

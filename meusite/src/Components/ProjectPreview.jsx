@@ -14,6 +14,13 @@ function ProjectPreview(props) {
       });
     };
     window.addEventListener("mousemove", handleWindowMouseMove);
+
+    return () => {
+      window.removeEventListener(
+        'mousemove',
+        handleWindowMouseMove
+      );
+    };
   }, []);
 
   const handleMouseEnter = (event) => {
@@ -27,8 +34,10 @@ function ProjectPreview(props) {
   return (
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <Link to={props.to} id="ProjectLink">
-        <div id="projectPreviewBackground" className="text-center my-3 py-2">
+        <div id="ProjectPreviewBackground" className="text-center my-3 py-2">
+          <div id="ProjectPreviewTitle">
           <h3>{props.title}</h3>
+          </div>
           <p>{props.resume}</p>
         </div>
       </Link>

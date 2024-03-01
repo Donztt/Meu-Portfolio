@@ -1,4 +1,4 @@
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 import Home from "./PAGES/Home";
 import About from "./PAGES/About";
 import PersonalProjects from "./PAGES/PersonalProjects";
@@ -13,30 +13,20 @@ import "./CSS/default.css";
 function App() {
   return (
     <BrowserRouter className="App">
-      <Route path="/" exact component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/personalProjects" component={PersonalProjects} />
-      <Route path="/bombermanGame" component={BombermanGame} />
-      <Route
-        path="/myOwnPortfolio"
-        component={MyOwnPortfolio}
-      />
-      <Route
-        path="/orderManagmentSys"
-        component={OrderManagmentSys}
-      />
-      <Route
-        path="/QuoteFilterByCurrency"
-        component={QuoteFilterByCurrency}
-      />
-      <Route
-        path="/regisNLoginSys"
-        component={RegisNLoginSys}
-      />
-      <Route
-        path="/RPGSurvivalGame"
-        component={RPGSurvivalGame}
-      />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/personalProjects" component={PersonalProjects} />
+        <Route path="/bombermanGame" component={BombermanGame} />
+        <Route path="/myOwnPortfolio" component={MyOwnPortfolio} />
+        <Route path="/orderManagmentSys" component={OrderManagmentSys} />
+        <Route
+          path="/QuoteFilterByCurrency"
+          component={QuoteFilterByCurrency}
+        />
+        <Route path="/regisNLoginSys" component={RegisNLoginSys} />
+        <Route path="/RPGSurvivalGame" component={RPGSurvivalGame} />
+      </Switch>
     </BrowserRouter>
   );
 }

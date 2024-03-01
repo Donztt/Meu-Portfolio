@@ -4,14 +4,23 @@
     text-decoration: none;
 }
 
-#projectPreviewBackground{
+#ProjectPreviewTitle{
+    padding-inline: 50px;
+    margin-bottom: 10px;
+}
+
+#ProjectPreviewBackground{
     background-color: var(--cor-secundaria);
     padding-bottom: 50px;
     filter: drop-shadow(0 7px 6px var(--cor-sombra));
     border-radius: 25px;
 }
 
-#projectPreviewBackground h3, p{
+#ProjectPreviewBackground h3{
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+#ProjectPreviewBackground h3, p{
     color:var(--cor-texto-primario);
 }
 

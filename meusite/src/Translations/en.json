@@ -10,10 +10,10 @@
         "CURRICULUM": "Curriculum"
     },
     "HOME": {
-        "WELCOME": "Welcome!",
+        "WELCOME": "Hello World!",
         "INTRODUCTION": "I am",
         "OFFICE": "Full-Stack Developer",
-        "TEXT": "As a programmer, I have a great interest in expanding my knowledge base and skills. I am always seeking to learn new technologies and emerging trends in my field to further enhance my ability to develop innovative and effective solutions. I am always excited to explore and experiment with new tools and technologies that can add value to the projects I'm involved in.",
+        "TEXT": "I am a creative and proactive programmer, passionate about what I do.",
         "TEXT2": "This Portfolio showcases personal projects that I would like to present to you!",
         "DISCOVERY_PROJECTS": "Discover Projects"
     },

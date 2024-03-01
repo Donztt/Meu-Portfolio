@@ -4,18 +4,29 @@ import { Link } from "react-router-dom";
 
 function DefaultButton(props) {
   return (
-    <div id="homeButtonBackGround">
+    <div
+      style={
+        props.withoutBackground
+          ? null
+          : { backgroundColor: "var(--cor-sombra)", borderRadius: "25px" }
+      }
+    >
       {props.externalLink ? (
-        <a href={props.href} id="homeButton" target="_blank" rel="noopener noreferrer">
-          <p className="btn btn-lg btn-block" id="homeButtonText">
+        <a
+          href={props.href}
+          id="homeButton"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="btn btn-lg btn-block homeButtonText">
             {props.text}
-          </p>
+          </span>
         </a>
       ) : (
         <Link to={props.href} id="homeButton">
-          <p className="btn btn-lg btn-block" id="homeButtonText">
+          <span className="btn btn-lg btn-block homeButtonText">
             {props.text}
-          </p>
+          </span>
         </Link>
       )}
     </div>

@@ -42,7 +42,6 @@ const imagesGallery = [
   },
 ];
 
-
 function ConfigModels(props) {
   return (
     <group>
@@ -104,98 +103,98 @@ function RPGSurvivalGame(props) {
     });
   }, []);
 
-    return (
-      <div>
-        <NavBar notShow={props.notShowLayout}/>
-        <div id="PersonalContentBackground">
-          <div id="Personal-Content">
-            <div className="container-md">
-              <div id="Project">
-                <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TITLE}</h3>
-                <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT1}</p>
-                <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT2}</p>
-                <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT3}</p>
-                <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT4}</p>
-                <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT5}</p>
-                <Zoom top>
-                  <div id="Project-Photo">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col align-self-start">
-                          <img
-                            src={MonsterPhoto}
-                            className="rounded mx-auto d-block"
-                            alt=""
-                          ></img>
-                        </div>
-                        <div className="col align-self-center">
-                          <img
-                            src={PersonagemPhoto}
-                            className="rounded mx-auto d-block"
-                            alt=""
-                          ></img>
-                        </div>
-                        <div className="col align-self-end">
-                          <img
-                            src={MonsterPhoto2}
-                            className="rounded mx-auto d-block"
-                            alt=""
-                          ></img>
-                        </div>
+  return (
+    <div>
+      <NavBar notShow={props.notShowLayout} />
+      <div id="PersonalContentBackground">
+        <div id="Personal-Content">
+          <div className="container-md">
+            <div id="Project">
+              <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TITLE}</h3>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT1}</p>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT2}</p>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT3}</p>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT4}</p>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT5}</p>
+              <Zoom top>
+                <div id="Project-Photo">
+                  <div className="container">
+                    <div className="row">
+                      <div className="col align-self-start">
+                        <img
+                          src={MonsterPhoto}
+                          className="rounded mx-auto d-block"
+                          alt=""
+                        ></img>
+                      </div>
+                      <div className="col align-self-center">
+                        <img
+                          src={PersonagemPhoto}
+                          className="rounded mx-auto d-block"
+                          alt=""
+                        ></img>
+                      </div>
+                      <div className="col align-self-end">
+                        <img
+                          src={MonsterPhoto2}
+                          className="rounded mx-auto d-block"
+                          alt=""
+                        ></img>
                       </div>
                     </div>
                   </div>
-                </Zoom>
-                <div id="Gallery">
-                  <ImageGallery
-                    items={imagesGallery}
-                    showThumbnails={false}
-                    showBullets={true}
-                  />
-                  ;
                 </div>
-                <div id="Videos">
-                  <div id="Video1">
-                    <h3>
-                      {
-                        TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME
-                          .VIDEO_TITLE1
-                      }
-                    </h3>
-                    <div className="embed-responsive embed-responsive-16by9">
-                      <iframe
-                        className="embed-responsive-item"
-                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6800416080004190208?compact=1"
-                        title="Demo Jogo"
-                        height="284"
-                        width="504"
-                      ></iframe>
-                    </div>
-                  </div>
-                  <div id="Video2">
-                    <h3>
-                      {
-                        TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME
-                          .VIDEO_TITLE2
-                      }
-                    </h3>
-                    <div className="embed-responsive embed-responsive-16by9">
-                      <iframe
-                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6801603672020160512?compact=1"
-                        title="Sistema Crafting"
-                        height="284"
-                        width="504"
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-                <Canvas3dModels />
+              </Zoom>
+              <div id="Gallery">
+                <ImageGallery
+                  items={imagesGallery}
+                  showThumbnails={false}
+                  showBullets={true}
+                />
+                ;
               </div>
+              <div id="Videos">
+                <div id="Video1">
+                  <h3>
+                    {
+                      TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME
+                        .VIDEO_TITLE1
+                    }
+                  </h3>
+                  <div className="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      className="embed-responsive-item"
+                      src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6800416080004190208?compact=1"
+                      title="Demo Jogo"
+                      height="284"
+                      width="504"
+                    ></iframe>
+                  </div>
+                </div>
+                <div id="Video2">
+                  <h3>
+                    {
+                      TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME
+                        .VIDEO_TITLE2
+                    }
+                  </h3>
+                  <div className="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6801603672020160512?compact=1"
+                      title="Sistema Crafting"
+                      height="284"
+                      width="504"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+              {props.notShowLayout ? null : <Canvas3dModels />}
             </div>
           </div>
         </div>
-        <Footer notShow={props.notShowLayout}/>
       </div>
-    );
+      <Footer notShow={props.notShowLayout} />
+    </div>
+  );
 }
 export default RPGSurvivalGame;

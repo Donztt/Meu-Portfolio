@@ -10,10 +10,10 @@
         "CURRICULUM": "Currículo"
     },
     "HOME":{
-        "WELCOME": "Bem vindo!",
+        "WELCOME": "Olá Mundo!",
         "INTRODUCTION": "Me chamo",
         "OFFICE": "Desenvolvedor Full-Stack",
-        "TEXT": "Como programador, tenho um grande interesse em expandir minha base de conhecimento e habilidades. Estou sempre buscando aprender novas tecnologias e tendências emergentes em minha área, a fim de aprimorar ainda mais minha capacidade de desenvolver soluções inovadoras e eficazes. Estou sempre animado para explorar e experimentar novas ferramentas e tecnologias que possam agregar valor aos projetos em que estou envolvido.",
+        "TEXT": "Sou um programador criativo e proativo, apaixonado pelo que faço.",
         "TEXT2": "Este Portfólio possui projetos pessoais que gostaria de apresentar a você!",
         "DISCOVERY_PROJECTS": "Conhecer Projetos"
     },

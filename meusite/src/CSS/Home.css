@@ -17,26 +17,19 @@
   color: var(--cor-secundaria);
   background: none;
 }
-#introduction {
-  background-color: var(--cor-secundaria);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  margin-bottom: 20px;
-  filter: drop-shadow(0 6px 12px var(--cor-sombra));
-  border: 5px solid;
-  border-color: var(--cor-borda);
-}
+
 #introduction p {
   font-style: oblique;
   font-weight: bold;
-  padding: 15px;
-  font-size: 1.2rem;
-  color: var(--cor-texto-primario);
+  padding-top: 20px;
+  font-size: 1.4rem;
+  color: var(--cor-texto-secundario);
 }
-
 #Perfil-Photo img {
   height: 70%;
   width: 70%;
+  min-height: 300px;
+  min-width: 300px;
   margin-bottom: 90px;
   filter: drop-shadow(0 6px 15px var(--cor-sombra));
   transition: transform 0.3s ease;

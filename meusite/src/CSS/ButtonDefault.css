@@ -1,8 +1,5 @@
-#homeButtonBackGround{
-    background: var(--cor-sombra);
-    border-radius: 25px;
-}
-#homeButton p{
+
+#homeButton span{
     position: relative;
     text-decoration: none;
     margin-bottom: 0;
@@ -15,30 +12,35 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     color: var(--cor-texto-primario);
-    border-top: 0px solid;
-    border-right: 0px solid;
-    border-left: 0px solid;
-    border-bottom: 0px solid;
+    border: 0px solid;
     border-color: var(--cor-borda);
     transition: color 0.2s ease
   }
-  #homeButton p::before {
-    background: var(--cor-primaria);
+  
+  #homeButton span::before {
     content: "";
     inset: 0;
     position: absolute;
-    transform: scaleX(0);
+    transform: scale(0);
     transform-origin: top;
     transition: transform 0.2s ease-in-out;
-    border-radius: 25px;
-    box-shadow: inset 0 0px 10px var(--cor-sombra);
     z-index: -1;
   }
   
   #homeButton :hover::before{
-    transform: scaleX(1);
+    transform: scale(1);
     transform-origin: top;
   }
-  #homeButton p:hover{
-    color: var(--cor-secundaria);
+  #homeButton span:hover{
+    color: var(--cor-texto-terciario);
+    animation: homeButtonText 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes homeButtonText {
+    from {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff,0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #030000, 0 0 15px #030000, 0 0 20px #030000, 0 0 25px #030000, 0 0 30px #030000, 0 0 35px #030000;
+    }
   }

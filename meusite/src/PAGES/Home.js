@@ -6,39 +6,37 @@ import "../CSS/Home.css";
 import Image from "../Photos/MyImages/eu.png";
 import { Fade } from "react-reveal";
 import { Translations } from "../Components/Translations.js";
-import DefaultButton from "../Components/ButtonDefault.jsx"
-
+import DefaultButton from "../Components/ButtonDefault.jsx";
 
 class Home extends React.Component {
-
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       language: localStorage.getItem("language"),
     };
   }
-  
+
   componentDidMount() {
     document.title = "Portfólio Donizetti - Home";
 
     window.addEventListener("storageLanguage", () => {
       this.setState({
-        language: localStorage.getItem("language")
+        language: localStorage.getItem("language"),
       });
     });
   }
-  
+
   render() {
-    const TRANSLATION = Translations(this.state.language); 
+    const TRANSLATION = Translations(this.state.language);
 
     return (
-      <div id="general-content">
+      <>
         <NavBar />
         <div id="Home-Content">
           <div className="container">
             <div className="row">
-              <div className="col align-self-start">
+              <div className="col align-self-start mt-5">
                 <div className="container-md">
                   <Fade left cascade>
                     <div id="Welcome">
@@ -47,23 +45,20 @@ class Home extends React.Component {
                       </h2>
                       <h3>
                         <strong>
-                          {TRANSLATION.HOME.INTRODUCTION} <mark id="Donizetti">Donizetti</mark>.
+                          {TRANSLATION.HOME.INTRODUCTION}{" "}
+                          <mark id="Donizetti">Donizetti</mark>.
                         </strong>
                       </h3>
                     </div>
                   </Fade>
                   <Fade left>
                     <div id="introduction">
-                      <p>
-                        {TRANSLATION.HOME.OFFICE}
-                      </p>
-                      <p>
-                      {TRANSLATION.HOME.TEXT}
-                      </p>
-                      <p>
-                      {TRANSLATION.HOME.TEXT2}
-                      </p>
-                      <DefaultButton href="/personalProjects" text={TRANSLATION.HOME.DISCOVERY_PROJECTS}/>
+                      <p>{TRANSLATION.HOME.OFFICE}</p>
+                      <p>{TRANSLATION.HOME.TEXT}</p>
+                      <DefaultButton
+                        href="/personalProjects"
+                        text={TRANSLATION.HOME.DISCOVERY_PROJECTS}
+                      />
                     </div>
                   </Fade>
                 </div>
@@ -73,11 +68,11 @@ class Home extends React.Component {
                   <div id="Photo-Canvas">
                     <div id="Perfil-Photo">
                       <Link to="/about">
-                      <img
-                        src={Image}
-                        className="rounded mx-auto d-block"
-                        alt=""
-                      ></img>
+                        <img
+                          src={Image}
+                          className="rounded mx-auto d-block"
+                          alt=""
+                        ></img>
                       </Link>
                     </div>
                   </div>
@@ -87,7 +82,7 @@ class Home extends React.Component {
           </div>
         </div>
         <Footer />
-      </div>
+      </>
     );
   }
 }

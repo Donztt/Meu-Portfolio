@@ -28,54 +28,56 @@ function NavBar(props) {
     { value: "es", label: "Español" },
   ];
 
-  return !props.notShow? (
-    <div className="NavBar-Content">
-      <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
-        <div className="container-fluid">
-          <Link id="logo-container" className="navbar-brand" to="/">
-            <div id="logo">Donztt Olv</div>
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse " id="navbarNav">
-            <ul className="nav mx-auto d-flex justify-content-center">
-              <li className="nav-item my-1">
-                <DefaultButton href="/" text={TRANSLATION.NAV.HOME} />
-              </li>
-              <li className="nav-item my-1">
-                <DefaultButton
-                  href="/about"
-                  text={TRANSLATION.NAV.ABOUT_ME}
-                />
-              </li>
-              <li className="nav-item my-1">
-                <DefaultButton
-                  href="/personalProjects"
-                  text={TRANSLATION.NAV.PERSONAL_PROJECTS}
-                />
-              </li>
-            </ul>
-          </div>
-          <div className="my-1 mx-auto">
-            <Dropdown
-              options={options}
-              onChange={handleLanguageChange}
-              value={language}
-              className="languageChangeSelect"
-            />
-          </div>
+  return !props.notShow ? (
+    <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
+      <div className="container-fluid">
+        <Link id="logo-container" className="navbar-brand" to="/">
+          <div id="logo">Donztt Olv</div>
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse " id="navbarNav">
+          <ul className="nav mx-auto d-flex justify-content-center">
+            <li className="nav-item my-1">
+              <DefaultButton
+                withoutBackground
+                href="/"
+                text={TRANSLATION.NAV.HOME}
+              />
+            </li>
+            <li className="nav-item my-1">
+              <DefaultButton
+                withoutBackground
+                href="/about"
+                text={TRANSLATION.NAV.ABOUT_ME}
+              />
+            </li>
+            <li className="nav-item my-1">
+              <DefaultButton
+                withoutBackground
+                href="/personalProjects"
+                text={TRANSLATION.NAV.PERSONAL_PROJECTS}
+              />
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
+        <Dropdown
+          options={options}
+          onChange={handleLanguageChange}
+          value={language}
+          className="languageChangeSelect my-1 mx-auto"
+        />
+      </div>
+    </nav>
   ) : null;
 }
 
