@@ -20,6 +20,8 @@ import {
   MouseModel,
   LobModel,
   PilarModel,
+  Pilar2Model,
+  PersonagemModel,
   GreatSwordModel,
   ApodrecidoModel
 } from "../Components/ModelsGame.jsx";
@@ -68,24 +70,22 @@ function Canvas3dModels() {
           shadows
           dpr={[1, 2]}
           camera={{ position: [0, 35, 70], fov: 50 }}
-          shadowMap
         >
           <ConfigModels />
           <Stars
-            radius={500}
+            radius={200}
             depth={150}
-            count={5000}
-            factor={20}
+            count={2000}
+            factor={30}
             saturation={0}
             fade
           />
           <Suspense fallback={null}>
-            <ApodrecidoModel position={[0, 0, -40]}/>
-            <MouseModel position={[0, 6, 0]} />
-            <BeholderModel position={[-28, 20, 0]} />
+            <ApodrecidoModel position={[0, -8, -50]}/>
+            <BeholderModel position={[-28, 15, 0]} />
             <LobModel position={[28, 6, -2]} />
-            <GreatSwordModel position={[0, -5, 8]} />
-            <PilarModel position={[0, -5, 0]} />
+            <PersonagemModel position={[0, -1, 0]}/>
+            <Pilar2Model position={[0, -5, 0]} />
             <PilarModel position={[-28, -5, 0]} />
             <PilarModel position={[28, -5, 0]} />
           </Suspense>

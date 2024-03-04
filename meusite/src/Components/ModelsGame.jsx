@@ -1,138 +1,97 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber'
-import beholder from '../Models3D/Beholder.glb';
-import lob from '../Models3D/lob.glb';
-import rato from '../Models3D/Rato2.glb';
-import pilar from '../Models3D/PilarPedestal.glb';
-import greatSword from '../Models3D/EspadaGrande.glb';
-import Apodrecido from '../Models3D/Apodrecido/Apodrecido'
+import React, { useEffect, useRef, useState } from "react";
+import { useGLTF, useAnimations } from "@react-three/drei";
+import Beholder from "../Models3D/Beholder/Beholder";
+import Lobsomem from "../Models3D/Lobsomem/Lobsomem";
+import rato from "../Models3D/Rato2.glb";
+import pilar from "../Models3D/PilarPedestal.glb";
+import greatSword from "../Models3D/EspadaGrande.glb";
+import Apodrecido from "../Models3D/Apodrecido/Apodrecido";
+import Pilar2 from "../Models3D/Pilar/Pilar2";
+import Personagem from "../Models3D/Personagem/Personagem";
 
 export function ApodrecidoModel(props) {
   return Apodrecido(props);
 }
 
 export function BeholderModel(props) {
-  const group = useRef()
-  const { nodes, materials, animations } = useGLTF(beholder)
-  const [active] = useState(false)
-  const { actions } = useAnimations(animations, group)
-
-  useFrame((state) => {
-      const t = state.clock.getElapsedTime()
-      group.current.rotation.z = - (1 + Math.sin(t / 1.5)) / 20
-      group.current.rotation.x = Math.cos(t / 4) / 8
-      group.current.rotation.y = Math.sin(t / 4) / 8
-      group.current.position.y = (140 + Math.sin(t / 1.5)) / 10
-  })
-
-  useEffect(() => {
-      actions.Idle.play()
-  })
-  return (
-      <group ref={group} {...props} dispose={null} rotation={[0, 0.5, 0]} scale={active ? 2 : 3}>
-          <primitive object={nodes.Bone} />
-          <primitive object={nodes.Bone001} />
-          <primitive object={nodes.Bone004} />
-          <primitive object={nodes.Bone007} />
-          <primitive object={nodes.Bone010} />
-          <primitive object={nodes.Bone013} />
-          <primitive object={nodes.Bone016} />
-          <primitive object={nodes.Bone019} />
-          <primitive object={nodes.Bone022} />
-          <primitive object={nodes.Bone025} />
-          <primitive object={nodes.Bone028} />
-          <primitive object={nodes.Bone031} />
-          <primitive object={nodes.Bone034} />
-          <primitive object={nodes.Bone037} />
-          <primitive object={nodes.Bone040} />
-          <primitive object={nodes.Bone043} />
-          <primitive object={nodes.Bone046} />
-          <primitive object={nodes.Bone049} />
-          <skinnedMesh
-              castShadow receiveShadow
-              geometry={nodes.Beholder.geometry}
-              material={materials['Material.001']}
-              skeleton={nodes.Beholder.skeleton}
-          />
-          <skinnedMesh receiveShadow geometry={nodes.Dentes.geometry} material={materials.Material} skeleton={nodes.Dentes.skeleton} />
-          <skinnedMesh receiveShadow geometry={nodes.Olho.geometry} material={materials['Material.004']} skeleton={nodes.Olho.skeleton} />
-      </group>
-  )
+  return Beholder(props);
 }
-
-useGLTF.preload(beholder)
 
 export function LobModel(props) {
-  const group = useRef()
-  const { nodes, materials, animations } = useGLTF(lob)
-  const [active] = useState(false)
-  const { actions } = useAnimations(animations, group)
-
-  useEffect(() => {
-      actions.Parado.play()
-  })
-
-  return (
-    <group ref={group} {...props} dispose={null} rotation={[0, -2, 0]} scale={active ? 2 : 3}>
-      <group rotation={[Math.PI / 2, 0, 0]} scale={[0.01, 0.01, 0.01]}>
-        <primitive object={nodes.mixamorigHips} />
-        <skinnedMesh geometry={nodes.Calca.geometry} material={materials.Material} skeleton={nodes.Calca.skeleton} receiveShadow castShadow/>
-        <skinnedMesh
-          geometry={nodes.Lobisman.geometry}
-          material={materials['Material.001']}
-          skeleton={nodes.Lobisman.skeleton}
-        />
-      </group>
-    </group>
-  )
+  return Lobsomem(props);
 }
 
-useGLTF.preload(lob)
+export function Pilar2Model(props) {
+  return Pilar2(props);
+}
+
+export function PersonagemModel(props) {
+  return Personagem(props);
+}
 
 export function MouseModel(props) {
-  const group = useRef()
-  const { nodes, materials, animations } = useGLTF(rato)
-  const { actions } = useAnimations(animations, group)
+  const group = useRef();
+  const { nodes, materials, animations } = useGLTF(rato);
+  const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
-      actions.Parado.play()
-  })
+    actions.Parado.play();
+  });
 
   return (
-      <group ref={group} {...props} dispose={null} rotation={[0, 3.5, 0]}>
-          <primitive object={nodes.Bone} />
-          <skinnedMesh receiveShadow castShadow geometry={nodes.Cube.geometry} material={materials.Material} skeleton={nodes.Cube.skeleton} />
-      </group>
-  )
+    <group ref={group} {...props} dispose={null} rotation={[0, 3.5, 0]}>
+      <primitive object={nodes.Bone} />
+      <skinnedMesh
+        receiveShadow
+        castShadow
+        geometry={nodes.Cube.geometry}
+        material={materials.Material}
+        skeleton={nodes.Cube.skeleton}
+      />
+    </group>
+  );
 }
 
-useGLTF.preload(rato)
-
+useGLTF.preload(rato);
 
 export function PilarModel(props) {
-  const group = useRef()
-  const [active] = useState(false)
-  const { nodes, materials } = useGLTF(pilar)
+  const group = useRef();
+  const [active] = useState(false);
+  const { nodes, materials } = useGLTF(pilar);
   return (
     <group ref={group} {...props} dispose={null} scale={active ? 2 : 6}>
-      <mesh geometry={nodes.Cube.geometry} material={materials.Material} castShadow receiveShadow/>
+      <mesh
+        geometry={nodes.Cube.geometry}
+        material={materials.Material}
+        castShadow
+        receiveShadow
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload(pilar)
+useGLTF.preload(pilar);
 
 export function GreatSwordModel(props) {
-  const group = useRef()
-  const [active] = useState(false)
-  const { nodes, materials } = useGLTF(greatSword)
+  const group = useRef();
+  const [active] = useState(false);
+  const { nodes, materials } = useGLTF(greatSword);
   return (
-    <group ref={group} {...props} dispose={null} scale={active ? 1 : 0.4} rotation={[-0.2, 3.5, 2.7]}>
-      <mesh geometry={nodes.EspadaoAbsurdo.geometry} material={materials['Material.006']}  receiveShadow castShadow />
+    <group
+      ref={group}
+      {...props}
+      dispose={null}
+      scale={active ? 1 : 0.4}
+      rotation={[-0.2, 3.5, 2.7]}
+    >
+      <mesh
+        geometry={nodes.EspadaoAbsurdo.geometry}
+        material={materials["Material.006"]}
+        receiveShadow
+        castShadow
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload(greatSword)
-
+useGLTF.preload(greatSword);
