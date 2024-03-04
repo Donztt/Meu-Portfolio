@@ -10,6 +10,7 @@ import OrderManagmentSys from "./OrderManagmentSys";
 import QuoteFilterByCurrency from "./QuoteFilterByCurrency";
 import RegisNLoginSys from "./RegisNLoginSys";
 import RPGSurvivalGame from "./RPGSurvivalGame";
+import transition from "../Components/Transition.jsx"
 
 class PersonalProjects extends React.Component {
   constructor(props) {
@@ -111,4 +112,4 @@ class PersonalProjects extends React.Component {
     );
   }
 }
-export default PersonalProjects;
+export default transition(PersonalProjects);

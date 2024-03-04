@@ -17,12 +17,10 @@ import { OrbitControls, PerspectiveCamera, Stars } from "@react-three/drei";
 import ErrorBoundary from "../Util/ErrorBoundary";
 import {
   BeholderModel,
-  MouseModel,
   LobModel,
   PilarModel,
   Pilar2Model,
   PersonagemModel,
-  GreatSwordModel,
   ApodrecidoModel
 } from "../Components/ModelsGame.jsx";
 import { Translations } from "../Components/Translations.js";

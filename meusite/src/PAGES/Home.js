@@ -7,6 +7,7 @@ import Image from "../Photos/MyImages/eu.png";
 import { Fade } from "react-reveal";
 import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
+import transition from "../Components/Transition.jsx"
 
 class Home extends React.Component {
   constructor(props) {
@@ -85,4 +86,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default transition(Home);

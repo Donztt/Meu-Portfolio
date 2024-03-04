@@ -5,6 +5,7 @@ import "../CSS/About.css";
 import { Fade, Slide } from "react-reveal";
 import { Translations } from "../Components/Translations.js";
 import ToolTipDefault from "../Components/ToolTipDefault.jsx";
+import transition from "../Components/Transition.jsx"
 
 import { FaJava, FaReact, FaUnity } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
@@ -615,4 +616,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default transition(About);
