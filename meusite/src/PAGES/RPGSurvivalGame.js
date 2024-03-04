@@ -21,7 +21,8 @@ import {
   LobModel,
   PilarModel,
   GreatSwordModel,
-} from "../Models3D/ModelsGame";
+  ApodrecidoModel
+} from "../Components/ModelsGame.jsx";
 import { Translations } from "../Components/Translations.js";
 
 const imagesGallery = [
@@ -79,6 +80,7 @@ function Canvas3dModels() {
             fade
           />
           <Suspense fallback={null}>
+            <ApodrecidoModel position={[0, 0, -40]}/>
             <MouseModel position={[0, 6, 0]} />
             <BeholderModel position={[-28, 20, 0]} />
             <LobModel position={[28, 6, -2]} />

@@ -1,11 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
-import beholder from './Beholder.glb';
-import lob from './lob.glb';
-import rato from './Rato2.glb';
-import pilar from './PilarPedestal.glb';
-import greatSword from './EspadaGrande.glb';
+import beholder from '../Models3D/Beholder.glb';
+import lob from '../Models3D/lob.glb';
+import rato from '../Models3D/Rato2.glb';
+import pilar from '../Models3D/PilarPedestal.glb';
+import greatSword from '../Models3D/EspadaGrande.glb';
+import Apodrecido from '../Models3D/Apodrecido/Apodrecido'
+
+export function ApodrecidoModel(props) {
+  return Apodrecido(props);
+}
 
 export function BeholderModel(props) {
   const group = useRef()
@@ -15,7 +20,7 @@ export function BeholderModel(props) {
 
   useFrame((state) => {
       const t = state.clock.getElapsedTime()
-      group.current.rotation.z = -  (1 + Math.sin(t / 1.5)) / 20
+      group.current.rotation.z = - (1 + Math.sin(t / 1.5)) / 20
       group.current.rotation.x = Math.cos(t / 4) / 8
       group.current.rotation.y = Math.sin(t / 4) / 8
       group.current.position.y = (140 + Math.sin(t / 1.5)) / 10
@@ -130,5 +135,4 @@ export function GreatSwordModel(props) {
 }
 
 useGLTF.preload(greatSword)
-
 

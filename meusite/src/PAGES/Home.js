@@ -64,19 +64,17 @@ class Home extends React.Component {
                 </div>
               </div>
               <div className="col align-self-end">
-                <Fade right>
-                  <div id="Photo-Canvas">
-                    <div id="Perfil-Photo">
-                      <Link to="/about">
-                        <img
-                          src={Image}
-                          className="rounded mx-auto d-block"
-                          alt=""
-                        ></img>
-                      </Link>
-                    </div>
+                <div id="Photo-Canvas">
+                  <div id="Perfil-Photo">
+                    <Link to="/about">
+                      <img
+                        src={Image}
+                        className="rounded mx-auto d-block"
+                        alt=""
+                      ></img>
+                    </Link>
                   </div>
-                </Fade>
+                </div>
               </div>
             </div>
           </div>

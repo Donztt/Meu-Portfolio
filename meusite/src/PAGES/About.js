@@ -14,7 +14,7 @@ import { GiAutoRepair } from "react-icons/gi";
 import {
   SiAngular,
   SiBootstrap,
-  SiDotNet,
+  SiDotnet,
   SiSpring,
   SiCsharp,
   SiOracle,
@@ -190,7 +190,7 @@ class About extends React.Component {
                             <ToolTipDefault
                               percentage="80"
                               text=".NET"
-                              icon={<SiDotNet />}
+                              icon={<SiDotnet />}
                             />
                           </div>
                           <div className="col-md-2 col-sm-4">
