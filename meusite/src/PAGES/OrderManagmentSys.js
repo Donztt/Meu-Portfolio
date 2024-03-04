@@ -1,6 +1,4 @@
 import React,{ useEffect, useState} from "react";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
 import "../CSS/PersonalProjects.css";
 import Zoom from "react-reveal/Zoom";
 import ImageGallery from "react-image-gallery";
@@ -11,6 +9,7 @@ import orderManagmentPhoto4 from "../Photos/orderManagementPhotos/gestão4.PNG";
 import orderManagmentPhoto5 from "../Photos/orderManagementPhotos/gestão5.PNG";
 import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
+import transition from "../Components/Transition.jsx"
 
 const imageGaleryOrderManagement = [
   {
@@ -42,7 +41,6 @@ function OrderManagmentSys(props) {
 
     return (
       <div>
-        <NavBar notShow={props.notShowLayout}/>
         <div id="PersonalContentBackground">
           <div id="Personal-Content">
             <div className="container-md">
@@ -91,8 +89,7 @@ function OrderManagmentSys(props) {
             </div>
           </div>
         </div>
-        <Footer notShow={props.notShowLayout}/>
       </div>
     );
 }
-export default OrderManagmentSys;
+export default transition(OrderManagmentSys);

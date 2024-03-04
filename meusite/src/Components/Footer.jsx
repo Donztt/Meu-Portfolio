@@ -15,7 +15,7 @@ function Footer(props) {
   const TRANSLATION = Translations(language);
 
    
-  return !props.notShow? (
+  return (
     <div className="footer-basic">
       <footer>
         <div className="social">
@@ -67,7 +67,7 @@ function Footer(props) {
         </ul>
       </footer>
     </div>
-  ) :  null;
+  );
 }
 
 export default Footer;

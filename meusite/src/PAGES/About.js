@@ -1,6 +1,4 @@
 import React from "react";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
 import "../CSS/About.css";
 import { Fade, Slide } from "react-reveal";
 import { Translations } from "../Components/Translations.js";
@@ -98,7 +96,6 @@ class About extends React.Component {
     const { isVisibleExp1, isVisibleExp2, isVisibleExp3 } = this.state;
     return (
       <>
-        <NavBar />
         <div id="AboutContentBackground">
           <div id="About-Content">
             <div className="container-md">
@@ -610,7 +607,6 @@ class About extends React.Component {
             </div>
           </div>
         </div>
-        <Footer />
       </>
     );
   }

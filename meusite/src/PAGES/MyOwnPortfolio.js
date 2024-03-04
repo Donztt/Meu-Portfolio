@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from "react";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
 import "../CSS/PersonalProjects.css";
 import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
+import transition from "../Components/Transition.jsx"
 
 function MyOwnPortfolio(props) {
   const [language, setLanguage] = useState(localStorage.getItem("language"));
@@ -17,7 +16,6 @@ function MyOwnPortfolio(props) {
 
     return (
       <div>
-        <NavBar notShow={props.notShowLayout}/>
         <div id="PersonalContentBackground">
           <div id="Personal-Content">
             <div className="container-md">
@@ -40,8 +38,7 @@ function MyOwnPortfolio(props) {
             </div>
           </div>
         </div>
-        <Footer notShow={props.notShowLayout}/>
       </div>
     );
 }
-export default MyOwnPortfolio;
+export default transition(MyOwnPortfolio);

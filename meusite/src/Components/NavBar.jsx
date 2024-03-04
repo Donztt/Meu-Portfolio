@@ -28,7 +28,7 @@ function NavBar(props) {
     { value: "es", label: "Español" },
   ];
 
-  return !props.notShow ? (
+  return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
       <div className="container-fluid">
         <Link id="logo-container" className="navbar-brand" to="/">
@@ -78,7 +78,7 @@ function NavBar(props) {
         />
       </div>
     </nav>
-  ) : null;
+  );
 }
 
 export default NavBar;

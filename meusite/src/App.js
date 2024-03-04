@@ -1,4 +1,4 @@
-import { Route, BrowserRouter, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./PAGES/Home";
 import About from "./PAGES/About";
 import PersonalProjects from "./PAGES/PersonalProjects";
@@ -8,13 +8,16 @@ import OrderManagmentSys from "./PAGES/OrderManagmentSys";
 import QuoteFilterByCurrency from "./PAGES/QuoteFilterByCurrency";
 import RegisNLoginSys from "./PAGES/RegisNLoginSys";
 import RPGSurvivalGame from "./PAGES/RPGSurvivalGame";
+import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
 import "./CSS/default.css";
 
 function App() {
   const location = useLocation();
   return (
-
+    <>
+      <NavBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />
@@ -31,7 +34,8 @@ function App() {
           />
         </Routes>
       </AnimatePresence>
-
+      <Footer />
+    </>
   );
 }
 

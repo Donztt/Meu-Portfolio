@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
 import "../CSS/PersonalProjects.css";
 import Zoom from "react-reveal/Zoom";
 import ImageGallery from "react-image-gallery";
@@ -8,6 +6,7 @@ import Image1Bomberman from "../Photos/GameImages/bombermanecologico.png";
 import Image2Bomberman from "../Photos/GameImages/bombermanecologico2.png";
 import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
+import transition from "../Components/Transition.jsx"
 
 const imageGalleryBomberman = [
   {
@@ -30,7 +29,6 @@ function BombermanGame(props) {
 
   return (
     <div>
-      <NavBar notShow={props.notShowLayout} />
       <div id="PersonalContentBackground">
         <div id="Personal-Content">
           <div className="container-md">
@@ -77,8 +75,7 @@ function BombermanGame(props) {
           </div>
         </div>
       </div>
-      <Footer notShow={props.notShowLayout}/>
     </div>
   );
 }
-export default BombermanGame;
+export default transition(BombermanGame);

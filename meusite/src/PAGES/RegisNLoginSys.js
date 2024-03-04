@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from "react";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
 import "../CSS/PersonalProjects.css";
 import Zoom from "react-reveal/Zoom";
 import crudReactJsAspNet from "../Videos/CRUDReactJsASPNET.mp4";
@@ -8,6 +6,7 @@ import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
 import { Player } from "video-react";
 import "video-react/dist/video-react.css";
+import transition from "../Components/Transition.jsx"
 
 function RegisNLoginSys(props){
   const [language, setLanguage] = useState(localStorage.getItem("language"));
@@ -21,7 +20,6 @@ function RegisNLoginSys(props){
 
     return (
       <div>
-        <NavBar notShow={props.notShowLayout}/>
         <div id="PersonalContentBackground">
           <div id="Personal-Content">
             <div className="container-md">
@@ -58,8 +56,7 @@ function RegisNLoginSys(props){
             </div>
           </div>
         </div>
-        <Footer notShow={props.notShowLayout}/>
       </div>
     );
 }
-export default RegisNLoginSys;
+export default transition(RegisNLoginSys);

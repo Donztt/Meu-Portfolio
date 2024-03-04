@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
 import "../CSS/Home.css";
 import Image from "../Photos/MyImages/eu.png";
 import { Fade } from "react-reveal";
@@ -33,7 +31,6 @@ class Home extends React.Component {
 
     return (
       <>
-        <NavBar />
         <div id="Home-Content">
           <div className="container">
             <div className="row">
@@ -80,7 +77,6 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-        <Footer />
       </>
     );
   }

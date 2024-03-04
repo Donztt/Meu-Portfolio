@@ -1,6 +1,4 @@
 import React from "react";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
 import "../CSS/PersonalProjects.css";
 import { Translations } from "../Components/Translations.js";
 import ProjectPreview from "../Components/ProjectPreview.jsx";
@@ -36,7 +34,6 @@ class PersonalProjects extends React.Component {
 
     return (
       <div>
-        <NavBar />
         <div id="PersonalContentBackground">
           <div id="Personal-Content">
             <div className="container-md">
@@ -46,7 +43,7 @@ class PersonalProjects extends React.Component {
                     title={TRANSLATION.PERSONAL_PROJECTS.PORTFOLIO.TITLE}
                     resume={TRANSLATION.PERSONAL_PROJECTS.PORTFOLIO.RESUME}
                     to="/myOwnPortfolio"
-                    pagePreview={<MyOwnPortfolio notShowLayout={true} />}
+                    pagePreview={<MyOwnPortfolio />}
                   />
                 </div>
                 <div className="col">
@@ -56,7 +53,7 @@ class PersonalProjects extends React.Component {
                       TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.RESUME
                     }
                     to="/orderManagmentSys"
-                    pagePreview={<OrderManagmentSys notShowLayout={true} />}
+                    pagePreview={<OrderManagmentSys />}
                   />
                 </div>
               </div>
@@ -66,7 +63,7 @@ class PersonalProjects extends React.Component {
                     title={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TITLE}
                     resume={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.RESUME}
                     to="/QuoteFilterByCurrency"
-                    pagePreview={<QuoteFilterByCurrency notShowLayout={true} />}
+                    pagePreview={<QuoteFilterByCurrency />}
                   />
                 </div>
                 <div className="col">
@@ -74,7 +71,7 @@ class PersonalProjects extends React.Component {
                     title={TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.TITLE}
                     resume={TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.RESUME}
                     to="/regisNLoginSys"
-                    pagePreview={<RegisNLoginSys notShowLayout={true} />}
+                    pagePreview={<RegisNLoginSys />}
                   />
                 </div>
               </div>
@@ -88,7 +85,7 @@ class PersonalProjects extends React.Component {
                       TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.RESUME
                     }
                     to="/RPGSurvivalGame"
-                    pagePreview={<RPGSurvivalGame notShowLayout={true} />}
+                    pagePreview={<RPGSurvivalGame notShow3dApresentation />}
                   />
                 </div>
                 <div className="col">
@@ -100,14 +97,13 @@ class PersonalProjects extends React.Component {
                       TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.RESUME
                     }
                     to="/bombermanGame"
-                    pagePreview={<BombermanGame notShowLayout={true} />}
+                    pagePreview={<BombermanGame />}
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

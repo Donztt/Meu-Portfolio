@@ -1,6 +1,4 @@
 import React, { Suspense, useEffect, useState } from "react";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
 import "../CSS/PersonalProjects.css";
 import PersonagemPhoto from "../Photos/GameImages/Rpg Game Photo.png";
 import MonsterPhoto from "../Photos/GameImages/Rpg Game Monster.png";
@@ -21,9 +19,10 @@ import {
   PilarModel,
   Pilar2Model,
   PersonagemModel,
-  ApodrecidoModel
+  ApodrecidoModel,
 } from "../Components/ModelsGame.jsx";
 import { Translations } from "../Components/Translations.js";
+import transition from "../Components/Transition.jsx";
 
 const imagesGallery = [
   {
@@ -79,10 +78,10 @@ function Canvas3dModels() {
             fade
           />
           <Suspense fallback={null}>
-            <ApodrecidoModel position={[0, -8, -50]}/>
+            <ApodrecidoModel position={[0, -8, -50]} />
             <BeholderModel position={[-28, 15, 0]} />
             <LobModel position={[28, 6, -2]} />
-            <PersonagemModel position={[0, -1, 0]}/>
+            <PersonagemModel position={[0, -1, 0]} />
             <Pilar2Model position={[0, -5, 0]} />
             <PilarModel position={[-28, -5, 0]} />
             <PilarModel position={[28, -5, 0]} />
@@ -105,7 +104,6 @@ function RPGSurvivalGame(props) {
 
   return (
     <div>
-      <NavBar notShow={props.notShowLayout} />
       <div id="PersonalContentBackground">
         <div id="Personal-Content">
           <div className="container-md">
@@ -188,13 +186,12 @@ function RPGSurvivalGame(props) {
                   </div>
                 </div>
               </div>
-              {props.notShowLayout ? null : <Canvas3dModels />}
+              {props.notShow3dApresentation ? null : <Canvas3dModels />}
             </div>
           </div>
         </div>
       </div>
-      <Footer notShow={props.notShowLayout} />
     </div>
   );
 }
-export default RPGSurvivalGame;
+export default transition(RPGSurvivalGame);
