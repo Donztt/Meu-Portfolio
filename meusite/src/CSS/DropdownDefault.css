@@ -1,0 +1,31 @@
+.DropdownButton{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-primario);
+    width: 150px;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.DropdownIcon{
+    right: 0;
+}
+.DropdownItemImage{
+    width: 30px;
+    padding-right: 5px;
+}
+.DropdownItens {
+    color: var(--cor-texto-primario);
+    position: fixed;
+    list-style-type: none;
+    list-style: none;
+    margin-top: 8px;
+    right: 10px;
+}
+
+.DropdownItem{
+    background-color: var(--cor-secundaria);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

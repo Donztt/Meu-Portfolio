@@ -6,16 +6,26 @@
   padding-bottom: 50px;
   filter: drop-shadow(0 7px 6px var(--cor-sombra));
 }
+
 #Welcome {
   margin-bottom: 30px;
 }
+
 #Welcome h2 {
   font-size: 4rem;
 }
+
 #Donizetti {
   font-size: 1.8em;
   color: var(--cor-secundaria);
   background: none;
+}
+
+#office p {
+  color: var(--cor-texto-secundario);
+  font-weight: bold;
+  font-size: 1.4rem;
+  opacity: 0.5;
 }
 
 #introduction p {
@@ -25,6 +35,7 @@
   font-size: 1.4rem;
   color: var(--cor-texto-secundario);
 }
+
 #Perfil-Photo img {
   height: 70%;
   width: 70%;

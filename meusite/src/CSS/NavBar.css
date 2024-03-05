@@ -28,9 +28,6 @@
 }
 .navbar {
     background-color: var(--cor-secundaria);
-    border-bottom: 5px solid;
-    border-color: var(--cor-borda);
-    filter: drop-shadow(0 6px 6px var(--cor-sombra));
     padding: 10px;
 }
 .dropdown-menu{
@@ -50,12 +47,18 @@
 }
 
 .languageChangeSelect {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-borda);
     border-radius: 10px;
     width: 120px;
     height: 40px;
     font-weight: bold;
+}
+.placeHolderDropdown{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-primario);
+}
+.menuDropdown{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-primario);
 }
 
 

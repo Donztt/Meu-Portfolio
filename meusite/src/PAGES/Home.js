@@ -5,7 +5,7 @@ import Image from "../Photos/MyImages/eu.png";
 import { Fade } from "react-reveal";
 import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
-import transition from "../Components/Transition.jsx"
+import transition from "../Components/Transition.jsx";
 
 class Home extends React.Component {
   constructor(props) {
@@ -47,11 +47,13 @@ class Home extends React.Component {
                           <mark id="Donizetti">Donizetti</mark>.
                         </strong>
                       </h3>
+                      <div id="office">
+                        <p>{TRANSLATION.HOME.OFFICE}</p>
+                      </div>
                     </div>
                   </Fade>
                   <Fade left>
                     <div id="introduction">
-                      <p>{TRANSLATION.HOME.OFFICE}</p>
                       <p>{TRANSLATION.HOME.TEXT}</p>
                       <DefaultButton
                         href="/personalProjects"
