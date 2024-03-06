@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../CSS/DropdownDefault.css";
-import { Link } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 function DropdownDefault({ options, onSelect, value }) {
@@ -46,7 +45,7 @@ function DropdownDefault({ options, onSelect, value }) {
         <ul className="DropdownItens">
           {options.map((item) => (
             <li onClick={() => handleItemClick(item)} className="DropdownItem">
-              <img src={item.img} className="DropdownItemImage"></img>
+              <img src={item.img} className="DropdownItemImage" alt=""></img>
               {item.label}
             </li>
           ))}

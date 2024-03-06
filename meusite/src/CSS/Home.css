@@ -49,3 +49,56 @@
 #Perfil-Photo img:hover {
   transform: translateY(-10px);
 }
+.Photo{
+  position: relative;
+  z-index: 2;
+}
+
+.recentProjects{
+  background-color: var(--cor-secundaria);
+}
+
+.recentProjects h2{
+  padding-top: 20px;
+  font-size: 3rem;
+  color: var(--cor-texto-primario);
+}
+
+.recentProjectList{
+  padding-inline: 150px;
+}
+
+.moreProjectsButton{
+  padding-inline: 150px;
+}
+
+.bestSkillsTitle{
+  padding: 20px;
+  color: var(--cor-detalhe);
+  position: relative;
+  font-size: 3rem;
+}
+
+.bestSkillsTitle::after{
+  content:'';
+  position:absolute;
+  width:80px;
+  height:2px;
+  background: var(--cor-detalhe);
+  bottom:0;
+  left:0;
+  right:0;
+  top: 60px;
+  margin:auto;
+}
+
+.bestSkillsItem{
+  background-color: var(--cor-terciaria);
+  border-radius: 25px;
+  padding: 8px;
+}
+
+.bestSkillsItem p{
+  font-size: 2.2rem;
+  color: var(--cor-texto-secundario);
+}

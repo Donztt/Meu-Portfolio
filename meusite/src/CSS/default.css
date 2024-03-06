@@ -1,7 +1,8 @@
 :root {
     --cor-primaria: #C9C9C9;
-    --cor-secundaria: #1F1F1F;
+    --cor-secundaria: hsl(0, 0%, 12%);
     --cor-terciaria: #b3b3b3;
+    --cor-detalhe: #770000;
     --cor-borda: #e7e7e7;
     --cor-sombra: #000000;
     --cor-texto-primario: #d1d1d1;

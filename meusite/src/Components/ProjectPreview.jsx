@@ -8,18 +8,16 @@ function ProjectPreview(props) {
 
   useEffect(() => {
     const handleWindowMouseMove = (event) => {
+      console.log(event);
       setMousePosition({
-        x: event.clientX,
-        y: event.clientY,
+        x: event.pageX,
+        y: event.pageY,
       });
     };
     window.addEventListener("mousemove", handleWindowMouseMove);
 
     return () => {
-      window.removeEventListener(
-        'mousemove',
-        handleWindowMouseMove
-      );
+      window.removeEventListener("mousemove", handleWindowMouseMove);
     };
   }, []);
 
@@ -31,14 +29,38 @@ function ProjectPreview(props) {
     setIsMouseOver(false);
   };
 
+  const backgroundStyle = (whiteStyle) => {
+    return whiteStyle
+      ? {
+          backgroundColor: "var(--cor-primaria)",
+        }
+      : {
+          backgroundColor: "var(--cor-secundaria)",
+        };
+  };
+
+  const textStyle = (whiteStyle) => {
+    return whiteStyle
+      ? {
+          color: "var(--cor-texto-secundario)",
+        }
+      : {
+          color: "var(--cor-texto-primario)",
+        };
+  };
+
   return (
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <Link to={props.to} id="ProjectLink">
-        <div id="ProjectPreviewBackground" className="text-center my-3 py-2">
+        <div
+          id="ProjectPreviewBackground"
+          style={backgroundStyle(props.whiteStyle)}
+          className="text-center my-3 py-2"
+        >
           <div id="ProjectPreviewTitle">
-          <h3>{props.title}</h3>
+            <h3 style={textStyle(props.whiteStyle)}>{props.title}</h3>
           </div>
-          <p>{props.resume}</p>
+          <p style={textStyle(props.whiteStyle)}>{props.resume}</p>
         </div>
       </Link>
       {isMouseOver && (
@@ -46,7 +68,7 @@ function ProjectPreview(props) {
           id="ProjectPreviewHover"
           style={{
             top: mousePosition.y + 10 + "px",
-            left: mousePosition.x + 10 + "px",
+            left: mousePosition.x - 170 + "px",
           }}
         >
           <div id="ProjectPreviewContent">{props.pagePreview}</div>

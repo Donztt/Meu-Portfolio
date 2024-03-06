@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Translations } from "./Translations.js";
 import DefaultButton from "./ButtonDefault";
-import  DropdownDefault  from "./DropdownDefault"
-import brazilFlag from  "../Photos/Flags/brazil.png"
-import usaFlag from  "../Photos/Flags/usa.png"
-import spainFlag from  "../Photos/Flags/spain.png"
+import DropdownDefault from "./DropdownDefault";
+import brazilFlag from "../Photos/Flags/brazil.png";
+import usaFlag from "../Photos/Flags/usa.png";
+import spainFlag from "../Photos/Flags/spain.png";
 
 function NavBar(props) {
   const storage = localStorage.getItem("language");
@@ -25,9 +25,9 @@ function NavBar(props) {
   };
 
   const options = [
-    { value: "pt", label: "Português", img: brazilFlag},
+    { value: "pt", label: "Português", img: brazilFlag },
     { value: "en", label: "English", img: usaFlag },
-    { value: "es", label: "Español", img: spainFlag},
+    { value: "es", label: "Español", img: spainFlag },
   ];
 
   return (
@@ -70,9 +70,15 @@ function NavBar(props) {
                 text={TRANSLATION.NAV.PERSONAL_PROJECTS}
               />
             </li>
+            <li className="nav-item my-1">
+              <DropdownDefault
+                options={options}
+                onSelect={handleLanguageChange}
+                value={language}
+              />
+            </li>
           </ul>
         </div>
-        <DropdownDefault options={options} onSelect={handleLanguageChange} value={language}/>
       </div>
     </nav>
   );

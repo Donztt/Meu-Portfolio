@@ -1,79 +1,94 @@
+#footer-logo-container {
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 5px solid;
+  border-left: 5px solid;
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-color: var(--cor-detalhe);
+  color: var(--cor-texto-primario);
+  width: 180px;
+  text-align: center;
+}
+.footerContacts{
+  margin-left: 30px;
+}
+.footerItems {
+  width: 300px;
+  margin: auto;
+}
+
+.footerButtons {
+  margin-left: 70px;
+}
+
+.footerButtom {
+  text-align: start;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.footer-basic h3{
+  margin-top: 20px;
+}
+.footer-basic p{
+  font-size: 1.2em;
+}
 .footer-basic {
-    padding:40px 0;
-    background-color:var(--cor-secundaria);
-    color:var(--cor-terciaria);
-    height: 100%;
-  }
-  
-  .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-  }
-  
-  .footer-basic li {
-    padding:0 10px;
-    margin-bottom: 30px;
-    font-size: 1.3em;
-  }
-  
-  .footer-basic ul a {
-    color: var(--cor-texto-primario);
-    text-decoration:none;
-    opacity:0.8;
+  padding: 40px 0;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  height: 100%;
+}
+
+.footer-basic a {
+  color: var(--cor-texto-primario);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic p {
+  color: var(--cor-texto-primario);
+}
+
+.footer-basic a:hover {
+  color: var(--cor-texto-terciario);
+  opacity: 1;
+}
+
+.footer-basic .social{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: var(--cor-texto-primario);
+  opacity: 0.75;
+}
+
+.footer-basic .social a:hover {
+  color: var(--cor-texto-terciario);
+  opacity: 1;
+  animation: socialIcon 1.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes socialIcon {
+  from {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
   }
 
-  .footer-basic p{
-    color: var(--cor-texto-primario);
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #030000, 0 0 15px #030000, 0 0 20px #030000, 0 0 25px #030000, 0 0 30px #030000, 0 0 35px #030000;
   }
-  
-  .footer-basic ul a:hover {
-    color:var(--cor-texto-terciario);
-    opacity:1;
-  }
-  
-  .footer-basic .social {
-    text-align:center;
-    padding-bottom:25px;
-  }
-  
-  .footer-basic .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin:0 8px;
-    color: var(--cor-texto-primario);
-    opacity:0.75;
-  }
-  
-  .footer-basic .social > a:hover {
-    color:var(--cor-texto-terciario);
-    opacity:1;
-    animation: socialIcon 1.5s ease-in-out infinite alternate;
-  }
-
-  .footer-basic .col {
-      border-right: 10px solid;
-      border-left: 10px solid;
-      border-color: var(--cor-borda);
-      border-radius: 25px;
-      margin: 10px;
-  }
-
-  @keyframes socialIcon {
-    from {
-      text-shadow: 0 0 20px #fff, 0 0 30px #fff,0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #030000, 0 0 15px #030000, 0 0 20px #030000, 0 0 25px #030000, 0 0 30px #030000, 0 0 35px #030000;
-    }
-  }
-  
+}

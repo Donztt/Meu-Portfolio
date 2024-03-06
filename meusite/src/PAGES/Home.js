@@ -6,6 +6,14 @@ import { Fade } from "react-reveal";
 import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
 import transition from "../Components/Transition.jsx";
+import ProjectPreview from "../Components/ProjectPreview.jsx";
+import OrderManagmentSys from "./OrderManagmentSys";
+import RPGSurvivalGame from "./RPGSurvivalGame";
+import QuoteFilterByCurrency from "./QuoteFilterByCurrency";
+import { SiReact } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
 
 class Home extends React.Component {
   constructor(props) {
@@ -55,10 +63,23 @@ class Home extends React.Component {
                   <Fade left>
                     <div id="introduction">
                       <p>{TRANSLATION.HOME.TEXT}</p>
-                      <DefaultButton
-                        href="/personalProjects"
-                        text={TRANSLATION.HOME.DISCOVERY_PROJECTS}
-                      />
+                      <div className="container p-0">
+                        <div className="row">
+                          <div className="col">
+                            <DefaultButton
+                              href="/personalProjects"
+                              text={TRANSLATION.FOOTER.CONTACTS}
+                            />
+                          </div>
+                          <div className="col">
+                            <DefaultButton
+                              href="/personalProjects"
+                              onlyBorderLine
+                              text={TRANSLATION.HOME.DISCOVERY_PROJECTS}
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </Fade>
                 </div>
@@ -74,6 +95,85 @@ class Home extends React.Component {
                       ></img>
                     </Link>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="recentProjects text-center">
+            <h2>{TRANSLATION.HOME.RECENT_PROJECTS}</h2>
+            <div className="recentProjectList">
+              <div className="row">
+                <div className="col">
+                  <ProjectPreview
+                    title={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TITLE}
+                    resume={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.RESUME}
+                    to="/QuoteFilterByCurrency"
+                    pagePreview={<QuoteFilterByCurrency />}
+                    whiteStyle
+                  />
+                </div>
+                <div className="col">
+                  <ProjectPreview
+                    title={TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TITLE}
+                    resume={
+                      TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.RESUME
+                    }
+                    to="/orderManagmentSys"
+                    pagePreview={<OrderManagmentSys />}
+                    whiteStyle
+                  />
+                </div>
+                <div className="col">
+                  <ProjectPreview
+                    title={
+                      TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TITLE
+                    }
+                    resume={
+                      TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.RESUME
+                    }
+                    to="/RPGSurvivalGame"
+                    pagePreview={<RPGSurvivalGame notShow3dApresentation />}
+                    whiteStyle
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="moreProjectsButton py-3">
+              <DefaultButton
+                href="/personalProjects"
+                withoutBackground
+                text={TRANSLATION.HOME.MORE_PROJECTS}
+              />
+            </div>
+          </div>
+          <div className="bestSkills text-center">
+            <h2 className="bestSkillsTitle">
+              {TRANSLATION.HOME.BEST_SKILLS_TITLE}
+            </h2>
+            <h3>{TRANSLATION.HOME.BEST_SKILLS_TEXT}</h3>
+            <div className="row">
+              <div className="col">
+                <div className="bestSkillsItem">
+                  <SiReact size={70} />
+                  <p>React</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="bestSkillsItem">
+                  <FaJava size={70} />
+                  <p>Java</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="bestSkillsItem">
+                  <IoLogoJavascript size={70} />
+                  <p>Javascript</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="bestSkillsItem">
+                  <FaGithub size={70} />
+                  <p>Github</p>
                 </div>
               </div>
             </div>

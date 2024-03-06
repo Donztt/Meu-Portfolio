@@ -4,7 +4,15 @@ import "../CSS/transition.css";
 const transition = (OgComponent) => {
   return () => (
     <>
-      <OgComponent />
+      <motion.div
+        className="page"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ ease: "easeInOut", duration: 1.5 }}
+      >
+        <OgComponent />
+      </motion.div>
       <motion.div
         className="slide-in"
         initial={{ scaleY: 0, opacity: 0 }}

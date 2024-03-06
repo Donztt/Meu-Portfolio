@@ -7,8 +7,8 @@
     font-size: 25px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-color: var(--cor-borda);
-    color: var(--cor-borda);
+    border-color: var(--cor-detalhe);
+    color: var(--cor-texto-primario);
 }
 #logo {
     transition: transform 0.3s ease-in-out;

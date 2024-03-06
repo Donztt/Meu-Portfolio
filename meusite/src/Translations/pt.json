@@ -1,11 +1,11 @@
 {
     "NAV":{
-        "HOME": "Home",
+        "HOME": "Início",
         "ABOUT_ME": "Sobre mim",
-        "PERSONAL_PROJECTS": "Projetos pessoais"
+        "PERSONAL_PROJECTS": "Meus Projetos"
     },
     "FOOTER":{
-        "CONTACTS": "Contatos",
+        "CONTACTS": "Contato",
         "ADRESS": "Endereço",
         "CURRICULUM": "Currículo"
     },
@@ -15,7 +15,11 @@
         "OFFICE": "Desenvolvedor Full-Stack",
         "TEXT": "Sou um programador criativo e proativo, apaixonado pelo que faço.",
         "TEXT2": "Este Portfólio possui projetos pessoais que gostaria de apresentar a você!",
-        "DISCOVERY_PROJECTS": "Conhecer Projetos"
+        "DISCOVERY_PROJECTS": "Projetos",
+        "RECENT_PROJECTS": "Projetos Recentes",
+        "MORE_PROJECTS": "Ver mais projetos",
+        "BEST_SKILLS_TITLE": "Habilidades",
+        "BEST_SKILLS_TEXT": "Linguagens e ferramentas nas quais tenho maior conhecimento experiência"
     },
     "ABOUT_ME":{
         "COLLEGE": "Curso: Ciência da Computação (termino - Janeiro/2022)",

@@ -15,7 +15,11 @@
         "OFFICE": "Desarrollador Full-Stack",
         "TEXT": "Soy un programador creativo y proactivo, apasionado por lo que hago.",
         "TEXT2": "¡Este portafolio muestra proyectos personales que me gustaría presentarte!",
-        "DISCOVERY_PROJECTS": "Descubrir proyectos"
+        "DISCOVERY_PROJECTS": "proyectos",
+        "RECENT_PROJECTS": "proyectos recientes",
+        "MORE_PROJECTS": "Ver más proyectos",
+        "BEST_SKILLS_TITLE": "Habilidades",
+        "BEST_SKILLS_TEXT": "Idiomas y herramientas en los que tengo mayor conocimiento y experiencia"
     },
     "ABOUT_ME": {
         "COLLEGE": "Grado: Ciencias de la Computación (completado - enero de 2022)",

@@ -2,7 +2,7 @@
     "NAV": {
         "HOME": "Home",
         "ABOUT_ME": "About Me",
-        "PERSONAL_PROJECTS": "Personal Projects"
+        "PERSONAL_PROJECTS": "My Projects"
     },
     "FOOTER": {
         "CONTACTS": "Contacts",
@@ -15,7 +15,11 @@
         "OFFICE": "Full-Stack Developer",
         "TEXT": "I am a creative and proactive programmer, passionate about what I do.",
         "TEXT2": "This Portfolio showcases personal projects that I would like to present to you!",
-        "DISCOVERY_PROJECTS": "Discover Projects"
+        "DISCOVERY_PROJECTS": "Projects",
+        "RECENT_PROJECTS": "Recent Projects",
+        "MORE_PROJECTS": "See more projects",
+        "BEST_SKILLS_TITLE": "Skills",
+        "BEST_SKILLS_TEXT": "Languages ​​and tools in which I have the most knowledge and experience"
     },
     "ABOUT_ME": {
         "COLLEGE": "Degree: Computer Science (completed - January 2022)",

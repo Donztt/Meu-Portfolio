@@ -10,7 +10,6 @@
 }
 
 #ProjectPreviewBackground{
-    background-color: var(--cor-secundaria);
     padding-bottom: 50px;
     filter: drop-shadow(0 7px 6px var(--cor-sombra));
     border-radius: 25px;
@@ -18,10 +17,6 @@
 
 #ProjectPreviewBackground h3{
     border-bottom: 1px solid var(--cor-borda);
-}
-
-#ProjectPreviewBackground h3, p{
-    color:var(--cor-texto-primario);
 }
 
 #ProjectPreviewHover {
@@ -36,7 +31,7 @@
 
 #ProjectPreviewContent {
     position: absolute;
-    z-index: 3;
+    z-index: 500;
     top: 0;
     left: 0;
     border: 0;

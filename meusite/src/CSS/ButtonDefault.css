@@ -4,14 +4,12 @@
     text-decoration: none;
     margin-bottom: 0;
     font-weight: bold;
-    padding: 15px;
     font-size: 1.4rem;
     z-index: 1;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    color: var(--cor-texto-primario);
     border: 0px solid;
     border-color: var(--cor-borda);
     transition: color 0.2s ease

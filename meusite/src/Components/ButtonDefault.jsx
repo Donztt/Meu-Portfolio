@@ -8,7 +8,15 @@ function DefaultButton(props) {
       style={
         props.withoutBackground
           ? null
-          : { backgroundColor: "var(--cor-sombra)", borderRadius: "25px" }
+          : props.onlyBorderLine
+            ? {
+                border: "5px solid var(--cor-detalhe)",
+                borderRadius: "25px"
+              }
+            : {
+                backgroundColor: "var(--cor-detalhe)",
+                borderRadius: "25px"
+              }
       }
     >
       {props.externalLink ? (
@@ -18,13 +26,39 @@ function DefaultButton(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="btn btn-lg btn-block homeButtonText">
+          <span
+            style={
+              props.onlyBorderLine
+                ? {
+                    color: "var(--cor-detalhe)",
+                    padding: "5px",
+                  }
+                : {
+                    color: "var(--cor-texto-primario)",
+                    padding: "10px",
+                  }
+            }
+            className="btn btn-lg btn-block homeButtonText"
+          >
             {props.text}
           </span>
         </a>
       ) : (
         <Link to={props.href} id="homeButton">
-          <span className="btn btn-lg btn-block homeButtonText">
+          <span
+            style={
+              props.onlyBorderLine
+                ? {
+                    color: "var(--cor-detalhe)",
+                    padding: "5px",
+                  }
+                : {
+                    color: "var(--cor-texto-primario)",
+                    padding: "10px",
+                  }
+            }
+            className="btn btn-lg btn-block homeButtonText"
+          >
             {props.text}
           </span>
         </Link>
