@@ -31,11 +31,10 @@
 }
 
 #introduction p {
-  font-style: oblique;
-  font-weight: bold;
   padding-top: 20px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--cor-texto-secundario);
+  margin-bottom: 20px;
 }
 
 #Perfil-Photo img {
@@ -79,6 +78,7 @@
   color: var(--cor-detalhe);
   position: relative;
   font-size: 3rem;
+  font-weight: bold;
 }
 
 .bestSkillsTitle::after {

@@ -3,14 +3,20 @@ import "../CSS/Footer.css";
 import { Translations } from "./Translations.js";
 import DefaultButton from "./ButtonDefault";
 import { Link } from "react-router-dom";
+import CurriculumPopup from "./CurriculumPopUp"
 
 function Footer(props) {
   const storage = localStorage.getItem("language");
   const [language, setLanguage] = useState(storage);
+  const [popupVisible, setPopupVisible] = useState(false);
 
   window.addEventListener("storageLanguage", () => {
     setLanguage(localStorage.getItem("language"));
   });
+
+  const closePopup = () => {
+    setPopupVisible(false);
+  };
 
   const TRANSLATION = Translations(language);
 
@@ -54,11 +60,12 @@ function Footer(props) {
                   <Link to="/about">{TRANSLATION.NAV.ABOUT_ME}</Link>
                 </div>
                 <div className="footerButtom">
-                  <Link to="/">{TRANSLATION.FOOTER.CONTACTS}</Link>
+                  <Link to="/contacts">{TRANSLATION.FOOTER.CONTACTS}</Link>
                 </div>
                 <div className="footerButtom">
-                  <Link to="/">{TRANSLATION.FOOTER.CURRICULUM}</Link>
+                  <Link onClick={ () => setPopupVisible(true)}>{TRANSLATION.FOOTER.CURRICULUM}</Link>
                 </div>
+                <CurriculumPopup popupVisible={popupVisible} onClose={closePopup}/>
               </div>
             </div>
           </div>

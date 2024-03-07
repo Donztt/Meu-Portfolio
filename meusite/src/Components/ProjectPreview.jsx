@@ -39,6 +39,18 @@ function ProjectPreview(props) {
         };
   };
 
+  const mousePositionStyle = () => {
+    return props.usePagePosition
+      ? {
+          top: mousePosition.pageY - 70 + "px",
+          left: mousePosition.pageX - 170 + "px",
+        }
+      : {
+          top: mousePosition.clientY + 10 + "px",
+          left: mousePosition.clientX - 170 + "px",
+        };
+  };
+
   return (
     <div
       onMouseEnter={handleMouseEnter}
@@ -58,13 +70,7 @@ function ProjectPreview(props) {
         </div>
       </Link>
       {isMouseOver && (
-        <div
-          id="ProjectPreviewHover"
-          style={{
-            top: mousePosition.clientY + 10 + "px",
-            left: mousePosition.clientX - 170 + "px",
-          }}
-        >
+        <div id="ProjectPreviewHover" style={mousePositionStyle()}>
           <div id="ProjectPreviewContent">{props.pagePreview}</div>
         </div>
       )}

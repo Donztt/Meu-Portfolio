@@ -47,6 +47,7 @@ function DefaultButton(props) {
           id="homeButton"
           target="_blank"
           rel="noopener noreferrer"
+          {...props}
         >
           <span
             style={textStyle()}
@@ -56,7 +57,7 @@ function DefaultButton(props) {
           </span>
         </a>
       ) : (
-        <Link to={props.href} id="homeButton">
+        <Link to={props.href} id="homeButton" {...props}>
           <span
             style={textStyle()}
             className="btn btn-lg btn-block homeButtonText"

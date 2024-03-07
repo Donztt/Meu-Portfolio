@@ -109,6 +109,7 @@ class Home extends React.Component {
                   to="/QuoteFilterByCurrency"
                   pagePreview={<QuoteFilterByCurrency />}
                   whiteStyle
+                  usePagePosition
                 />
               </div>
               <div className="col">
@@ -118,6 +119,7 @@ class Home extends React.Component {
                   to="/orderManagmentSys"
                   pagePreview={<OrderManagmentSys />}
                   whiteStyle
+                  usePagePosition
                 />
               </div>
               <div className="col">
@@ -129,6 +131,7 @@ class Home extends React.Component {
                   to="/RPGSurvivalGame"
                   pagePreview={<RPGSurvivalGame notShow3dApresentation />}
                   whiteStyle
+                  usePagePosition
                 />
               </div>
             </div>

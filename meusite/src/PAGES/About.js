@@ -548,62 +548,6 @@ class About extends React.Component {
                   </button>
                 </>
               </Fade>
-              <Fade top>
-                <div id="Experiences">
-                  <h3>AMLabs</h3>
-                  <div className="container">
-                    <div className="row">
-                      <div className="col align-self-start">
-                        <p>{TRANSLATION.ABOUT_ME.AMLABS.STACKS}</p>
-                        <p>{TRANSLATION.ABOUT_ME.AMLABS.DATABASES}</p>
-                        <p>{TRANSLATION.ABOUT_ME.AMLABS.FRAMEWORKS}</p>
-                        <p>{TRANSLATION.ABOUT_ME.AMLABS.WORK_METODOLOGY}</p>
-                      </div>
-                      <div className="col align-self-end">
-                        <p>{TRANSLATION.ABOUT_ME.AMLABS.ABOUT}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <>
-                  {isVisibleExp3 && (
-                    <div id="StackBackground">
-                      <Slide top>
-                        <div id="Stacks">
-                          <div className="container text-center">
-                            <div className="row">
-                              <div>
-                                <h4>
-                                  {
-                                    TRANSLATION.ABOUT_ME.AMLABS.STACK_DETAILS
-                                      .PROJECT1
-                                  }
-                                </h4>
-                                <div className="d-flex justify-content-center">
-                                  <ul>
-                                    <li>C#</li>
-                                    <li>ASP.NET</li>
-                                    <li>AngularJs</li>
-                                    <li>Git Flow</li>
-                                    <li>SOAP</li>
-                                    <li>SQL Server</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Slide>
-                    </div>
-                  )}
-                  <button
-                    onClick={this.toggleVisibilityExp3}
-                    id="Stack-Details"
-                  >
-                    {TRANSLATION.ABOUT_ME.SHOWMORE}
-                  </button>
-                </>
-              </Fade>
             </div>
           </div>
         </div>
