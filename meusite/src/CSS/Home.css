@@ -5,6 +5,8 @@
   background-color: var(--cor-primaria);
   padding-bottom: 50px;
   filter: drop-shadow(0 7px 6px var(--cor-sombra));
+  max-width: 100%;
+  overflow: hidden
 }
 
 #Welcome {
@@ -49,56 +51,62 @@
 #Perfil-Photo img:hover {
   transform: translateY(-10px);
 }
-.Photo{
+
+.Photo {
   position: relative;
   z-index: 2;
 }
 
-.recentProjects{
+.recentProjects {
+  position: relative;
   background-color: var(--cor-secundaria);
 }
 
-.recentProjects h2{
+.recentProjects .col {
+  padding-inline: 30px;
+}
+
+.recentProjects h2 {
   padding-top: 20px;
   font-size: 3rem;
+  margin-bottom: 50px;
   color: var(--cor-texto-primario);
 }
 
-.recentProjectList{
-  padding-inline: 150px;
-}
-
-.moreProjectsButton{
-  padding-inline: 150px;
-}
-
-.bestSkillsTitle{
+.bestSkillsTitle {
   padding: 20px;
+  margin-bottom: 50px;
   color: var(--cor-detalhe);
   position: relative;
   font-size: 3rem;
 }
 
-.bestSkillsTitle::after{
-  content:'';
-  position:absolute;
-  width:80px;
-  height:2px;
+.bestSkillsTitle::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 2px;
   background: var(--cor-detalhe);
-  bottom:0;
-  left:0;
-  right:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   top: 60px;
-  margin:auto;
+  margin: auto;
 }
 
-.bestSkillsItem{
+.bestSkillsItem {
   background-color: var(--cor-terciaria);
   border-radius: 25px;
   padding: 8px;
+  margin-top: 10px;
+  min-width: 150px;
 }
 
-.bestSkillsItem p{
-  font-size: 2.2rem;
+.bestSkillsItem p {
+  position: relative;
+  font-size: calc(20px + 0.7vw);
+  font-weight: bold;
   color: var(--cor-texto-secundario);
+  top: 10px;
+  text-align: center;
 }

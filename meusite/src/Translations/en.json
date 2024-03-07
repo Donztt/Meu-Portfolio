@@ -19,7 +19,8 @@
         "RECENT_PROJECTS": "Recent Projects",
         "MORE_PROJECTS": "See more projects",
         "BEST_SKILLS_TITLE": "Skills",
-        "BEST_SKILLS_TEXT": "Languages ​​and tools in which I have the most knowledge and experience"
+        "BEST_SKILLS_TEXT": "Languages and tools in which I have the most knowledge and experience",
+        "BEST_SKILLS_BUTTON": "See other knowledge"
     },
     "ABOUT_ME": {
         "COLLEGE": "Degree: Computer Science (completed - January 2022)",

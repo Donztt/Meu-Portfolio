@@ -66,7 +66,7 @@ function NavBar(props) {
             <li className="nav-item my-1">
               <DefaultButton
                 withoutBackground
-                href="/personalProjects"
+                href="/myProjects"
                 text={TRANSLATION.NAV.PERSONAL_PROJECTS}
               />
             </li>

@@ -19,7 +19,8 @@
         "RECENT_PROJECTS": "Projetos Recentes",
         "MORE_PROJECTS": "Ver mais projetos",
         "BEST_SKILLS_TITLE": "Habilidades",
-        "BEST_SKILLS_TEXT": "Linguagens e ferramentas nas quais tenho maior conhecimento experiência"
+        "BEST_SKILLS_TEXT": "Linguagens e ferramentas nas quais tenho maior conhecimento e experiência",
+        "BEST_SKILLS_BUTTON": "Ver outros conhecimentos"
     },
     "ABOUT_ME":{
         "COLLEGE": "Curso: Ciência da Computação (termino - Janeiro/2022)",

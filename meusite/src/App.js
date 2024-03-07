@@ -22,7 +22,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/personalProjects" element={<PersonalProjects />} />
+          <Route path="/myProjects" element={<PersonalProjects />} />
           <Route path="/bombermanGame" element={<BombermanGame />} />
           <Route path="/myOwnPortfolio" element={<MyOwnPortfolio />} />
           <Route path="/orderManagmentSys" element={<OrderManagmentSys />} />

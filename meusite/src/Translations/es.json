@@ -19,7 +19,8 @@
         "RECENT_PROJECTS": "proyectos recientes",
         "MORE_PROJECTS": "Ver más proyectos",
         "BEST_SKILLS_TITLE": "Habilidades",
-        "BEST_SKILLS_TEXT": "Idiomas y herramientas en los que tengo mayor conocimiento y experiencia"
+        "BEST_SKILLS_TEXT": "Idiomas y herramientas en los que tengo mayor conocimiento y experiencia",
+        "BEST_SKILLS_BUTTON": "Ver otros conocimientos"
     },
     "ABOUT_ME": {
         "COLLEGE": "Grado: Ciencias de la Computación (completado - enero de 2022)",

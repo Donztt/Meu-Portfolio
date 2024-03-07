@@ -5,7 +5,6 @@
 }
 
 #ProjectPreviewTitle{
-    padding-inline: 50px;
     margin-bottom: 10px;
 }
 
@@ -13,10 +12,22 @@
     padding-bottom: 50px;
     filter: drop-shadow(0 7px 6px var(--cor-sombra));
     border-radius: 25px;
+    height: 300px;
+    min-width: 200px;
 }
 
 #ProjectPreviewBackground h3{
-    border-bottom: 1px solid var(--cor-borda);
+    font-size: calc(25px + 0.6vw);
+    padding-inline: 10px;
+    height: 90px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#ProjectPreviewBackground p {
+    margin-top: 25px;
+    font-size: calc(20px + 0.6vw);
+    padding: 5px;
 }
 
 #ProjectPreviewHover {

@@ -48,10 +48,10 @@ function Footer(props) {
               </div>
               <div className="footerButtons">
                 <div className="footerButtom">
-                  <Link to="/">{TRANSLATION.NAV.PERSONAL_PROJECTS}</Link>
+                  <Link to="/myProjects">{TRANSLATION.NAV.PERSONAL_PROJECTS}</Link>
                 </div>
                 <div className="footerButtom">
-                  <Link to="/">{TRANSLATION.NAV.ABOUT_ME}</Link>
+                  <Link to="/about">{TRANSLATION.NAV.ABOUT_ME}</Link>
                 </div>
                 <div className="footerButtom">
                   <Link to="/">{TRANSLATION.FOOTER.CONTACTS}</Link>

@@ -42,59 +42,60 @@ const imagesGallery = [
   },
 ];
 
-function ConfigModels(props) {
-  return (
-    <group>
-      <ambientLight intensity={0.7} />
-      <spotLight
-        intensity={3}
-        angle={10}
-        penumbra={1}
-        position={[-15, 80, 0]}
-        receiveShadow
-        castShadow
-      />
-      <PerspectiveCamera {...props} />
-      <OrbitControls />
-    </group>
-  );
-}
-function Canvas3dModels() {
-  return (
-    <ErrorBoundary message="Não foi possível carregar a apresentação 3D, Verifique se o acelerador de GPU está ativo em seu navegador">
-      <div id="Models3D">
-        <Canvas
-          shadows
-          dpr={[1, 2]}
-          camera={{ position: [0, 35, 70], fov: 50 }}
-        >
-          <ConfigModels />
-          <Stars
-            radius={200}
-            depth={150}
-            count={2000}
-            factor={30}
-            saturation={0}
-            fade
-          />
-          <Suspense fallback={null}>
-            <ApodrecidoModel position={[0, -8, -50]} />
-            <BeholderModel position={[-28, 15, 0]} />
-            <LobModel position={[28, 6, -2]} />
-            <PersonagemModel position={[0, -1, 0]} />
-            <Pilar2Model position={[0, -5, 0]} />
-            <PilarModel position={[-28, -5, 0]} />
-            <PilarModel position={[28, -5, 0]} />
-          </Suspense>
-        </Canvas>
-      </div>
-    </ErrorBoundary>
-  );
-}
-
-function RPGSurvivalGame(props) {
+export function RPGSurvivalGame(props) {
   const [language, setLanguage] = useState(localStorage.getItem("language"));
   let TRANSLATION = Translations(language);
+  
+  const ConfigModels = () =>{
+    return (
+      <group>
+        <ambientLight intensity={0.7} />
+        <spotLight
+          intensity={3}
+          angle={10}
+          penumbra={1}
+          position={[-15, 80, 0]}
+          receiveShadow
+          castShadow
+        />
+        <PerspectiveCamera />
+        <OrbitControls />
+      </group>
+    );
+  }
+  
+  const Canvas3dModels = () => {
+    return props.notShow3dApresentation? null :(
+      <ErrorBoundary message="Não foi possível carregar a apresentação 3D, Verifique se o acelerador de GPU está ativo em seu navegador">
+        <div id="Models3D">
+          <Canvas
+            shadows
+            dpr={[1, 2]}
+            camera={{ position: [0, 35, 70], fov: 50 }}
+          >
+            <ConfigModels />
+            <Stars
+              radius={200}
+              depth={150}
+              count={2000}
+              factor={30}
+              saturation={0}
+              fade
+            />
+            <Suspense fallback={null}>
+              <ApodrecidoModel position={[0, -8, -50]} />
+              <BeholderModel position={[-28, 15, 0]} />
+              <LobModel position={[28, 6, -2]} />
+              <PersonagemModel position={[0, -1, 0]} />
+              <Pilar2Model position={[0, -5, 0]} />
+              <PilarModel position={[-28, -5, 0]} />
+              <PilarModel position={[28, -5, 0]} />
+            </Suspense>
+          </Canvas>
+        </div>
+      </ErrorBoundary>
+    );
+  }
 
   useEffect(() => {
     window.addEventListener("storageLanguage", () => {
@@ -186,7 +187,7 @@ function RPGSurvivalGame(props) {
                   </div>
                 </div>
               </div>
-              {props.notShow3dApresentation ? null : <Canvas3dModels />}
+              <Canvas3dModels />
             </div>
           </div>
         </div>
