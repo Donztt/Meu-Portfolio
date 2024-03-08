@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/Footer.css";
 import { Translations } from "./Translations.js";
-import DefaultButton from "./ButtonDefault";
 import { Link } from "react-router-dom";
 import CurriculumPopup from "./CurriculumPopUp"
 

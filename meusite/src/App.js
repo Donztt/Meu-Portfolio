@@ -8,6 +8,7 @@ import OrderManagmentSys from "./PAGES/OrderManagmentSys";
 import QuoteFilterByCurrency from "./PAGES/QuoteFilterByCurrency";
 import RegisNLoginSys from "./PAGES/RegisNLoginSys";
 import RPGSurvivalGame from "./PAGES/RPGSurvivalGame";
+import Contacts from "./PAGES/Contact";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
@@ -23,6 +24,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/myProjects" element={<PersonalProjects />} />
+          <Route path="/contacts" element={<Contacts />} />
           <Route path="/bombermanGame" element={<BombermanGame />} />
           <Route path="/myOwnPortfolio" element={<MyOwnPortfolio />} />
           <Route path="/orderManagmentSys" element={<OrderManagmentSys />} />

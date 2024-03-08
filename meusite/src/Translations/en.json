@@ -27,7 +27,7 @@
         "YO": "Age: ",
         "YEARS": "years",
         "SHOWMORE": "Show More",
-        "DESCRIPTION":"Passionate about technology since childhood, I have always been fascinated by building functional structures. As other fields often have limitations on creativity, I decided to pursue computer science, where I can unleash my creativity in almost limitless ways. I am a results-oriented Full-Stack Developer focused on creating practical and intuitive software solutions for clients, while ensuring high maintainability for the company.",
+        "DESCRIPTION": "Passionate about technology since childhood, I have always been fascinated by building functional structures. As other fields often have limitations on creativity, I decided to pursue computer science, where I can unleash my creativity in almost limitless ways. I am a results-oriented Full-Stack Developer focused on creating practical and intuitive software solutions for clients, while ensuring high maintainability for the company.",
         "SOFT_SKILLS": {
             "SKILL1": "Critical Thinking",
             "SKILL2": "Problem Solving",
@@ -41,7 +41,7 @@
             "SKILL10": "Persistence",
             "SKILL11": "Transparency",
             "SKILL12": "Flexibility"
-        },        
+        },
         "IDEIA_SISTEMAS": {
             "STACKS": "Programming Languages: Visual Basic 6 / C#",
             "DATABASES": "Used Databases: SQL Server and MySQL",
@@ -67,17 +67,19 @@
                 "PROJECT3": "Lentec (Automated Monitoring)",
                 "PROJECT4": "App Da Turma (Graduation Management System)"
             }
-        },
-        "AMLABS": {
-            "STACKS": "Programming Languages: C# / Javascript / HTML / CSS",
-            "DATABASES": "Used Databases: SQL Server",
-            "FRAMEWORKS": "Frameworks: ASP.NET / AngularJs / Git Flow / Entity Framework",
-            "WORK_METODOLOGY": "Work Methodology: SCRUM",
-            "ABOUT": "Working in a company focused on the foreign market, I had the opportunity to challenge myself and learn new tools like AngularJS and GitFlow. Additionally, I participated in daily meetings in English, which allowed me to improve my language skills while collaborating on exciting and challenging projects.",
-            "STACK_DETAILS": {
-                "PROJECT1": "Service Order Management System"
-            }
         }
+    },
+    "CONTACTS": {
+        "TITLE": "Feel free to contact me!",
+        "CONTACTS": "My contacts",
+        "BASED_IN": "Based in",
+        "SEND_EMAIL": "Send email",
+        "DOWNLOAD_CURRICULUM": "Download my resume",
+        "SUCESS_SEND_EMAIL": "Email sent successfully! Thank you very much.",
+        "ERROR_SEND_EMAIL": "An error occurred while sending the email, please try again later.",
+        "PLACEHOLDER_NAME": "Name",
+        "PLACEHOLDER_EMAIL": "yourEmail@email.com",
+        "PLACEHOLDER_MESSAGE": "Message"
     },
     "PERSONAL_PROJECTS": {
         "RPG_SURVIVAL_GAME": {

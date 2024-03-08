@@ -66,7 +66,7 @@ class Home extends React.Component {
                       <div className="row">
                         <div className="col">
                           <DefaultButton
-                            href="/myProjects"
+                            href="/contacts"
                             text={TRANSLATION.FOOTER.CONTACTS}
                           />
                         </div>

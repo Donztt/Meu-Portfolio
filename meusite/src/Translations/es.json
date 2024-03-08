@@ -41,7 +41,7 @@
             "SKILL10": "Persistencia",
             "SKILL11": "Transparencia",
             "SKILL12": "Flexibilidad"
-        },        
+        },
         "IDEIA_SISTEMAS": {
             "STACKS": "Lenguajes de programación: Visual Basic 6 / C#",
             "DATABASES": "Bases de datos utilizadas: SQL Server y MySQL",
@@ -67,17 +67,19 @@
                 "PROJECT3": "Lentec (Monitoreo automatizado)",
                 "PROJECT4": "App da Turma (Sistema de gestión de graduaciones)"
             }
-        },
-        "AMLABS": {
-            "STACKS": "Lenguajes de programación: C# / Javascript / HTML / CSS",
-            "DATABASES": "Bases de datos utilizadas: SQL Server",
-            "FRAMEWORKS": "Frameworks: ASP.NET / AngularJs / Git Flow / Entity Framework",
-            "WORK_METODOLOGY": "Metodología de trabajo: SCRUM",
-            "ABOUT": "Trabajando en una empresa enfocada en el mercado extranjero, tuve la oportunidad de desafiarme a mí mismo y aprender nuevas herramientas como AngularJS y GitFlow. Además, participé en reuniones diarias en inglés, lo que me permitió mejorar mis habilidades lingüísticas mientras colaboraba en proyectos emocionantes y desafiantes.",
-            "STACK_DETAILS": {
-                "PROJECT1": "Sistema de gestión de órdenes de servicio"
-            }
         }
+    },
+    "CONTACTS": {
+        "TITLE": "¡No dudes en contactarme!",
+        "CONTACTS": "Mis contactos",
+        "BASED_IN": "Ubicado en",
+        "SEND_EMAIL": "Enviar correo electrónico",
+        "DOWNLOAD_CURRICULUM": "Descargar mi currículum",
+        "SUCESS_SEND_EMAIL": "Correo electrónico enviado con éxito. Muchas gracias.",
+        "ERROR_SEND_EMAIL": "Se produjo un error al enviar el correo electrónico, inténtelo nuevamente más tarde.",
+        "PLACEHOLDER_NAME": "Nombre",
+        "PLACEHOLDER_EMAIL": "tuEmail@email.com",
+        "PLACEHOLDER_MESSAGE": "Mensaje"
     },
     "PERSONAL_PROJECTS": {
         "RPG_SURVIVAL_GAME": {

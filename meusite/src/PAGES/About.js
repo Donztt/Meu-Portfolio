@@ -3,7 +3,7 @@ import "../CSS/About.css";
 import { Fade, Slide } from "react-reveal";
 import { Translations } from "../Components/Translations.js";
 import ToolTipDefault from "../Components/ToolTipDefault.jsx";
-import transition from "../Components/Transition.jsx"
+import transition from "../Components/Transition.jsx";
 
 import { FaJava, FaReact, FaUnity } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
@@ -39,7 +39,6 @@ class About extends React.Component {
       language: localStorage.getItem("language"),
       isVisibleExp1: false,
       isVisibleExp2: false,
-      isVisibleExp3: false,
     };
   }
 
@@ -69,11 +68,6 @@ class About extends React.Component {
       isVisibleExp2: !prevState.isVisibleExp2,
     }));
   };
-  toggleVisibilityExp3 = () => {
-    this.setState((prevState) => ({
-      isVisibleExp3: !prevState.isVisibleExp3,
-    }));
-  };
 
   getYo = (birthDay) => {
     var today = new Date();
@@ -93,7 +87,7 @@ class About extends React.Component {
     var myYo = this.getYo(birthDay);
 
     const TRANSLATION = Translations(this.state.language);
-    const { isVisibleExp1, isVisibleExp2, isVisibleExp3 } = this.state;
+    const { isVisibleExp1, isVisibleExp2 } = this.state;
     return (
       <>
         <div id="AboutContentBackground">
@@ -116,31 +110,49 @@ class About extends React.Component {
                       <h2 className="text-center my-3">Soft Skills</h2>
                       <div className="d-flex justify-content-center">
                         <ul className="text-center">
-                        <div className="container">
-                          <div className="row">
-                            <div className="col">
-                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL1}</li>
-                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL2}</li>
-                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL3}</li>
-                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL4}</li>
-                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL5}</li>
-                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL6}</li>
+                          <div className="container">
+                            <div className="row">
+                              <div className="col">
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL1}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL2}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL3}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL4}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL5}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL6}
+                                </li>
+                              </div>
+                              <div className="col">
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL7}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL8}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL9}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL10}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL11}
+                                </li>
+                                <li>
+                                  {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL12}
+                                </li>
+                              </div>
                             </div>
-                            <div className="col">
-                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL7}</li>
-                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL8}</li>
-                              <li>{TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL9}</li>
-                              <li>
-                                {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL10}
-                              </li>
-                              <li>
-                                {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL11}
-                              </li>
-                              <li>
-                                {TRANSLATION.ABOUT_ME.SOFT_SKILLS.SKILL12}
-                              </li>
-                            </div>
-                          </div>
                           </div>
                         </ul>
                       </div>
