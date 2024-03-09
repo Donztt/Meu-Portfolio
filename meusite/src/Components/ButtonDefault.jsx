@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../CSS/ButtonDefault.css";
 import { Link } from "react-router-dom";
 
 function DefaultButton(props) {
+  const [hover, setHover] = useState(false);
+
   const backgroundStyle = () => {
     return props.withoutBackground
       ? null
@@ -18,20 +20,17 @@ function DefaultButton(props) {
   };
 
   const textStyle = () => {
-     
     if (props.onlyBorderLine) {
-     return {
+      return {
         color: "var(--cor-detalhe)",
         padding: "5px",
-      }
-    }
-    else if(props.linkStyle){
+      };
+    } else if (props.linkStyle) {
       return {
         color: "#008AD8",
         padding: "10px",
       };
-    }
-    else{
+    } else {
       return {
         color: "var(--cor-texto-primario)",
         padding: "10px",
@@ -39,8 +38,37 @@ function DefaultButton(props) {
     }
   };
 
+  const textHoverStyle = () => {
+    if (props.onlyBorderLine) {
+      return {
+        color: "var(--cor-detalhe)",
+        animation: "var(--hover-anim1)",
+        padding: "5px"
+      };
+    } else if (props.linkStyle) {
+      return {
+        color: "var(--cor-texto-terciario)",
+        animation: "var(--hover-anim2)",
+        padding: "10px"
+      };
+    } else {
+      return {
+        color: "var(--cor-texto-terciario)",
+        animation: "var(--hover-anim1)",
+        padding: "10px"
+      };
+    }
+  };
   return (
-    <div style={backgroundStyle()}>
+    <div
+      style={backgroundStyle()}
+      onMouseEnter={() => {
+        setHover(true);
+      }}
+      onMouseLeave={() => {
+        setHover(false);
+      }}
+    >
       {props.externalLink ? (
         <a
           href={props.href}
@@ -50,7 +78,7 @@ function DefaultButton(props) {
           {...props}
         >
           <span
-            style={textStyle()}
+            style={hover?textHoverStyle() : textStyle()}
             className="btn btn-lg btn-block homeButtonText"
           >
             {props.text}
@@ -59,7 +87,7 @@ function DefaultButton(props) {
       ) : (
         <Link to={props.href} id="homeButton" {...props}>
           <span
-            style={textStyle()}
+            style={hover? textHoverStyle() : textStyle()}
             className="btn btn-lg btn-block homeButtonText"
           >
             {props.text}

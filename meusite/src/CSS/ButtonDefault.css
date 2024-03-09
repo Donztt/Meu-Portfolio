@@ -15,30 +15,3 @@
     transition: color 0.2s ease
   }
   
-  #homeButton span::before {
-    content: "";
-    inset: 0;
-    position: absolute;
-    transform: scale(0);
-    transform-origin: top;
-    transition: transform 0.2s ease-in-out;
-    z-index: -1;
-  }
-  
-  #homeButton :hover::before{
-    transform: scale(1);
-    transform-origin: top;
-  }
-  #homeButton span:hover{
-    color: var(--cor-texto-terciario);
-    animation: homeButtonText 1.5s ease-in-out infinite alternate;
-  }
-
-  @keyframes homeButtonText {
-    from {
-      text-shadow: 0 0 20px #fff, 0 0 30px #fff,0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #030000, 0 0 15px #030000, 0 0 20px #030000, 0 0 25px #030000, 0 0 30px #030000, 0 0 35px #030000;
-    }
-  }

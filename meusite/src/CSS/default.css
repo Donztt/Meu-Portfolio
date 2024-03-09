@@ -8,9 +8,31 @@
     --cor-texto-primario: #d1d1d1;
     --cor-texto-secundario: #1F1F1F;
     --cor-texto-terciario: #ffffff;
+    --hover-anim1: hoverAnim1 1.5s ease-in-out infinite alternate;
+    --hover-anim2: hoverAnim2 1.5s ease-in-out infinite alternate;
 }
 
 
 body {
     background-color: var(--cor-secundaria);
+}
+
+@keyframes hoverAnim1 {
+    from {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #030000, 0 0 15px #030000, 0 0 20px #030000, 0 0 25px #030000, 0 0 30px #030000, 0 0 35px #030000;
+    }
+}
+
+@keyframes hoverAnim2 {
+    from {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #2ac1e7, 0 0 50px #2ac1e7, 0 0 60px #2ac1e7, 0 0 70px #2ac1e7, 0 0 80px #2ac1e7;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #030000, 0 0 15px #030000, 0 0 20px #030000, 0 0 25px #030000, 0 0 30px #030000, 0 0 35px #030000;
+    }
 }
