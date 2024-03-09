@@ -17,7 +17,7 @@ const imageGalleryBomberman = [
   },
 ];
 
-function BombermanGame(props) {
+export function BombermanGame(props) {
   const [language, setLanguage] = useState(localStorage.getItem("language"));
   let TRANSLATION = Translations(language);
 
@@ -26,6 +26,12 @@ function BombermanGame(props) {
       setLanguage(localStorage.getItem("language"));
     });
   }, []);
+
+  useEffect(() =>{
+    if (!props.disableScrollTop) {
+      window.scrollTo(0, 0);
+    }
+  });
 
   return (
     <div>

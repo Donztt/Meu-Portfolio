@@ -24,7 +24,6 @@ function Contacts() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target);
 
     emailjs
       .sendForm(
@@ -61,6 +60,10 @@ function Contacts() {
     window.addEventListener("storageLanguage", () => {
       setLanguage(localStorage.getItem("language"));
     });
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   return (

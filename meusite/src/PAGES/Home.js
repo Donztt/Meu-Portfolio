@@ -7,9 +7,9 @@ import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
 import transition from "../Components/Transition.jsx";
 import ProjectPreview from "../Components/ProjectPreview.jsx";
-import OrderManagmentSys from "./OrderManagmentSys";
-import {RPGSurvivalGame} from "./RPGSurvivalGame";
-import QuoteFilterByCurrency from "./QuoteFilterByCurrency";
+import { OrderManagmentSys } from "./OrderManagmentSys";
+import { RPGSurvivalGame } from "./RPGSurvivalGame";
+import { QuoteFilterByCurrency } from "./QuoteFilterByCurrency";
 import { SiReact } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -26,7 +26,7 @@ class Home extends React.Component {
 
   componentDidMount() {
     document.title = "Portfólio Donizetti - Home";
-
+    window.scrollTo(0, 0);
     window.addEventListener("storageLanguage", () => {
       this.setState({
         language: localStorage.getItem("language"),
@@ -107,7 +107,7 @@ class Home extends React.Component {
                   title={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TITLE}
                   resume={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.RESUME}
                   to="/QuoteFilterByCurrency"
-                  pagePreview={<QuoteFilterByCurrency />}
+                  pagePreview={<QuoteFilterByCurrency disableScrollTop/>}
                   whiteStyle
                   usePagePosition
                 />
@@ -117,7 +117,7 @@ class Home extends React.Component {
                   title={TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TITLE}
                   resume={TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.RESUME}
                   to="/orderManagmentSys"
-                  pagePreview={<OrderManagmentSys />}
+                  pagePreview={<OrderManagmentSys disableScrollTop/>}
                   whiteStyle
                   usePagePosition
                 />
@@ -129,7 +129,7 @@ class Home extends React.Component {
                     TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.RESUME
                   }
                   to="/RPGSurvivalGame"
-                  pagePreview={<RPGSurvivalGame notShow3dApresentation />}
+                  pagePreview={<RPGSurvivalGame notShow3dApresentation disableScrollTop/>}
                   whiteStyle
                   usePagePosition
                 />

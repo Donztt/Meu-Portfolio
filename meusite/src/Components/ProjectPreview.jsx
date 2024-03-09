@@ -1,15 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../CSS/ProjectPreview.css";
 import { Link } from "react-router-dom";
-import useMousePosition from "@react-hook/mouse-position";
 
 function ProjectPreview(props) {
   const [isMouseOver, setIsMouseOver] = useState(false);
-  const [mousePosition, ref] = useMousePosition(
-    0, // enterDelay
-    0, // leaveDelay
-    60 // fps
-  );
+  const [mousePosition, setMousePosition] = useState({});
+
+  useEffect(() => {
+    const handleWindowMouseMove = (event) => {
+      setMousePosition(event);
+    };
+    window.addEventListener("mousemove", handleWindowMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleWindowMouseMove);
+    };
+  }, []);
 
   const handleMouseEnter = (event) => {
     setIsMouseOver(true);
@@ -52,11 +58,7 @@ function ProjectPreview(props) {
   };
 
   return (
-    <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      ref={ref}
-    >
+    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <Link to={props.to} id="ProjectLink">
         <div
           id="ProjectPreviewBackground"

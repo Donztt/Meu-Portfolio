@@ -2,13 +2,13 @@ import React from "react";
 import "../CSS/PersonalProjects.css";
 import { Translations } from "../Components/Translations.js";
 import ProjectPreview from "../Components/ProjectPreview.jsx";
-import BombermanGame from "./BombermanGame";
-import MyOwnPortfolio from "./MyOwnPortfolio";
-import OrderManagmentSys from "./OrderManagmentSys";
-import QuoteFilterByCurrency from "./QuoteFilterByCurrency";
-import RegisNLoginSys from "./RegisNLoginSys";
-import RPGSurvivalGame from "./RPGSurvivalGame";
-import transition from "../Components/Transition.jsx"
+import { BombermanGame } from "./BombermanGame";
+import { MyOwnPortfolio } from "./MyOwnPortfolio";
+import { OrderManagmentSys } from "./OrderManagmentSys";
+import { QuoteFilterByCurrency } from "./QuoteFilterByCurrency";
+import { RegisNLoginSys } from "./RegisNLoginSys";
+import { RPGSurvivalGame } from "./RPGSurvivalGame";
+import transition from "../Components/Transition.jsx";
 
 class PersonalProjects extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class PersonalProjects extends React.Component {
 
   componentDidMount() {
     document.title = "Portfólio Donizetti - Projetos Pessoais";
-
+    window.scrollTo(0, 0);
     window.addEventListener("storageLanguage", () => {
       this.setState({
         language: localStorage.getItem("language"),
@@ -43,7 +43,7 @@ class PersonalProjects extends React.Component {
                     title={TRANSLATION.PERSONAL_PROJECTS.PORTFOLIO.TITLE}
                     resume={TRANSLATION.PERSONAL_PROJECTS.PORTFOLIO.RESUME}
                     to="/myOwnPortfolio"
-                    pagePreview={<MyOwnPortfolio />}
+                    pagePreview={<MyOwnPortfolio disableScrollTop />}
                   />
                 </div>
                 <div className="col">
@@ -53,7 +53,7 @@ class PersonalProjects extends React.Component {
                       TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.RESUME
                     }
                     to="/orderManagmentSys"
-                    pagePreview={<OrderManagmentSys />}
+                    pagePreview={<OrderManagmentSys disableScrollTop />}
                   />
                 </div>
               </div>
@@ -63,7 +63,7 @@ class PersonalProjects extends React.Component {
                     title={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TITLE}
                     resume={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.RESUME}
                     to="/QuoteFilterByCurrency"
-                    pagePreview={<QuoteFilterByCurrency />}
+                    pagePreview={<QuoteFilterByCurrency disableScrollTop />}
                   />
                 </div>
                 <div className="col">
@@ -71,7 +71,7 @@ class PersonalProjects extends React.Component {
                     title={TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.TITLE}
                     resume={TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.RESUME}
                     to="/regisNLoginSys"
-                    pagePreview={<RegisNLoginSys />}
+                    pagePreview={<RegisNLoginSys disableScrollTop />}
                   />
                 </div>
               </div>
@@ -85,7 +85,12 @@ class PersonalProjects extends React.Component {
                       TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.RESUME
                     }
                     to="/RPGSurvivalGame"
-                    pagePreview={<RPGSurvivalGame notShow3dApresentation />}
+                    pagePreview={
+                      <RPGSurvivalGame
+                        notShow3dApresentation
+                        disableScrollTop
+                      />
+                    }
                   />
                 </div>
                 <div className="col">
@@ -97,7 +102,7 @@ class PersonalProjects extends React.Component {
                       TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.RESUME
                     }
                     to="/bombermanGame"
-                    pagePreview={<BombermanGame />}
+                    pagePreview={<BombermanGame disableScrollTop />}
                   />
                 </div>
               </div>

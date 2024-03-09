@@ -44,7 +44,7 @@ class About extends React.Component {
 
   componentDidMount() {
     document.title = "Portfólio Donizetti - Projetos Pessoais";
-
+    window.scrollTo(0, 0);
     window.addEventListener("storageLanguage", () => {
       this.setState({
         language: localStorage.getItem("language"),

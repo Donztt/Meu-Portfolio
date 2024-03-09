@@ -45,8 +45,8 @@ const imagesGallery = [
 export function RPGSurvivalGame(props) {
   const [language, setLanguage] = useState(localStorage.getItem("language"));
   let TRANSLATION = Translations(language);
-  
-  const ConfigModels = () =>{
+
+  const ConfigModels = () => {
     return (
       <group>
         <ambientLight intensity={0.7} />
@@ -62,10 +62,10 @@ export function RPGSurvivalGame(props) {
         <OrbitControls />
       </group>
     );
-  }
-  
+  };
+
   const Canvas3dModels = () => {
-    return props.notShow3dApresentation? null :(
+    return props.notShow3dApresentation ? null : (
       <ErrorBoundary message="Não foi possível carregar a apresentação 3D, Verifique se o acelerador de GPU está ativo em seu navegador">
         <div id="Models3D">
           <Canvas
@@ -95,13 +95,19 @@ export function RPGSurvivalGame(props) {
         </div>
       </ErrorBoundary>
     );
-  }
+  };
 
   useEffect(() => {
     window.addEventListener("storageLanguage", () => {
       setLanguage(localStorage.getItem("language"));
     });
   }, []);
+
+  useEffect(() =>{
+    if (!props.disableScrollTop) {
+      window.scrollTo(0, 0);
+    }
+  });
 
   return (
     <div>

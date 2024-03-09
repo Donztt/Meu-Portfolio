@@ -1,4 +1,4 @@
-.DropdownButton{
+.DropdownButton {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto-primario);
     width: 200px;
@@ -9,13 +9,16 @@
     font-weight: bold;
     margin-top: 5px;
 }
-.DropdownIcon{
+
+.DropdownIcon {
     right: 0;
 }
-.DropdownItemImage{
+
+.DropdownItemImage {
     width: 20px;
     padding-right: 5px;
 }
+
 .DropdownItens {
     color: var(--cor-texto-primario);
     position: absolute;
@@ -24,13 +27,14 @@
     margin-top: 8px;
 }
 
-.DropdownItem{
+.DropdownItem {
     background-color: var(--cor-secundaria);
     padding-top: 5px;
     padding-bottom: 5px;
+    text-align: start;
 }
 
-.DropdownItem:hover{
+.DropdownItem:hover {
     background-color: var(--cor-terciaria);
     color: var(--cor-texto-secundario);
 }
