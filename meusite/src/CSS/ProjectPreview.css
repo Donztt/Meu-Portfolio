@@ -10,10 +10,25 @@
 
 #ProjectPreviewBackground{
     padding-bottom: 50px;
-    filter: drop-shadow(0 7px 6px var(--cor-sombra));
+    filter: drop-shadow(0 0 15px var(--cor-sombra));
     border-radius: 25px;
     height: 300px;
-    min-width: 200px;
+    min-width: 230px;
+    overflow: hidden;
+}
+
+#ProjectPreviewBackground::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 300px;
+    width: 240px;
+    left: -200px;
+    transform: skewX(-45deg);
+}
+
+#ProjectPreviewBackground:hover:before{
+    animation: slide 1.5s;
 }
 
 #ProjectPreviewBackground h3{
@@ -26,8 +41,8 @@
 
 #ProjectPreviewBackground p {
     margin-top: 25px;
-    font-size: calc(20px + 0.6vw);
-    padding: 5px;
+    font-size: calc(15px + 0.6vw);
+    padding: 20px;
 }
 
 #ProjectPreviewHover {
@@ -51,4 +66,13 @@
     width: 1200px;
     transform: scale(0.3);
     transform-origin: 0% 0% 0px;
+}
+
+@keyframes slide {
+    0%,100%{
+        left: -200px;
+    }
+    50%{
+        left: 100%;
+    }
 }

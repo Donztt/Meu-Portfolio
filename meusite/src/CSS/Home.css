@@ -38,11 +38,12 @@
 }
 
 #Perfil-Photo img {
-  height: 70%;
-  width: 70%;
+  height: 80%;
+  width: 80%;
   min-height: 300px;
   min-width: 300px;
-  margin-bottom: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   filter: drop-shadow(0 6px 15px var(--cor-sombra));
   transition: transform 0.3s ease;
 }
@@ -59,10 +60,11 @@
 .recentProjects {
   position: relative;
   background-color: var(--cor-secundaria);
+  padding-inline: 50px;
 }
 
 .recentProjects .col {
-  padding-inline: 30px;
+  padding-inline: 50px;
 }
 
 .recentProjects h2 {

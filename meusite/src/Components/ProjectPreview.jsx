@@ -63,7 +63,7 @@ function ProjectPreview(props) {
         <div
           id="ProjectPreviewBackground"
           style={backgroundStyle()}
-          className="text-center my-3 py-2"
+          className="text-center my-3"
         >
           <div id="ProjectPreviewTitle">
             <h3 style={textStyle()}>{props.title}</h3>

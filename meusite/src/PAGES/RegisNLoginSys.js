@@ -31,19 +31,21 @@ export function RegisNLoginSys(props) {
           <div className="container-md">
             <div id="Project">
               <h3>{TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.TITLE}</h3>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.TEXT1}</p>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.TEXT2}</p>
+              <h5>ReactJs / .NET</h5>
               <Zoom top>
                 <div className="my-5">
                   <Player autoPlay muted loop src={crudReactJsAspNet} />
                 </div>
               </Zoom>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.TEXT2}</p>
               <div className="container">
                 <div className="row">
                   <div className="col-md-12">
                     <DefaultButton
                       href="https://github.com/Donztt/CRUD-ReactJs-ASP.NET-V2"
                       externalLink
+                      withoutBackground
+                      linkStyle
                       text={
                         TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.FONT_CODE
                       }

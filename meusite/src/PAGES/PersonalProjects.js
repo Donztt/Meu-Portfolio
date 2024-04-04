@@ -37,6 +37,9 @@ class PersonalProjects extends React.Component {
         <div id="PersonalContentBackground">
           <div id="Personal-Content">
             <div className="container-md">
+              <h2 id="pageTitle">
+                {TRANSLATION.PERSONAL_PROJECTS.TITLE}
+              </h2>
               <div className="row">
                 <div className="col">
                   <ProjectPreview
@@ -56,8 +59,6 @@ class PersonalProjects extends React.Component {
                     pagePreview={<OrderManagmentSys disableScrollTop />}
                   />
                 </div>
-              </div>
-              <div className="row">
                 <div className="col">
                   <ProjectPreview
                     title={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TITLE}
@@ -66,6 +67,9 @@ class PersonalProjects extends React.Component {
                     pagePreview={<QuoteFilterByCurrency disableScrollTop />}
                   />
                 </div>
+              </div>
+
+              <div className="row">
                 <div className="col">
                   <ProjectPreview
                     title={TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.TITLE}
@@ -74,8 +78,6 @@ class PersonalProjects extends React.Component {
                     pagePreview={<RegisNLoginSys disableScrollTop />}
                   />
                 </div>
-              </div>
-              <div className="row">
                 <div className="col">
                   <ProjectPreview
                     title={

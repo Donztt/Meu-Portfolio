@@ -31,19 +31,21 @@ export function QuoteFilterByCurrency(props) {
           <div className="container-md">
             <div id="Project">
               <h3>{TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TITLE}</h3>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TEXT1}</p>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TEXT2}</p>
+              <h5>Angular12 / Java</h5>
               <Zoom top>
                 <div className="my-5">
                   <Player autoPlay muted loop src={ExchangeRateVideo} />
                 </div>
               </Zoom>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TEXT2}</p>
               <div className="container">
                 <div className="row">
                   <div className="col-md-12">
                     <DefaultButton
                       href="https://github.com/Donztt/cotacao-moedas-challenge-Java-Angular"
                       externalLink
+                      withoutBackground
+                      linkStyle
                       text={
                         TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.FONT_CODE
                       }

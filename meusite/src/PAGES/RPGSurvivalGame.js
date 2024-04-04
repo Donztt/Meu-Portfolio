@@ -116,7 +116,14 @@ export function RPGSurvivalGame(props) {
           <div className="container-md">
             <div id="Project">
               <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TITLE}</h3>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT1}</p>
+              <h5>Unity3D / C#</h5>
+              <div id="Gallery">
+                <ImageGallery
+                  items={imagesGallery}
+                  showThumbnails={false}
+                  showBullets={true}
+                />
+              </div>
               <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT2}</p>
               <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT3}</p>
               <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT4}</p>
@@ -150,14 +157,6 @@ export function RPGSurvivalGame(props) {
                   </div>
                 </div>
               </Zoom>
-              <div id="Gallery">
-                <ImageGallery
-                  items={imagesGallery}
-                  showThumbnails={false}
-                  showBullets={true}
-                />
-                ;
-              </div>
               <div id="Videos">
                 <div id="Video1">
                   <h3>

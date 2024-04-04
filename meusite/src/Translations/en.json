@@ -23,7 +23,9 @@
         "BEST_SKILLS_BUTTON": "See other knowledge"
     },
     "ABOUT_ME": {
-        "COLLEGE": "Degree: Computer Science (completed - January 2022)",
+        "TITLE": "About me",
+        "DEGREE":"Degree: ",
+        "COLLEGE": "Computer Science (completed - January 2022)",
         "YO": "Age: ",
         "YEARS": "years",
         "SHOWMORE": "Show More",
@@ -82,6 +84,7 @@
         "PLACEHOLDER_MESSAGE": "Message"
     },
     "PERSONAL_PROJECTS": {
+        "TITLE": "My Projects",
         "RPG_SURVIVAL_GAME": {
             "RESUME": "Game made in Unity3D",
             "TITLE": "RPG Survival Game",
@@ -106,9 +109,9 @@
             "RESUME": "Full-stack project for order management",
             "TITLE": "Order Management System",
             "TEXT1": "This project features two variants, both sharing the same frontend but differing in the backends. One is implemented in Java, and the other in .NET. Both applications utilize REST API as their software architecture style.",
-            "TEXT2": "Used Stacks: AngularJs / Java",
+            "TEXT2": "AngularJs / Java Version",
             "TEXT3": "A system that employs AngularJS on the frontend and Java with Spring Boot on the backend. To enhance development efficiency, powerful tools like Lombok, Swagger, and Hibernate have been incorporated. This combination of technologies provides an agile and effective development experience, ensuring the quality and scalability of the system.",
-            "TEXT4": "Used Stacks: AngularJs / .NET",
+            "TEXT4": "AngularJs / .NET Version",
             "TEXT5": "The system is built with AngularJS on the frontend and .NET on the backend, also integrating Swagger to enhance documentation and facilitate interaction with the API.",
             "FONT_CODE1": "Source Code with Java",
             "FONT_CODE2": "Source Code with .NET"

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../CSS/Home.css";
-import Image from "../Photos/MyImages/eu.png";
+import Image from "../Photos/MyImages/eu2.png";
 import { Fade } from "react-reveal";
 import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";

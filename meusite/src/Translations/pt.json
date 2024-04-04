@@ -23,7 +23,9 @@
         "BEST_SKILLS_BUTTON": "Ver outros conhecimentos"
     },
     "ABOUT_ME": {
-        "COLLEGE": "Curso: Ciência da Computação (termino - Janeiro/2022)",
+        "TITLE": "Sobre mim",
+        "DEGREE":"Curso: ",
+        "COLLEGE": "Ciência da Computação (termino - Janeiro/2022)",
         "YO": "Idade: ",
         "YEARS": "Anos",
         "SHOWMORE": "Mostrar mais",
@@ -82,6 +84,7 @@
         "PLACEHOLDER_MESSAGE": "Mensagem"
     },
     "PERSONAL_PROJECTS": {
+        "TITLE": "Meus Projetos",
         "RPG_SURVIVAL_GAME": {
             "RESUME": "Jogo feito na Unity3D",
             "TITLE": "RPG de sobreviência",
@@ -106,9 +109,9 @@
             "RESUME": "Projeto full-stack para gestão de pedidos",
             "TITLE": "Sistema de gestão de pedidos",
             "TEXT1": "Este projeto apresenta duas variantes, ambas compartilhando o mesmo frontend, porém distinguindo-se nos backends, sendo uma implementada em Java e a outra em .NET, ambas as aplicações utilizam API REST como estilo de arquitetura de software. ",
-            "TEXT2": "Stacks utilizadas: AngularJs / Java",
+            "TEXT2": "Versão AngularJs / Java",
             "TEXT3": "Um sistema que emprega AngularJS no frontend e Java com Spring Boot no backend. Para aprimorar a eficiência do desenvolvimento, incorporei ferramentas poderosas, como Lombok, Swagger e Hibernate. Essa combinação de tecnologias proporciona uma experiência de desenvolvimento ágil e eficaz, garantindo a qualidade e a escalabilidade do sistema.",
-            "TEXT4": "Stacks utilizadas: AngularJs / .NET",
+            "TEXT4": "Versão AngularJs / .NET",
             "TEXT5": "O sistema é construído com AngularJS no frontend e .NET no backend, contando ainda com a integração do Swagger para aprimorar a documentação e facilitar a interação com a API.",
             "FONT_CODE1": "Código Fonte com Java",
             "FONT_CODE2": "Código Fonte com .NET"

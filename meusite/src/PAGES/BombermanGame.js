@@ -40,9 +40,7 @@ export function BombermanGame(props) {
           <div className="container-md">
             <div id="Project">
               <h3>{TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TITLE}</h3>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT1}</p>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT2}</p>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT3}</p>
+              <h5>Java</h5>
               <Zoom top>
                 <div id="Gallery">
                   <ImageGallery
@@ -53,12 +51,16 @@ export function BombermanGame(props) {
                   ;
                 </div>
               </Zoom>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT2}</p>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT3}</p>
               <div className="container">
                 <div className="row">
                   <div className="col-md-6">
                     <DefaultButton
                       href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico"
                       externalLink
+                      withoutBackground
+                      linkStyle
                       text={
                         TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO
                           .FONT_CODE
@@ -69,6 +71,8 @@ export function BombermanGame(props) {
                     <DefaultButton
                       href="https://github.com/Donztt/APS-UNIP-2018---Bomberman-Ecologico/releases/download/1.0/Bomberman.jar"
                       externalLink
+                      withoutBackground
+                      linkStyle
                       text={
                         TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO
                           .DOWNLOAD_GAME

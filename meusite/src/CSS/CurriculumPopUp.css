@@ -19,6 +19,9 @@
     position: relative;
     width: 700px;
   }
+  .popup-content #button{
+    margin-bottom: 10px;
+  }
   
   .close-button {
     background: var(--cor-detalhe);

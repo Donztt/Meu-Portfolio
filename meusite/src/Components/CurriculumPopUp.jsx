@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../CSS/CurriculumPopUp.css";
 import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
-import EnCurriculo from "../Curriculos/Donizetti Oliveira En Curriculo.pdf";
-import PtCurriculo from "../Curriculos/Donizetti Oliveira PTBR Curriculo.pdf";
+import EnCurriculoPDF from "../Curriculos/Donizetti Oliveira En Curriculo.pdf";
+import PtCurriculoPDF from "../Curriculos/Donizetti Oliveira PTBR Curriculo.pdf";
+import EnCurriculoDocx from "../Curriculos/Donizetti Oliveira En Curriculo.docx";
+import PtCurriculoDocx from "../Curriculos/Donizetti Oliveira PTBR Curriculo.docx";
 
 function Curriculum(props) {
-
   const [language, setLanguage] = useState(localStorage.getItem("language"));
   let TRANSLATION = Translations(language);
 
@@ -26,21 +27,44 @@ function Curriculum(props) {
             </button>
             <div className="row">
               <div className="col">
-                <DefaultButton
-                  href={PtCurriculo}
-                  download
-                  externalLink
-                  text={TRANSLATION.FOOTER.CURRICULUM + " - (PT-BR)"}
-                />
+                <h2>PDF</h2>
+                <div id="button">
+                  <DefaultButton
+                    href={PtCurriculoPDF}
+                    download
+                    externalLink
+                    text={TRANSLATION.FOOTER.CURRICULUM + " - (PT-BR)"}
+                  />
                 </div>
-                <div className="col">
-                <DefaultButton
-                  href={EnCurriculo}
-                  download
-                  externalLink
-                  onlyBorderLine
-                  text={TRANSLATION.FOOTER.CURRICULUM + " - (EN)"}
-                />
+                <div id="button">
+                  <DefaultButton
+                    href={EnCurriculoPDF}
+                    download
+                    externalLink
+                    onlyBorderLine
+                    text={TRANSLATION.FOOTER.CURRICULUM + " - (EN)"}
+                  />
+                </div>
+              </div>
+              <div className="col">
+                <h2>DOCX</h2>
+                <div id="button">
+                  <DefaultButton
+                    href={PtCurriculoDocx}
+                    download
+                    externalLink
+                    text={TRANSLATION.FOOTER.CURRICULUM + " - (PT-BR)"}
+                  />
+                </div >
+                <div id="button">
+                  <DefaultButton
+                    href={EnCurriculoDocx}
+                    download
+                    externalLink
+                    onlyBorderLine
+                    text={TRANSLATION.FOOTER.CURRICULUM + " - (EN)"}
+                  />
+                </div>
               </div>
             </div>
           </div>

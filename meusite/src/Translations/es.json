@@ -2,7 +2,7 @@
     "NAV": {
         "HOME": "Inicio",
         "ABOUT_ME": "Sobre mí",
-        "PERSONAL_PROJECTS": "Proyectos personales"
+        "PERSONAL_PROJECTS": "Mis proyectos"
     },
     "FOOTER": {
         "CONTACTS": "Contactos",
@@ -23,7 +23,9 @@
         "BEST_SKILLS_BUTTON": "Ver otros conocimientos"
     },
     "ABOUT_ME": {
-        "COLLEGE": "Grado: Ciencias de la Computación (completado - enero de 2022)",
+        "TITLE": "Sobre mí",
+        "DEGREE":"Grado: ",
+        "COLLEGE": "Ciencias de la Computación (completado - enero de 2022)",
         "YO": "Edad: ",
         "YEARS": "años",
         "SHOWMORE": "Mostrar más",
@@ -82,6 +84,7 @@
         "PLACEHOLDER_MESSAGE": "Mensaje"
     },
     "PERSONAL_PROJECTS": {
+        "TITLE": "Mis proyectos",
         "RPG_SURVIVAL_GAME": {
             "RESUME": "Juego hecho en Unity3D",
             "TITLE": "RPG de supervivencia",
@@ -106,9 +109,9 @@
             "RESUME": "Proyecto full-stack para gestión de pedidos",
             "TITLE": "Sistema de Gestión de Pedidos",
             "TEXT1": "Este proyecto presenta dos variantes, ambas compartiendo el mismo frontend pero diferenciándose en los backends, una implementada en Java y la otra en .NET. Ambas aplicaciones utilizan API REST como estilo de arquitectura de software.",
-            "TEXT2": "Tecnologías utilizadas: AngularJs / Java",
+            "TEXT2": "Versión AngularJs / Java",
             "TEXT3": "Un sistema que utiliza AngularJS en el frontend y Java con Spring Boot en el backend. Para mejorar la eficiencia del desarrollo, se han incorporado herramientas poderosas como Lombok, Swagger y Hibernate. Esta combinación de tecnologías proporciona una experiencia de desarrollo ágil y efectiva, garantizando la calidad y escalabilidad del sistema.",
-            "TEXT4": "Tecnologías utilizadas: AngularJs / .NET",
+            "TEXT4": "Versión AngularJs / .NET",
             "TEXT5": "El sistema está construido con AngularJS en el frontend y .NET en el backend, también integrando Swagger para mejorar la documentación y facilitar la interacción con la API.",
             "FONT_CODE1": "Código Fuente con Java",
             "FONT_CODE2": "Código Fuente con .NET"

@@ -52,11 +52,8 @@ export function OrderManagmentSys(props) {
           <div className="container-md">
             <div id="Project">
               <h3>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TITLE}</h3>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT1}</p>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT2}</p>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT3}</p>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT4}</p>
-              <p>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT5}</p>
+              <h5>AngularJs / Java</h5>
+              <h5>AngularJs / .NET</h5>
               <Zoom top>
                 <div id="Gallery">
                   <ImageGallery
@@ -67,12 +64,19 @@ export function OrderManagmentSys(props) {
                   ;
                 </div>
               </Zoom>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT1}</p>
+              <h5>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT2}</h5>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT3}</p>
+              <h5>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT4}</h5>
+              <p>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT5}</p>
               <div className="container">
                 <div className="row">
                   <div className="col-md-6">
                     <DefaultButton
                       href="https://github.com/Donztt/AngularJs---Java-Challenge"
                       externalLink
+                      withoutBackground
+                      linkStyle
                       text={
                         TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT
                           .FONT_CODE1
@@ -83,6 +87,8 @@ export function OrderManagmentSys(props) {
                     <DefaultButton
                       href="https://github.com/Donztt/AngularJs---Asp.net-Challenge-"
                       externalLink
+                      withoutBackground
+                      linkStyle
                       text={
                         TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT
                           .FONT_CODE2
