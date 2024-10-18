@@ -103,7 +103,7 @@ export function RPGSurvivalGame(props) {
     });
   }, []);
 
-  useEffect(() =>{
+  useEffect(() => {
     if (!props.disableScrollTop) {
       window.scrollTo(0, 0);
     }
@@ -117,13 +117,15 @@ export function RPGSurvivalGame(props) {
             <div id="Project">
               <h3>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TITLE}</h3>
               <h5>Unity3D / C#</h5>
-              <div id="Gallery">
-                <ImageGallery
-                  items={imagesGallery}
-                  showThumbnails={false}
-                  showBullets={true}
-                />
-              </div>
+              <Zoom top>
+                <div id="Gallery">
+                  <ImageGallery
+                    items={imagesGallery}
+                    showThumbnails={false}
+                    showBullets={true}
+                  />
+                </div>
+              </Zoom>
               <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT2}</p>
               <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT3}</p>
               <p>{TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TEXT4}</p>

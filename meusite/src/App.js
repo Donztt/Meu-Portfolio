@@ -8,6 +8,7 @@ import OrderManagmentSys from "./PAGES/OrderManagmentSys";
 import QuoteFilterByCurrency from "./PAGES/QuoteFilterByCurrency";
 import RegisNLoginSys from "./PAGES/RegisNLoginSys";
 import RPGSurvivalGame from "./PAGES/RPGSurvivalGame";
+import ContactList from './PAGES/ContactList';
 import Contacts from "./PAGES/Contact";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/orderManagmentSys" element={<OrderManagmentSys />} />
           <Route path="/regisNLoginSys" element={<RegisNLoginSys />} />
           <Route path="/RPGSurvivalGame" element={<RPGSurvivalGame />} />
+          <Route path="/contactList" element={<ContactList />} />
           <Route
             path="/QuoteFilterByCurrency"
             element={<QuoteFilterByCurrency />}

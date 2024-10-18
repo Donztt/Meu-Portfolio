@@ -8,8 +8,8 @@ import DefaultButton from "../Components/ButtonDefault.jsx";
 import transition from "../Components/Transition.jsx";
 import ProjectPreview from "../Components/ProjectPreview.jsx";
 import { OrderManagmentSys } from "./OrderManagmentSys";
-import { RPGSurvivalGame } from "./RPGSurvivalGame";
 import { QuoteFilterByCurrency } from "./QuoteFilterByCurrency";
+import { ContactList } from './ContactList';
 import { SiReact } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -104,6 +104,18 @@ class Home extends React.Component {
             <div className="row">
               <div className="col">
                 <ProjectPreview
+                  title={TRANSLATION.PERSONAL_PROJECTS.CONTACT_LIST.TITLE}
+                  resume={
+                    TRANSLATION.PERSONAL_PROJECTS.CONTACT_LIST.RESUME
+                  }
+                  to="/contactList"
+                  pagePreview={<ContactList disableScrollTop/>}
+                  whiteStyle
+                  usePagePosition
+                />
+              </div>
+              <div className="col">
+                <ProjectPreview
                   title={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TITLE}
                   resume={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.RESUME}
                   to="/QuoteFilterByCurrency"
@@ -118,18 +130,6 @@ class Home extends React.Component {
                   resume={TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.RESUME}
                   to="/orderManagmentSys"
                   pagePreview={<OrderManagmentSys disableScrollTop/>}
-                  whiteStyle
-                  usePagePosition
-                />
-              </div>
-              <div className="col">
-                <ProjectPreview
-                  title={TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.TITLE}
-                  resume={
-                    TRANSLATION.PERSONAL_PROJECTS.RPG_SURVIVAL_GAME.RESUME
-                  }
-                  to="/RPGSurvivalGame"
-                  pagePreview={<RPGSurvivalGame notShow3dApresentation disableScrollTop/>}
                   whiteStyle
                   usePagePosition
                 />

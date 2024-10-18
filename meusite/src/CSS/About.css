@@ -72,6 +72,13 @@
     top: -40px;
     z-index: 2;
 }
+
+#ExpTitle{
+    text-align: center;
+    color: var(--cor-primaria);
+    font-size: 3rem;
+}
+
 #Data {
     position: relative;
     z-index: 5;

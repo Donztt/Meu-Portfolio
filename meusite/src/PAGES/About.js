@@ -122,8 +122,8 @@ class About extends React.Component {
                 </div>
               </div>
             </div>
-            <div></div>
             <div id="ContainerExp">
+              <h2 id="ExpTitle">{TRANSLATION.ABOUT_ME.EXPERIENCES}</h2>
               <div id="Experiences">
                 <div className="container">
                   <h3>

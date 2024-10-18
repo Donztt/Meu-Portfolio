@@ -8,6 +8,7 @@ import { OrderManagmentSys } from "./OrderManagmentSys";
 import { QuoteFilterByCurrency } from "./QuoteFilterByCurrency";
 import { RegisNLoginSys } from "./RegisNLoginSys";
 import { RPGSurvivalGame } from "./RPGSurvivalGame";
+import { ContactList } from './ContactList';
 import transition from "../Components/Transition.jsx";
 
 class PersonalProjects extends React.Component {
@@ -41,6 +42,14 @@ class PersonalProjects extends React.Component {
                 {TRANSLATION.PERSONAL_PROJECTS.TITLE}
               </h2>
               <div className="row">
+              <div className="col">
+                  <ProjectPreview
+                    title={TRANSLATION.PERSONAL_PROJECTS.CONTACT_LIST.TITLE}
+                    resume={TRANSLATION.PERSONAL_PROJECTS.CONTACT_LIST.RESUME}
+                    to="/contactList"
+                    pagePreview={<ContactList disableScrollTop />}
+                  />
+                </div>
                 <div className="col">
                   <ProjectPreview
                     title={TRANSLATION.PERSONAL_PROJECTS.PORTFOLIO.TITLE}
@@ -59,6 +68,9 @@ class PersonalProjects extends React.Component {
                     pagePreview={<OrderManagmentSys disableScrollTop />}
                   />
                 </div>
+              </div>
+
+              <div className="row">
                 <div className="col">
                   <ProjectPreview
                     title={TRANSLATION.PERSONAL_PROJECTS.EXCHANGE_RATE.TITLE}
@@ -67,9 +79,6 @@ class PersonalProjects extends React.Component {
                     pagePreview={<QuoteFilterByCurrency disableScrollTop />}
                   />
                 </div>
-              </div>
-
-              <div className="row">
                 <div className="col">
                   <ProjectPreview
                     title={TRANSLATION.PERSONAL_PROJECTS.CRUD_REACTJS.TITLE}
@@ -78,6 +87,20 @@ class PersonalProjects extends React.Component {
                     pagePreview={<RegisNLoginSys disableScrollTop />}
                   />
                 </div>
+                <div className="col">
+                  <ProjectPreview
+                    title={
+                      TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TITLE
+                    }
+                    resume={
+                      TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.RESUME
+                    }
+                    to="/bombermanGame"
+                    pagePreview={<BombermanGame disableScrollTop />}
+                  />
+                </div>
+              </div>
+              <div className="row">
                 <div className="col">
                   <ProjectPreview
                     title={
@@ -93,18 +116,6 @@ class PersonalProjects extends React.Component {
                         disableScrollTop
                       />
                     }
-                  />
-                </div>
-                <div className="col">
-                  <ProjectPreview
-                    title={
-                      TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TITLE
-                    }
-                    resume={
-                      TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.RESUME
-                    }
-                    to="/bombermanGame"
-                    pagePreview={<BombermanGame disableScrollTop />}
                   />
                 </div>
               </div>

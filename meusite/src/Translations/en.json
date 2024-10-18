@@ -30,6 +30,7 @@
         "YEARS": "years",
         "SHOWMORE": "Show More",
         "DESCRIPTION": "Passionate about technology since childhood, I have always been fascinated by building functional structures. As other fields often have limitations on creativity, I decided to pursue computer science, where I can unleash my creativity in almost limitless ways. I am a results-oriented Full-Stack Developer focused on creating practical and intuitive software solutions for clients, while ensuring high maintainability for the company.",
+        "EXPERIENCES":"Experiences",
         "SOFT_SKILLS": {
             "SKILL1": "Critical Thinking",
             "SKILL2": "Problem Solving",
@@ -136,6 +137,13 @@
             "TEXT1": "Used Stacks: ReactJS / .NET",
             "TEXT2": "I developed this simplified registration system, covering all basic operations of an application (CRUD), and incorporating the login functionality, with support for token issuance and validation during the user authentication process. I used ReactJS and ASP.NET technologies for the development of this application.",
             "FONT_CODE": "Source Code"
-        }
+        },
+        "CONTACT_LIST": {
+            "RESUME": "Simple full-stack project for contact list",
+            "TITLE": "Contact List System",
+            "TEXT1": "Stacks used: Angular / Java",
+            "TEXT2": "I developed this system to deepen my knowledge in the Angular framework and improve my Java skills. It is a simple CRUD that allows access to registered contacts, with search and sorting functionalities by name.",
+            "FONT_CODE": "Source Code"
+        }        
     }
 }

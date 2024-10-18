@@ -30,6 +30,7 @@
         "YEARS": "Anos",
         "SHOWMORE": "Mostrar mais",
         "DESCRIPTION": "Apaixonado por tecnologia desde a infância, sempre fui fascinado por construir estruturas funcionais. Como em outros campos frequentemente há limitações à criatividade, decidi seguir a área de ciência da computação, onde posso liberar minha criatividade de maneiras quase ilimitadas. Sou um Desenvolvedor Full-Stack orientado a resultados, focado na criação de soluções de software práticas e intuitivas para clientes, garantindo ao mesmo tempo alta manutenibilidade para a empresa.",
+        "EXPERIENCES":"Experiências",
         "SOFT_SKILLS": {
             "SKILL1": "Pensamento Crítico",
             "SKILL2": "Resolução de Problemas",
@@ -135,6 +136,13 @@
             "TITLE": "Sistema de Cadastro e Login",
             "TEXT1": "Stacks utilizadas: Reactjs / .NET",
             "TEXT2": "Desenvolvi este sistema de cadastro simplificado, abrangendo todas as operações básicas de uma aplicação (CRUD), e que incorpora a funcionalidade de login, com suporte para a emissão e validação de tokens durante o processo de autenticação do usuário. Utilizei as tecnologias ReactJS e ASP.NET para a realização dessa aplicação.",
+            "FONT_CODE": "Código Fonte"
+        },
+        "CONTACT_LIST": {
+            "RESUME": "Projeto full-stack simples para lista de contatos",
+            "TITLE": "Sistema de lista de contatos",
+            "TEXT1": "Stacks utilizadas: Angular / Java",
+            "TEXT2": "Desenvolvi este sistema para aprofundar meu conhecimento no framework Angular e melhorar minhas habilidades em Java. É um CRUD simples que permite acesso aos contatos registrados, com funcionalidades de busca e ordenação por nome.",
             "FONT_CODE": "Código Fonte"
         }
     }

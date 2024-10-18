@@ -57,7 +57,6 @@ export function MyOwnPortfolio(props) {
                     showThumbnails={false}
                     showBullets={true}
                   />
-                  ;
                 </div>
               </Zoom>
               <p>{TRANSLATION.PERSONAL_PROJECTS.PORTFOLIO.TEXT2}</p>

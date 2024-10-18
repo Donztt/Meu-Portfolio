@@ -48,7 +48,6 @@ export function BombermanGame(props) {
                     showThumbnails={false}
                     showBullets={true}
                   />
-                  ;
                 </div>
               </Zoom>
               <p>{TRANSLATION.PERSONAL_PROJECTS.BOMBERMAN_ECOLOGICO.TEXT2}</p>

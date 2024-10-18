@@ -11,6 +11,7 @@ import { Translations } from "../Components/Translations.js";
 import DefaultButton from "../Components/ButtonDefault.jsx";
 import transition from "../Components/Transition.jsx";
 
+
 const imageGaleryOrderManagement = [
   {
     original: orderManagmentPhoto1,
@@ -61,7 +62,6 @@ export function OrderManagmentSys(props) {
                     showThumbnails={false}
                     showBullets={true}
                   />
-                  ;
                 </div>
               </Zoom>
               <p>{TRANSLATION.PERSONAL_PROJECTS.ORDER_MANAGEMENT.TEXT1}</p>
